@@ -15,6 +15,20 @@
   },
   {
     "execID": 3,
+    "name": "Kishor Yogeswaran",
+    "course": "Computer Science",
+    "bio": null,
+    "nationality": "",
+    "pronouns": "he/him",
+    "team": null,
+    "title": "Treasurer",
+    "liLink": "https://www.linkedin.com/in/kishor-yogeswaran-772322262",
+    "ghLink": "https://github.com/KYoges",
+    "year": "2",
+    "imageLink": "kishor"
+  },
+  {
+    "execID": 4,
     "name": "Sarim Haye",
     "course": "Computer Science",
     "bio": null,
@@ -28,7 +42,7 @@
     "imageLink": "sarim"
   },
   {
-    "execID": 4,
+    "execID": 5,
     "name": "James Boss",
     "course": "",
     "bio": null,
@@ -42,7 +56,7 @@
     "imageLink": "james"
   },
   {
-    "execID": 5,
+    "execID": 6,
     "name": "Nikita Pelagecha",
     "course": "Computer Science",
     "bio": null,
@@ -56,7 +70,7 @@
     "imageLink": "nick"
   },
   {
-    "execID": 6,
+    "execID": 7,
     "name": "Zaira Ahmed",
     "course": "Computer Science",
     "bio": null,
@@ -69,7 +83,7 @@
     "imageLink": "zaira"
   },
   {
-    "execID": 7,
+    "execID": 8,
     "name": "Aaron Geung",
     "course": "Mathematics",
     "bio": null,
