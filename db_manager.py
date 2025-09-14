@@ -128,7 +128,9 @@ class DatabaseManager:
                     ghLink=item.get('ghLink', '')
                 )
                 member.execID = item['execID']
-                if item.get('name'):
+                if item.get('imageLink'):
+                    member.imageLink = item['imageLink']
+                elif item.get('name'):
                     member.imageLink = item['name'].replace(' ', '')
                 db.session.add(member)
             print(f"  ✓ Added {len(validated_data['exec_members'])} exec members")
