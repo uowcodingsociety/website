@@ -11,6 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+
+    - name: Check for Python file changes
+      uses: tj-actions/changed-files@v41
+      id: changed-files
+      with:
+        files: '**/*.py'
+
     - name: Deploy to production
       uses: appleboy/ssh-action@v1.0.3
       with:
@@ -73,3 +84,14 @@ jobs:
         script: |
           cd ~/website/
           FLASK_APP=codesoc.py flask db-reset
+
+    - name: Reload WSGI if Python files changed
+      if: steps.changed-files.outputs.any_changed == 'true'
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USER }}
+        key: ${{ secrets.VM_SSH_KEY }}
+        script: |
+          echo "Python files changed, reloading WSGI..."
+          touch /var/www/www_warwickcodingsociety_com_wsgi.py
