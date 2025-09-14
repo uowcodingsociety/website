@@ -37,7 +37,7 @@
     "team": null,
     "title": "Social Secretary",
     "liLink": "https://www.linkedin.com/in/james-boss-baba0527a",
-    "ghLink": "https://github.com/armaan-nagra",
+    "ghLink": "https://github.com/jb8520",
     "year": "2",
     "imageLink": "james"
   },
@@ -54,6 +54,32 @@
     "ghLink": "https://github.com/pelagecha",
     "year": "3",
     "imageLink": "nick"
+  },
+  {
+    "execID": 6,
+    "name": "Zaira Ahmed",
+    "course": "Computer Science",
+    "bio": null,
+    "nationality": "",
+    "pronouns": "he/him",
+    "team": null,
+    "title": "Diversity Director",
+    "liLink": "https://www.linkedin.com/in/zaira-ahmed-161758244",
+    "year": "3",
+    "imageLink": "zaira"
+  },
+  {
+    "execID": 7,
+    "name": "Aaron Geung",
+    "course": "Mathematics",
+    "bio": null,
+    "nationality": "",
+    "pronouns": "he/him",
+    "team": null,
+    "title": "Sports Coordinator",
+    "liLink": "https://www.linkedin.com/in/aaron-geung-1249992a6/",
+    "year": "2",
+    "imageLink": "aaron"
   },
   {
     "execID": 1,
