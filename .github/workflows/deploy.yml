@@ -11,22 +11,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Remove temp deployment
+    - name: Deploy to production
       uses: appleboy/ssh-action@v1.0.3
       with:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USER }}
         key: ${{ secrets.VM_SSH_KEY }}
-        script: rm -rf /tmp/website/
-
-    - name: Clone repository
-      if: success()
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.VM_HOST }}
-        username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
-        script: git clone https://github.com/${{ github.repository }} /tmp/website/
+        script: |
+          if [ -d ~/website/.git ]; then
+            echo "Repository exists, pulling latest changes..."
+            cd ~/website/
+            git pull origin main
+          else
+            echo "Repository doesn't exist, cloning..."
+            rm -rf ~/website/
+            git clone https://github.com/${{ github.repository }} ~/website/
+            cd ~/website/
+          fi
 
     - name: Create environment file
       if: success()
@@ -36,7 +37,7 @@ jobs:
         username: ${{ secrets.VM_USER }}
         key: ${{ secrets.VM_SSH_KEY }}
         script: |
-          cd /tmp/website/
+          cd ~/website/
           echo "MAIL_USERNAME=${{ secrets.MAIL_USERNAME }}" > .env
           echo "MAIL_PASSWORD=${{ secrets.MAIL_PASSWORD }}" >> .env
 
@@ -48,7 +49,7 @@ jobs:
         username: ${{ secrets.VM_USER }}
         key: ${{ secrets.VM_SSH_KEY }}
         script: |
-          cd /tmp/website/
+          cd ~/website/
           pip install -r requirements.txt
 
     - name: Validate database
@@ -59,7 +60,7 @@ jobs:
         username: ${{ secrets.VM_USER }}
         key: ${{ secrets.VM_SSH_KEY }}
         script: |
-          cd /tmp/website/
+          cd ~/website/
           FLASK_APP=codesoc.py flask db-validate
 
     - name: Reset database
@@ -70,17 +71,5 @@ jobs:
         username: ${{ secrets.VM_USER }}
         key: ${{ secrets.VM_SSH_KEY }}
         script: |
-          cd /tmp/website/
+          cd ~/website/
           FLASK_APP=codesoc.py flask db-reset
-
-
-    - name: Deploy to production
-      if: success()
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.VM_HOST }}
-        username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
-        script: |
-          rm -rf ~/website/
-          cp -r /tmp/website/ ~/website/
