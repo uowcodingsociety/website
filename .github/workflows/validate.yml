@@ -1,0 +1,47 @@
+name: Validate PR
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Create virtual environment
+      run: python -m venv venv
+
+    - name: Install dependencies
+      run: |
+        . venv/bin/activate
+        pip install -r requirements.txt
+
+    - name: Validate database
+      run: |
+        . venv/bin/activate
+        FLASK_APP=codesoc.py flask db-validate
+
+    - name: Reset database
+      run: |
+        . venv/bin/activate
+        FLASK_APP=codesoc.py flask db-reset
+
+    - name: Test Flask app starts
+      run: |
+        . venv/bin/activate
+        timeout 10s bash -c '
+          FLASK_APP=codesoc.py flask run &
+          FLASK_PID=$!
+          sleep 10
+          curl -f http://127.0.0.1:5000 > /dev/null
+          kill $FLASK_PID
+        '
