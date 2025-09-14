@@ -1,157 +1,153 @@
 main {
-    box-sizing: border-box;
-    max-width: 1434px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0px 70px;
-    margin: 0px auto;
-    color: var(--primary-white);
-    column-gap: 20px;
+  box-sizing: border-box;
+  max-width: 1434px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 70px;
+  margin: 0px auto;
+  color: var(--primary-white);
+  column-gap: 20px;
 }
 
 #pageTitle span {
-    color: var(--primary-blue);
+  color: var(--primary-blue);
 }
 
 hr {
-    margin: 40px auto;
-    width: 80%;
-    border-color: var(--primary-blue);
-    height: 3px;
-    border-radius: 10px;
-    background-color: var(--primary-blue);
+  margin: 40px auto;
+  width: 80%;
+  border-color: var(--primary-blue);
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--primary-blue);
 }
 
 p {
-    margin-top: 5px;
-    font-weight: 300;
+  margin-top: 5px;
+  font-weight: 300;
 }
 
 #pageTitle {
-    opacity: 0.0;
-    position: relative;
-    left: -30px;
-    width: 100%;
-    font-size: 50px;
-    margin: 40px 0px;
+  opacity: 0;
+  position: relative;
+  left: -30px;
+  width: 100%;
+  font-size: 50px;
+  margin: 40px 0px;
 }
 
 #execContainer {
-    width: 100%
+  width: 100%;
 }
 
 #execContainer h2 {
-    text-align: left;
-
+  text-align: left;
 }
 
 #execTeam {
-    display: flex;
-    background-color: var(--background-100);
-    border-radius: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background-color: var(--background-100);
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .person {
-    background-color: var(--background-300);
-    padding: 10px;
-    border-radius: 20px;
-    margin: 20px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--background-300);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .person-image-container {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 20px;
-    margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .person-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-
 .person-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
 }
 
 .person-socials-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .person-socials-container img {
-    max-width: 30px;
+  max-width: 30px;
 }
 
 .socials-container2 {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .person-name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #aboutUsContainer div {
-    padding: 20px;
-    border-radius: 20px;
-    background-color: var(--background-100);
-    font-size: 18px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--background-100);
+  font-size: 18px;
 }
 
 .person-name {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .person-position {
-    color: var(--primary-blue);
-    overflow-wrap: break-word;
-    text-align: center;
+  color: var(--primary-blue);
+  overflow-wrap: break-word;
+  text-align: center;
 }
 
-
 @media (max-width: 720px) {
+  #pageTitle {
+    font-size: 33px;
+  }
 
-    #pageTitle {
-        font-size: 33px;
-    }
+  main {
+    padding: 0px 15px;
+  }
 
-    main {
-        padding: 0px 15px;
-    }
+  .person-image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
 
-    .person-image-container {
-        width: 150px;
-        height: 150px;
-        overflow: hidden;
-        border-radius: 20px;
-        margin-bottom: 10px;
-    }
+  .person-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+  }
 
-    .person-text-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 150px;
-    }
-
-    .person {
-        margin: 10px 25px;
-    }
+  .person {
+    margin: 10px 25px;
+  }
 }
