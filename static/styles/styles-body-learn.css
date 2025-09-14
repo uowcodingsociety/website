@@ -1,0 +1,298 @@
+main{
+    box-sizing: border-box;
+    max-width: 1434px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 70px;
+    margin: 0px auto;
+    color: var(--primary-white);
+}
+
+#pageTitle span{
+    color: var(--primary-blue);
+}
+
+b{
+    font-weight: 500;
+}
+
+#pageTitle{
+    position: relative;
+    opacity: 0.0;
+    left: -30px;
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.otherResourcesSubtitle{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.resourceList{
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 5px;
+}
+
+.resourceList a {
+    font-size: 20px;
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.resourceList a:hover {
+    color: var(--primary-white);
+}
+
+.sectionTitle{
+    font-size: 33px;
+    font-weight: 500;
+}
+
+#pageTitle, .sectionTitle{
+    width: 100%;
+}
+
+#studentImages img{
+    border: var(--primary-white) 2px solid;
+    border-radius: 5px;
+    width: 45%;
+}
+
+#courseImages img{
+    width: 100px;
+}
+
+.learnContainer, .mentorshipContainer{
+    position: relative;
+    width: 480px;
+    background-color: var(--background-100);
+    min-height: 300px;
+    margin: 35px 0px;
+    padding: 20px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.learnContainer p{
+    text-align: center;
+    margin: 10px 5px 25px 5px;
+}
+
+.learnContainer h3, .mentorshipContainer h3{
+    align-self: flex-start;
+    font-weight: 500;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.learnContainer button, .mentorshipContainer button{
+  color: var(--primary-blue);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  width: fit-content;
+  border: 2px solid var(--primary-blue);
+  border-radius: 8px;
+  padding: 9px 25px;
+  position: absolute;
+  bottom: 25px;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.2s;
+}
+
+.learnContainer button:hover, .mentorshipContainer button:hover{
+  color: var(--primary-white);
+  background-color: var(--primary-blue);
+}
+
+.learnContainer button:active, .mentorshipContainer button:active{
+  color: var(--primary-blue);
+  background-color: var(--background-100);
+}
+
+.mentorshipContainer{
+    min-height: 280px;
+}
+
+.mentorshipContainer img{
+    width: 140px;
+    height: 140px;
+}
+
+.mentorshipContent{
+    display: flex;
+    margin-top: 20px;
+}
+
+.mentorshipContent p{
+    margin-left: 20px;
+}
+
+.mentorshipContainer p, .learnContainer p{
+    font-weight: 300;
+}
+
+.otherContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-100);
+    padding: 20px 110px 0px 20px;
+    margin-top: 30px;
+    border-radius: 11px;
+    padding-bottom: 10px;
+}
+
+.resourceList li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.resourceList li a{
+    color: white;
+    background-color: var(--shades-dark);
+    border-radius: 5px;
+    padding: 4px 8px 4px 8px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.resourceList li a:hover{
+  background-color: var(--shades-blue);
+  transition: background-color 0.2s;
+}
+
+.resourceList li a:active{
+  background-color: var(--primary-blue);
+}
+
+@media all and (max-width: 1180px) {
+    main{
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 728px) {
+    #pageTitle{
+        font-size: 33px;
+    }
+
+    .sectionTitle{
+        font-size: 24px;
+    }
+
+    .otherResourcesSubtitle{
+        font-size: 20px;
+    }
+
+    .resourceList a {
+        font-size: 18px;
+    }
+
+    .mentorshipContainer{
+        min-height: 310px;
+    }
+}
+
+@media all and (max-width: 612px) {
+    main{
+        padding: 0px 15px;
+    }
+
+    .imageContainer, .mentorshipContent{
+        align-items: center;
+        height: fit-content;
+    }
+
+    #studentImages img {
+        width: 45%;
+    }
+
+    .learnContainer button, .mentorshipContainer button{
+        bottom: unset;
+        position: unset;
+        margin-top: 20px;
+    }
+
+    .learnContainer, .mentorshipContainer{
+        width: 80%;
+    }
+
+    .learnContainer, .mentorshipContainer{
+        min-height: auto;
+    }
+
+    #courseImages img{
+        width: 20%;
+        margin-bottom: 10px;
+    }
+
+    #pageTitle {
+        font-size: 22px;
+        line-height: 24px;
+        padding-left: 20px;
+
+    }
+
+    .learnContainer p {
+        margin: 10px 5px 15px 5px;
+    }
+
+
+    .learnContainer, .mentorshipContainer {
+        margin: 20px 0px;
+    }
+
+    .mentorshipContainer p{
+        font-size: 11px;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    .learnContainer p {
+        font-size: 11px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .mentorshipContainer img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .otherContainer{
+        padding: 20px 20px -20px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    #pageTitle{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .otherContainer{
+        padding: 10px;
+        width: 85%;
+    }
+
+    .resourceList a{
+        font-size: 16px;
+    }
+}

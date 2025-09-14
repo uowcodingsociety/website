@@ -1,0 +1,315 @@
+main{
+    box-sizing: border-box;
+    max-width: 1434px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 70px;
+    margin: 0px auto;
+    color: white;
+}
+
+#pageTitle span, h4 span{
+    color: #008EFF;
+}
+
+section{
+    margin: 20px 0px;
+}
+
+hr{
+    margin: 10px auto 30px auto;
+    width: 80%;
+    border-color: #008EFF;
+    height: 3px;
+    background-color: var(--primary-blue);
+    border-radius: 10px;
+}
+
+.titleText{
+    font-size: 20px;
+    margin-bottom: 13px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+p{
+    margin: 5px 3px;
+}
+
+#pageTitle{
+    opacity: 0.0;
+    position: relative;
+    left: -30px;
+    width: 100%;
+    font-size: 50px;
+    margin: 40px 0px 10px 0px
+}
+
+#emailLink{
+    color: #008EFF;
+    background-color: #313A5B;
+    padding: 5px 10px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+/* Partner Widget Styling */
+
+#partnerWidgets{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partnerButton{
+    font-family: inherit;
+    background-color: #008EFF;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 8px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 7px;
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.partnerButton:hover{
+  background-color: #66BBFF;
+}
+
+.partnerLogo{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 70px;
+}
+
+.partnerTitle{
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.partnerAttributes{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 60%;
+}
+
+#sponsorTier{
+    color: green;
+}
+
+.partnerDescription{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+.partnerWidget{
+    position: relative;
+    width: 40%;
+    min-width: 382px;
+    border-radius: 12px;
+    margin: 20px 5px;
+    padding: 20px;
+    background-color: var(--background-100);
+}
+
+/* End of Partner Widget Styling */
+
+/* News Widget Styling */
+
+.newsWidget{
+    display: flex;
+    background-color: #313A5B;
+    border-radius: 12px;
+    margin: 35px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.newsWidget button{
+    background-color: #008EFF;
+    color: white;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    font-family: inherit;
+    font-size: 12px;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+.partnerNewsButton{
+    left: 110px;
+}
+
+.newsWidget .partnerNewsButton{
+    background-color: #5C6481;
+}
+
+.partnerNewsButton:hover{
+    background-color: #7C84A1;
+}
+
+.learnMoreButton:hover{
+    background-color: #66BBFF
+}
+
+.newsContent{
+    padding: 15px;
+}
+
+.newsDescription{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.newsImage{
+    width: 40%;
+    max-width: 600px;
+    max-height: 100%;
+    object-fit: cover;
+    height: 150px;
+}
+
+.newsTitle{
+    font-weight: 500;
+}
+
+.newsContent{
+    width: 67%;
+}
+
+#newsMainTitle{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.newsDescription{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px;
+    line-height: 150%;
+    margin-top: 3px;
+}
+
+
+/* End of News Widget Styling */
+
+
+@media all and (max-width: 1020px){
+
+    #partnerWidgets{
+        justify-content: center;
+    }
+
+    .partnerWidget{
+        width: 80%;
+    }
+
+    .newsImage{
+        width: 30%;
+        height: auto;
+    }
+
+    .newsContent{
+        width: 70%;
+    }
+
+    .newsWidget button{
+        bottom: unset;
+        left: unset;
+        position: unset;
+        margin-top: 20px;
+}
+
+}
+
+@media all and (max-width: 652px){
+    main{
+        padding: 0px 35px;
+    }
+
+    section {
+        margin: 15px 0px;
+    }
+
+    #pageTitle{
+        font-size: 22px;
+        margin: 20px 0px 10px 0px;
+    }
+
+    .titleText{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #emailLink{
+        padding: 2.5px 5px;
+    }
+
+    .partnerWidget{
+        min-width: unset;
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .newsImage{
+        width: 100%;
+        height: auto;
+    }
+
+    .newsContent{
+        width: 100%;
+    }
+
+    .newsWidget{
+        flex-wrap: wrap;
+    }
+
+    .newsDescription{
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+    }
+}
+
+@media all and (max-width: 490px){
+    .partnerTitle{
+        max-width: 72%;
+        font-size: 20px;
+    }
+
+    .partnerAttributes{
+        font-size: 18px;
+    }
+
+    .partnerDescription{
+        font-size: 14px;
+    }
+
+    .partnerLogo{
+        width: 55px;
+    }
+}
+
+
+
+
+

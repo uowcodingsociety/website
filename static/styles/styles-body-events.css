@@ -1,0 +1,256 @@
+main{
+    box-sizing: border-box;
+    max-width: 1434px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 70px;
+    margin: 0px auto;
+    color: white;
+}
+
+li{
+    display: inline;
+    font-size: 18px;
+}
+
+.fc-event-title{
+    font-weight: bold;
+}
+
+#colourIndex{
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--background-100);
+    padding: 7px 25px;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+}
+
+#pageTitle{
+    width: 100%;
+    position: relative;
+    opacity: 0.0;
+    left: -30px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#indexTitle{
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+
+#pageTitle span{
+    color: #008EFF;
+}
+
+#colourIndex li{
+    width: 120px;
+    margin: 15px 10px 15px 0px;
+}
+
+.colourSquare{
+    padding: 4px 15px;
+    margin-right: 10px;
+    border-radius: 7px;
+    background-color: black;
+}
+
+.mobile-menu-navigation{
+    z-index: 10000;
+}
+
+.fc-event-title-container{
+    border-radius: 3px;
+}
+
+.fc-media-screen{
+    width: 100%;
+}
+
+.fc .fc-list-empty{
+    background-color: var(--background-300);
+}
+
+.fc-event-title{
+    width: 100%;
+    padding-left: 5px;
+}
+
+.fc-theme-standard .fc-list{
+    border: none;
+}
+
+.fc .fc-list-event:hover td {
+    background-color: var(--shades-blue);
+    color: black;
+    transition: border-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.fc .fc-list-event:hover .fc-list-event-dot {
+    border-color: var(--primary-white);
+}
+
+.fc-theme-standard .fc-list-day-cushion{
+    background-color: var(--background-100);
+}
+
+.fc-list .fc-list-sticky .fc-listWeek-view .fc-view{
+    background-color: none;
+}
+
+.fc {
+    color: var(--primary-white);
+    width: 100%;
+}
+
+.fc-daygrid table{
+    border-collapse: separate;
+    border-spacing: 8px;
+    border-radius: 11px;
+    background-color: var(--background-100);
+}
+
+
+.fc-daygrid-day-number {
+    font-size: 30px;
+}
+
+.fc .fc-daygrid-day-top {
+    margin-top: -10px;
+    flex-direction: row;
+}
+
+.fc-daygrid td, .fc-daygrid th, .fc .fc-scrollgrid{
+    border: none;
+}
+
+.fc-col-header-cell-cushion {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.fc-daygrid-dot-event{
+    background-color: var(--background-100);
+    color: var(--primary-white);
+    transition: all 0.2s;
+}
+
+.fc-event-main-frame{
+    border-radius: 12px;
+}
+
+.fc-h-event .fc-event-main{
+    transition: all 0.2s;
+}
+
+.fc-daygrid-dot-event:hover, .fc-h-event:hover .fc-event-main{
+    background-color: var(--shades-blue);
+    color: black;
+}
+
+.fc-daygrid-dot-event:hover .fc-daygrid-event-dot{
+    border-color: var(--primary-white);
+}
+
+.fc-daygrid-event{
+    white-space: unset;
+    flex-wrap: wrap;
+}
+
+.fc-h-event{
+    border: none;
+    background-color: rgba(0,0,0,0)
+}
+
+
+
+
+.fc-daygrid-day{
+    background-color: rgb(55, 64, 96);
+}
+
+.fc-daygrid-day-frame{
+    border-top: 3px solid var(--primary-white);
+}
+
+
+.fc-col-header-cell{
+    color: var(--shades-blue);
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#calendar{
+    height: 100%;
+}
+
+/* Issue #1 */
+@media all and (min-width: 1440px){
+    .fc{
+        width: 1294px;
+    }
+}
+
+@media all and (max-width: 1060px){
+    .fc .fc-list-event-title a{
+        border-radius: 4px;
+        padding: 2px 7px;
+        color: var(--background-300);
+        display: block;
+        width: fit-content;
+    }
+
+}
+
+@media all and (max-width: 760px){
+
+    main{
+        padding: 0px 15px;
+    }
+
+    #pageTitle{
+        font-size: 33px;
+    }
+
+    .fc{
+        margin: 2%;
+    }
+
+    .fc .fc-toolbar-title{
+        font-size: 16px;
+    }
+
+    .fc .fc-button{
+        padding: 4px;
+    }
+
+    .fc .fc-button{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .fc-list-event-time{
+        font-size: 14px;
+    }
+
+    #pageTitle{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    #indexTitle{
+        font-size: 16px;
+    }
+
+}

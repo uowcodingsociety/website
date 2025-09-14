@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Learn | CodeSoc</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="static/styles/styles-navbar.css">
+    <link rel="stylesheet" href="static/styles/reset.css">
+    <link rel="stylesheet" href="static/styles/styles-body-learn.css">
+    <link rel="stylesheet" href="static/styles/styles-footer.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kfd8owr.css">
+    <link rel="shortcut icon" type="image/png" href="/static/assets/Icons/favicon.ico">
+  </head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Q2ZMD5NS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M6Q2ZMD5NS');
+  </script>
+
+  <body>
+
+    <script src = "/static/js/jquery-3.6.0.min.js"></script>
+    <script src = "/static/js/global.js"></script>
+    <script src = "/static/js/learn.js"></script>
+
+    <div class="backup-button">
+      <a href="#"><img src="/static/assets/Icons/backupbutton.png"></a>
+    </div>
+
+    {% include "reusable/header.html" %}
+
+    <main>
+        <h1 id="pageTitle">Our Learning Resources<span>.</span></h1>
+        <div class="learnContainer">
+            <h3>Workshops</h3>
+            <p>Weekly student-run workshops on a variety of topics accessible to all students.</p>
+            <div class="imageContainer" id="studentImages">
+                <img src="/static/assets/soc-images/image4.jpg">
+                <img src="/static/assets/soc-images/image5.jpg">
+            </div>
+            <button id="workshopsButton">Upcoming Workshops</button>
+        </div>
+        <div class="learnContainer">
+            <h3>Courses</h3>
+            <p>Free, student-made courses to learn coding. You can access them on your own or follow them at our workshops.</p>
+            <div class="imageContainer" id="courseImages">
+                <img src="/static/assets/Icons/whitepython.png">
+                <img src="/static/assets/Icons/whiteswift.png">
+                <img src="/static/assets/Icons/whiteHTML.png">
+            </div>
+            <button id="coursesButton">View All Courses</button>
+        </div>
+        <h2 class="sectionTitle">Mentorship</h2>
+        <div class="mentorshipContainer">
+            <h3>For Mentors</h3>
+            <div class="mentorshipContent">
+                <img src="/static/assets/Graphics/mentor.png">
+                <p>The best way to show you're good at something, is by teaching it. Showcase your skill by becoming a student mentor! You are not a private tutor, you are a mentor. So you are not expected to give private tutoring classes, but rather be a helping hand and a guide. <br><br> <b>Expected weekly commitment ≈ 30 mins</b></p>
+            </div>
+            <button id="mentorButton">Become a Mentor</button>
+        </div>
+        <div class="mentorshipContainer">
+            <h3>For Mentees</h3>
+            <div class="mentorshipContent">
+                <img src="/static/assets/Graphics/mentee.png">
+                <p>Feel overwhelmed and don't know where or how to start coding? Find a student mentor that will be there to help guide you on your coding journey. This mentorship is very highly demanded. Thus, you must be commited, active, and serious about learning code. <br><br> <b>We have a small selection process.</b></p>
+            </div>
+            <button id="menteeButton">Become a Mentee</button>
+        </div>
+        <h2 class="sectionTitle">Other Resources</h2>
+        <div class="otherContainer">
+            <h3 class="otherResourcesSubtitle">Technical Interview Preparation</h3>
+            <ul class="resourceList">
+                <li><a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind 75</a></li>
+                <li><a href="https://www.techinterviewhandbook.org/" target="_blank">Tech Interview Handbook</a></li>
+                <li><a href="https://github.com/jwasham/coding-interview-university" target="_blank">Coding Interview University</a></li>
+            </ul>
+            <h3 class="otherResourcesSubtitle">Other Resources</h3>
+            <ul class="resourceList">
+                <li><a href="https://t.me/hydralib" target="_blank">Free Book Resources</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    {% include "reusable/footer.html" %}
+
+  </body>
+</html>

@@ -1,0 +1,99 @@
+ <nav class="header">
+    <div class="header-container">
+      <div class="left-section-header">
+        <div class="logo-container">
+            {% if pageName != "woco" %}
+                <a href="/"><img class="logo-image" src="/static/assets/Graphics/logo.png"></a>
+                <a href="/"><img class="mobile-logo-image" src="/static/assets/Graphics/logosmallwhite.png"></a>
+            {% else %}
+                <a href="/"><img class="logo-image" src="/static/assets/Graphics/logowocosmall.png"></a>
+                <a href="/"><img class="mobile-logo-image" src="/static/assets/Graphics/logowocomedium.png"></a>
+            {% endif %}
+        </div>
+        <div class="navigation-container">
+          <a href="/" class="navigation-item {{'active-nav-item' if pageName == 'home' else ''}}">Home</a>
+          <div class="dropdown-menu-container">
+            <div class="dropdown"><img src="/static/assets/Icons/dropdown.png"></div>
+            <a href="/learn" class="navigation-item-learn {{'active-nav-item' if pageName == 'learn' or pageName == 'courses' or pageName == 'mentorship' else ''}}">Learn</a>
+            <div class="dropdown-menu">
+              <a href="/learn/courses">Courses</a>
+            </div>
+            <div class="dropdown-menu2ndItem">
+              <a href="/learn/mentorship">Mentorship</a>
+            </div>
+          </div>
+          <div class="dropdown-menu-container">
+            <div class="dropdown" style="left: 63px"><img src="/static/assets/Icons/dropdown.png"></div>
+            <a href="/careers" class="navigation-item-learn {{'active-nav-item' if pageName == 'careers' or pageName == 'sponsors' else ''}}">Careers</a>
+            <div class="dropdown-menu">
+              <a href="/careers/sponsors">Partners</a>
+            </div>
+          </div>
+          <!-- <a href="/develop" class="navigation-item {{'active-nav-item' if pageName == 'develop' else ''}}">Develop</a> -->
+          <a href="/events" class="navigation-item {{'active-nav-item' if pageName == 'events' else ''}}">Events</a>
+          <div id="bubble-container">
+            <a href="/blog" class="navigation-item {{'active-nav-item' if pageName == 'blog' else ''}}">Blog</a>
+            {% if pageName != "blog" %}
+               <!--  <p id="new-bubble-nav">New</p> -->
+            {% endif %}
+          </div>
+          <!-- <a href="/woco" class="navigation-item {{'active-nav-item' if pageName == 'woco' else ''}}">Woco</a> -->
+
+        </div>
+      </div>
+
+      <div class="right-section-header">
+        <div class="button1-container"> <a class="{{'active-secondary-nav-item' if pageName == 'execTeam' else ''}}" href="/exec-team">Exec Team</a></div>
+        {% if pageName != "develop" %}
+          <a href="https://www.warwicksu.com/societies-sports/societies/61317/" target="_blank" class="button2-container">
+            <div class="button2-icon">
+              <img src="/static/assets/Icons/users.png">
+            </div>
+            <div class="button2-text">
+              Membership
+            </div>
+          </a>
+        {% else %}
+          <a href="mailto:Warwickdevelopernetwork@gmail.com" target="_blank" class="button2-container">
+            <div class="button2-icon">
+              <img src="/static/assets/Icons/mailwhite.png">
+            </div>
+            <div class="button2-text">
+              Get in Touch
+            </div>
+          </a>
+        {% endif %}
+      </div>
+      <div class="mobile-menu">
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" id="nav-toggle-label">
+        {% if pageName != "develop" %}
+            <img id="mobile-menu-icon-open" src="/static/assets/Icons/burgermenu.png">
+            <img id="mobile-menu-icon-closed" src="/static/assets/Icons/close.png">
+        {% else %}
+            <img id="mobile-menu-icon-open" src="/static/assets/Icons/burgermenuwhite.png">
+            <img id="mobile-menu-icon-closed" src="/static/assets/Icons/closewhite.png">
+        {% endif %}
+        </label>
+        <div class="mobile-menu-navigation">
+          <a href="/" class="navigation-item">Home</a>
+          <a href="/learn" class="navigation-item">Learn</a>
+          <a href="/learn/courses" class="navigation-item">Courses</a>
+          <a href="/learn/mentorship" class="navigation-item">Mentorship</a>
+          <a href="/careers" class="navigation-item">Careers</a>
+          <a href="/careers/sponsors" class="navigation-item">Partners</a>
+          <!-- <a href="/develop" class="navigation-item">Develop</a> -->
+          <a href="/events" class="navigation-item">Events</a>
+          <a href="/blog" class="navigation-item">Blog</a>
+          <div class="mobile-important-navigation">
+            <a href="/exec-team" class="navigation-item">Meet the Exec</a>
+            {% if pageName != "develop" %}
+              <a href="https://www.warwicksu.com/societies-sports/societies/61317/" class="navigation-item">Membership</a>
+            {% else %}
+              <a href="mailto:Warwickdevelopernetwork@gmail.com" class="navigation-item">Get in Touch</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>

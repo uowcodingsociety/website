@@ -1,0 +1,507 @@
+main{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-direction: column;
+  max-width: 1434px;
+  width: 100%;
+  padding: 0px 70px;
+  margin: 0px auto;
+  color: var(--primary-white);
+  column-gap: 20px;
+}
+
+#pageTitle span, h1 span{
+  color: var(--primary-blue);
+}
+
+#pageTitle{
+  opacity: 0.0;
+  position: relative;
+  left: -30px;
+  width: 100%;
+  font-size: 50px;
+  margin: 40px 0px;
+}
+
+h1,h2,h3,h4,p,li,ul,a{
+  margin: 0px;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Light: 300 Regular: 400 Medium: 500 Bold: 700 */
+
+/*  Top  */
+
+.top{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  column-gap: 30px;
+}
+
+.top img{
+    height: 392px;
+}
+
+.topLeft{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top h1{
+  margin: 0px 0px 15px 0px;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.top p{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.top li{
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+.top ul{
+  list-style: none; /* Remove default bullets */
+}
+
+.top ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--primary-blue); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.topLeftinner{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mentors */
+
+.mentors{
+  margin-bottom: 60px;
+}
+
+main h2{
+  margin: 0px 0px 30px 0px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.mid-team-container{
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  column-gap: 70px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.mid-team-member{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 247px;
+  height: 239px;
+  background-color: var(--background-100);
+  border-radius: 20px;
+  border: 2px solid var(--background-100);
+  transition: border-color 0.2s;
+}
+
+.mid-team-member:hover{
+  border-color: var(--primary-blue);
+}
+
+.mid-team-member p:first-of-type{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.mid-team-member p:last-of-type{
+  color: var(--primary-blue);
+  font-size: 17px;
+}
+
+.mid-team-member img{
+  width: 133px;
+  height: 133px;
+}
+
+.mid-team-container a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Widgets */
+
+.widgets{
+  margin-bottom: 60px;
+}
+
+.bot-box-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+}
+
+.bot-box{
+  width: 40%;
+  padding: 25px 30px 25px 30px;
+  background-color: var(--background-100);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.box-title{
+  align-self: flex-start;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.box-content ul{
+  list-style: none; /* Remove default bullets */
+}
+
+.box-content li{
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: 300;
+}
+
+.box-content ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--primary-blue); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.box-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-content img{
+  width: 30%;
+  height: fit-content;
+  height: min-intrinsic;
+}
+
+.bot-box button{
+  justify-self: center;
+  border: 2px solid var(--primary-blue);
+  background-color: transparent;
+  color: var(--primary-blue);
+  border-radius: 5px;
+  font-family: inherit;
+  padding: 5px 12px 7px 12px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.bot-box a{
+  margin-top: -12px;
+}
+
+.bot-box button:hover{
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+/* Mentor/Mentee board */
+
+.mentor-mentee-box{
+  width: 100%;
+  height: 359px;
+  background-color: var(--background-100);
+  border-radius: 15px;
+}
+
+/* Resources */
+
+.bot-box-resources{
+  width: 40%;
+  padding: 25px 30px 25px 30px;
+  background-color: var(--background-100);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 30px;
+}
+
+.widgets:last-of-type{
+  margin-bottom: 0px;
+}
+
+.resource-link{
+  font-size: 20px;
+  background-color: var(--shades-dark);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  font-weight: 400;
+}
+
+.resource-link:hover{
+  background-color: var(--shades-blue);
+}
+
+.resource-link:active{
+  background-color: var(--primary-blue);
+}
+
+.resource-info{
+  font-size: 17px;
+  max-width: 100%;
+  margin-top: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+
+
+/* Mobile */
+
+@media (max-width: 1240px) {
+
+  .top img{
+    height: 314px;
+  }
+
+  .top li, .top p{
+    font-size: 15px;
+  }
+
+  .top ul{
+    margin-left: -15px;
+  }
+
+}
+
+@media (max-width: 1124px) {
+
+  .top p{
+   margin-bottom: 15px;
+  }
+
+  .box-content li{
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  .top{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .top img{
+    height: auto;
+    width: 90%;
+    align-self: center;
+  }
+
+  .topLeft{
+    width: 100%;
+  }
+
+  .box-content ul{
+    margin-left: -7px;
+  }
+
+  .box-content img{
+    width: 20%;
+  }
+
+  .box-content{
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .bot-box{
+    width: 100%;
+  }
+
+  .bot-box-container{
+    justify-content: center;
+  }
+
+  .box-content li{
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  .box-content ul{
+    margin-left: 20px;
+  }
+
+  .bot-box-resources{
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 669px) {
+
+  main{
+    padding: 0px 40px;
+  }
+
+  .top img{
+    width: 100%;
+  }
+
+  .mid-team-member{
+    width: 180px;
+    height: 175px;
+  }
+
+  .mid-team-member p:first-of-type{
+    font-size: 15px;
+  }
+
+  .mid-team-member p:last-of-type{
+    font-size: 12px;
+  }
+
+  .mid-team-member img{
+    width: 86px;
+    height: 86px;
+  }
+
+  .mid-team-container{
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .box-content ul{
+    margin-left: -5px;
+  }
+
+  .box-content li{
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+}
+
+@media (max-width: 469px) {
+
+  main {
+    padding: 0px 25px;
+  }
+
+  .top, .widgets, .mentors{
+    margin-bottom: 30px;
+  }
+
+  .mid-team-member{
+    width: 135px;
+    height: 160px;
+    border-radius: 15px;
+    row-gap: 5px;
+  }
+
+  .mid-team-member p{
+    text-align: center;
+  }
+
+  .box-content li{
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .box-content ul{
+    margin-left: -15px;
+  }
+
+  #pageTitle{
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+  }
+
+  .top h1{
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+
+  .top p{
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .top li{
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+  }
+
+  .top ul{
+    margin-left: -23px;
+  }
+
+  .bot-box{
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    row-gap: 15px;
+  }
+
+  .bot-box button{
+    font-size: 13px;
+    padding: 3px 9px 5px 9px;
+    margin-top: 10px;
+  }
+
+  .widgets h2, .mentors h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .box-title{
+    font-size: 17px;
+  }
+
+}
+
+
+
+
+
+

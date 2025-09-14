@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+
+# Database files - regenerated from JSON data
+instance/
+*.sqlite
+*.db
+
+# CSV files - converted to JSON
+*.csv
+
+# Keep JSON data files and schemas
+!data/
+!schemas.json
+

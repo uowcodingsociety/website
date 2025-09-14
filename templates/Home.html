@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Warwick Coding Society | Home</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="static/styles/styles-navbar.css">
+    <link rel="stylesheet" href="static/styles/styles-body-home.css">
+    <link rel="stylesheet" href="static/styles/styles-footer.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kfd8owr.css">
+    <link rel="shortcut icon" type="image/png" href="/static/assets/Icons/favicon.ico">
+  </head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Q2ZMD5NS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M6Q2ZMD5NS');
+  </script>
+
+  <body>
+
+    <script src = "static/js/jquery-3.6.0.min.js"></script>
+    <script src = "static/js/global.js"></script>
+    <script src = "static/js/home.js"></script>
+
+    <div class="backup-button">
+      <a href="#"><img src="/static/assets/Icons/backupbutton.png"></a>
+    </div>
+
+    {% include "reusable/header.html" %}
+
+    <main class="top">
+      <div class="top-container">
+        <div class="left-section-container">
+          <header class="main-logo-container">
+            <img src="/static/assets/Graphics/logofullwhite.png">
+          </header>
+          <h1 id="title-text"></h1>
+          <p class="title-body-text">CodeSoc is the coding hub at the University of Warwick. Our goal is to make learning code accessible to all students. To accomplish this, we offer courses, workshops, academic events, social events, guest talks, a mentoring program and more!</p>
+          <ul class="social-icons-container">
+            <li class="social-icon">
+              <a target=”_blank” href="https://www.linkedin.com/company/warwickcodingsociety/"><img src="/static/assets/Icons/linkedin.png"></a>
+            </li>
+            <li class="social-icon">
+              <a target=”_blank” href="https://www.instagram.com/wwcodesoc/"><img src="/static/assets/Icons/instagram.png"></a>
+            </li>
+            <li class="social-icon">
+              <a target=”_blank” href="https://discord.gg/NDCg2VwQxZ"><img src="/static/assets/Icons/discord.png"></a>
+            </li>
+            <li class="social-icon">
+              <a target=”_blank” href="https://github.com/Warwick-Coding-Society"><img src="/static/assets/Icons/github.png"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section-container">
+          <img src="/static/assets/soc-images/entireimages.jpg">
+        </div>
+      </div>
+    </main>
+
+    <div class="mid-bot">
+      <h2 class="mid-bot-container">
+        Our partners & sponsors
+      </h2>
+    </div>
+
+    <section class="mid">
+      <ul class="mid-container">
+        <li class="company-logo">
+          <a href="/careers/sponsors">
+            <img src="/static/assets/CompanyLogos/uowarwick.png">
+            <aside class="company-description uow">
+              University of Warwick
+            </aside>
+          </a>
+        </li>
+        <li class="company-logo">
+          <a href="/careers/sponsors">
+            <img src="/static/assets/CompanyLogos/imc.png">
+            <aside class="company-description jst">
+              IMC Trading
+            </aside>
+          </a>
+        </li>
+        <li class="company-logo">
+          <a href="/careers/sponsors">
+            <img src="/static/assets/CompanyLogos/wwsu.png">
+            <aside class="company-description wwsu">
+              Warwick Student's Union
+            </aside>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="mid-bot">
+      <div class="mid-bot-container">
+        Our offering to warwick students
+      </div>
+    </div>
+
+    <section class="bot">
+      <div class="bot-container">
+        <article class="ltd-container">
+          <div class="ltd-container-title-and-text">
+            <div class="ltd-container-title">Learn<span>.</span></div>
+              <div class="ltd-container-text">We provide free student-made courses and student-run workshops, as well as a mentorship program.</div>
+          </div>
+          <div class="ltd-button-container">
+            <div class="ltd-button-container-inside">
+              <a href="/learn" class="ltd-button">Learn More</a>
+            </div>
+          </div>
+        </article>
+        <article class="ltd-container">
+          <div class="ltd-container-title-and-text">
+            <div class="ltd-container-title">Careers<span>.</span></div>
+              <div class="ltd-container-text">Checkout our internships spreadsheet, become a student mentor, a developer, or attend our CV Clinics!</div>
+          </div>
+          <div class="ltd-button-container">
+            <div class="ltd-button-container-inside">
+              <a href="/careers" class="ltd-button">Learn More</a>
+            </div>
+          </div>
+        </article>
+        <article class="ltd-container">
+          <div class="ltd-container-title-and-text">
+            <div class="ltd-container-title">Courses<span>.</span></div>
+              <div class="ltd-container-text">We offer 5 free student-made courses. These are available online but we also run weekly workshops during Term 1 & 2.</div>
+          </div>
+          <div class="ltd-button-container">
+            <div class="ltd-button-container-inside">
+              <a href="/learn/courses" class="ltd-button">Learn More</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    {% include "reusable/footer.html" %}
+
+  </body>
+</html>

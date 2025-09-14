@@ -1,0 +1,20 @@
+[
+  {
+    "sponsorID": 4,
+    "sponsorName": "Warwick Student's Union",
+    "sponsorDescription": "Warwick Student's Union, also known as Warwick SU, is the student union for the University of Warwick. We are an official Warwick SU recognized society and the SU supports us in a variety of ways.",
+    "sponsorIndustry": "Academic",
+    "sponsorTier": "Partner",
+    "sponsorSiteURL": "https://www.warwicksu.com",
+    "sponsorImageName": "wwsu.png"
+  },
+  {
+    "sponsorID": 5,
+    "sponsorName": "IMC Trading",
+    "sponsorDescription": "For three decades IMC has provided liquidity to the financial markets globally. Specialised in algorithmic trading and advanced technology, we set the pace for the evolution of market making.",
+    "sponsorIndustry": null,
+    "sponsorTier": null,
+    "sponsorSiteURL": null,
+    "sponsorImageName": null
+  }
+]

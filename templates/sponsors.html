@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Partners | CodeSoc</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="/static/styles/reset.css">
+    <link rel="stylesheet" href="/static/styles/styles-navbar.css">
+    <link rel="stylesheet" href="/static/styles/styles-body-sponsors.css">
+    <link rel="stylesheet" href="/static/styles/styles-footer.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kfd8owr.css">
+    <link rel="shortcut icon" type="image/png" href="/static/assets/Icons/favicon.ico">
+  </head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Q2ZMD5NS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M6Q2ZMD5NS');
+  </script>
+
+  <body>
+
+    <script src = "/static/js/jquery-3.6.0.min.js"></script>
+    <script src = "/static/js/global.js"></script>
+
+    <div class="backup-button">
+      <a href="#"><img src="/static/assets/Icons/backupbutton.png"></a>
+    </div>
+
+    {% include "reusable/header.html" %}
+
+    <main>
+        <h1 id="pageTitle">Our Partners<span>.</span></h1>
+        <p class="titleText">Our work and achievements would not be possible without the support of
+        our partners. With our partners we organise career events, industry insights,
+        guest talks, and more.</p>
+        <p class="titleText">If you're interested in becoming a partner, <a id="emailLink" href="mailto:warwickcodingsociety@gmail.com">reach out to us.</a></p>
+        <section id="partnerWidgets">
+            {% for sponsor in sponsors %}
+                {% include "reusable/partnerWidget.html" %}
+            {% endfor %}
+        </section>
+        <hr>
+        <section id="news">
+        <h2 id="newsMainTitle">News from our partners</h2>
+        <div id="newsWidgets">
+            {% for newsDict in sponsorNews %}
+                {% include "reusable/newsWidget.html" %}
+            {% endfor %}
+        </div>
+        </section>
+    </main>
+
+    {% include "reusable/footer.html" %}
+
+  </body>
+</html>

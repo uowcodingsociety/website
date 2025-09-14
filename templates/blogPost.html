@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="/static/styles/reset.css">
+    <link rel="stylesheet" href="/static/styles/styles-navbar.css">
+    <link rel="stylesheet" href="/static/styles/styles-body-blogPost.css">
+    <link rel="stylesheet" href="/static/styles/styles-footer.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kfd8owr.css">
+    <link rel="shortcut icon" type="image/png" href="/static/assets/Icons/favicon.ico">
+  </head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Q2ZMD5NS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M6Q2ZMD5NS');
+  </script>
+
+  <body>
+
+    <script src = "/static/js/jquery-3.6.0.min.js"></script>
+    <script src = "/static/js/global.js"></script>
+
+    <div class="backup-button">
+      <a href="#"><img src="/static/assets/Icons/backupbutton.png"></a>
+    </div>
+
+    {% include "reusable/header.html" %}
+
+    <main>
+        <h1>{{ blogPost.postTitle }}<span>.</span></h1>
+        <h2>By: <span>{{ blogPost.postAuthor }}</span></h2>
+        {{ blogPost.postContent | safe}}
+        <h3 id="postCreationDate">{{ blogPost.postCreationDate }}</h3>
+    </main>
+
+    {% include "reusable/footer.html" %}
+
+  </body>
+</html>

@@ -1,0 +1,371 @@
+{
+  "exec_members": {
+    "title": "ExecMember Schema",
+    "description": "JSON schema for execMembers table",
+    "type": "object",
+    "properties": {
+      "execID": {
+        "type": "integer"
+      },
+      "name": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "course": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "bio": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 612
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "nationality": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "pronouns": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 32
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "team": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "liLink": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 512
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": ""
+      },
+      "ghLink": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 512
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": ""
+      },
+      "year": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 64
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": ""
+      },
+      "imageLink": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": ""
+      }
+    },
+    "required": [],
+    "additionalProperties": false
+  },
+  "blog_posts": {
+    "title": "BlogPost Schema",
+    "description": "JSON schema for blogPosts table",
+    "type": "object",
+    "properties": {
+      "postID": {
+        "type": "integer"
+      },
+      "postTitle": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "postDescription": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 256
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "postTags": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 256
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "postCreationDate": {
+        "anyOf": [
+          {
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "postContent": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "postAuthor": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 256
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "postImageURL": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 256
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "required": [],
+    "additionalProperties": false
+  },
+  "sponsors": {
+    "title": "Sponsor Schema",
+    "description": "JSON schema for sponsors table",
+    "type": "object",
+    "properties": {
+      "sponsorID": {
+        "type": "integer"
+      },
+      "sponsorName": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 256
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "sponsorDescription": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 1024
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "sponsorIndustry": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 256
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "sponsorTier": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "sponsorSiteURL": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 512
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "sponsorImageName": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 256
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "required": [],
+    "additionalProperties": false
+  },
+  "sponsor_news": {
+    "title": "SponsorNews Schema",
+    "description": "JSON schema for sponsorNews table",
+    "type": "object",
+    "properties": {
+      "newsID": {
+        "type": "integer"
+      },
+      "sponsorID": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "newsTitle": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 256
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "newsDescription": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 1024
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "newsURL": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 1024
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "newsImageName": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 256
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "required": [],
+    "additionalProperties": false
+  }
+}

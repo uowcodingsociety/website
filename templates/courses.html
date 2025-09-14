@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Courses | CodeSoc</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="/static/styles/styles-navbar.css">
+    <link rel="stylesheet" href="/static/styles/styles-body-courses.css">
+    <link rel="stylesheet" href="/static/styles/styles-footer.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kfd8owr.css">
+    <link rel="shortcut icon" type="image/png" href="/static/assets/Icons/favicon.ico">
+  </head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Q2ZMD5NS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M6Q2ZMD5NS');
+  </script>
+
+  <body>
+
+    <script src = "/static/js/jquery-3.6.0.min.js"></script>
+    <script src = "/static/js/global.js"></script>
+
+    <div class="backup-button">
+      <a href="#"><img src="/static/assets/Icons/backupbutton.png"></a>
+    </div>
+
+    {% include "reusable/header.html" %}
+
+    <div class="all">
+      <div class="all-container">
+        <div class="top-container">
+          <div class="top-title">Our Courses<span>.</span></div>
+          <div class="courses-list-container">
+            <div class="available-container">
+              <div class="available-title">Available</div>
+              <div class="available-list">
+                <a href="#python">
+                <div class="language-logo"><img src="/static/assets/Icons/whitepython.png"></div>
+                </a>
+                <div class="separator">&#8226;</div>
+                <a href="#swift">
+                <div class="language-logo"><img src="/static/assets/Icons/whiteswift.png"></div>
+                </a>
+                <div class="separator">&#8226;</div>
+                <a href="#html">
+                <div class="language-logo"><img src="/static/assets/Icons/whiteHTML.png"></div>
+                </a>
+                <div class="separator">&#8226;</div>
+                <a href="#uiux">
+                <div class="language-logo"><img src="/static/assets/Icons/whiteuiux.png"></div>
+                </a>
+                <div class="separator">&#8226;</div>
+                <a href="#react">
+                <div class="language-logo"><img src="/static/assets/Icons/whitereact.png"></div>
+                </a>
+              </div>
+            </div>
+            <div class="coming-soon-container">
+              <div class="coming-soon-title">Coming Soon</div>
+              <div class="coming-soon-list">
+                <div class="language-logo"><img src="/static/assets/Icons/cppicon.png"></div>
+                <div class="separator">&#8226;</div>
+                <div class="language-logo"><img src="/static/assets/Icons/rusticon.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mid-container">
+          <div class="mid-left-container">
+            <div id="python" class="python-container">
+              <div class="python-inner-container">
+                <div class="lesson-title-logo">
+                  <div class="lesson-title">Python</div>
+                  <img src="/static/assets/Icons/colorpython.png">
+                </div>
+                <div class="lesson-desc-stats-links">
+                  <div class="lesson-desc">Collaboration between <span>Warwick Coding Society</span>, <span>Computing Society</span> and <span>Warwick AI</span>. This course assumes no prior knowledge and walks you through all of the programming fundamentals which are then applied to a fun project: <span>Wahoot</span></span></div>
+                  <div class="lesson-stats"><span>6</span> Lessons - <span>12</span> hours total content</div>
+                  <div class="lesson-links">
+                    <div class="lesson"><a target="_blank" href="https://drive.google.com/drive/folders/1adhxMDU5yfMzeUqmRsKioPKwqc9905-S?usp=sharing">1. <span>Setup, Variables, Data types, and Debugging</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://drive.google.com/drive/folders/1jLEOxk0Et0i68L8Y_GZZwaKlO0iR5MN7?usp=sharing">2. <span>Operators, Conditional statements, and Functions</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://drive.google.com/drive/folders/1vs3QYzqcpkfQG_VjqoiS3385iKoHYDep?usp=sharing">3. <span>Data Structures, String Slicing, and Loops</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://drive.google.com/drive/folders/1Wl0RI_oNPbBPMJWKVxwqBUzvJKgO2qNV?usp=share_link">4. <span>File Handling & The Command line</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://drive.google.com/drive/folders/1wstxKvdG1NJNnZKixCoz6l87dXqLMlJh?usp=share_link">5. <span>Object Oriented Programming & Decorators</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://drive.google.com/drive/folders/1-d9JoyUUuUE3pLtHpTcW55pWdUpzqSTm?usp=share_link">6. <span>Efficiency, Compactness & Readability</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="html" class="html-css-container">
+              <div class="html-css-inner-container">
+                <div class="lesson-title-logo">
+                  <div class="lesson-title">HTML & CSS: WebDev 1</div>
+                  <img src="/static/assets/Icons/colorhtml.png">
+                </div>
+                <div class="lesson-desc-stats-links">
+                  <div class="lesson-desc">This course was made by <span>Adriano Barbet</span>. It goes over basic HTML & CSS syntax and then walks you through a project: Building your Personal portfolio site. Our <span> UI/UX</span> course fits great with this course, check it out as well!</div>
+                  <div class="lesson-stats"><span>7</span> Lessons - <span>14</span> hours total content</div>
+                  <div class="lesson-links">
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1PxHmZLxmXMLOmlai3_aAac_tzDTyR0_qeVE-yjIlarA/edit?usp=sharing">1. <span>Basics of HTML</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1qiYAe9nPD6L9Wl_Rl9XzCUeae-yhL7pHAiULq6VLhDA/edit?usp=sharing">2. <span>Basics of CSS</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1pS2iK9sDi63pTJACYRm0EzvTGQ3t6FwICPNnC0ZJGTc/edit?usp=sharing">3. <span>Project part 1: Setting up your workspace</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1m3fha47cPTSLY6y3IuJK6zcb6Pu3E7gXzK5dKpw7Pso/edit?usp=sharing">4. <span>Project part 2: Building & Styling the NavBar</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1Jlr43eNvTTcOM3lBOvxRLJmb0WmsNXPnbIDndDWGZQ8/edit?usp=sharing">5. <span>Project part 3: Building & Styling the pages 1/2</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1PyONaM0At5ier3V3rD-dAszU132rFmWfjPMjdARyf6s/edit?usp=sharing">6. <span>Project part 4: Building & Styling the pages 2/2</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1IsHAb7m4PbOU_TG8a011h7z6SeIlH5WN4tRM0E8Ud_k/edit?usp=sharing">7. <span>Project part 5: Making the site Reactive</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div id="react" class="html-css-container">
+              <div class="html-css-inner-container">
+                <div class="lesson-title-logo">
+                  <div class="lesson-title">React: WebDev 2</div>
+                  <img src="/static/assets/Icons/colorreact.png">
+                </div>
+                <div class="lesson-desc-stats-links">
+                  <div class="lesson-desc">This course was made by <span>Jakub Ucinski</span>. The course assumes knowledge of the fundamentals (HTML, CSS, JS). It then teaches you all you need to know about the framework, and then walks you through a project, building a Sine Wave Stacker.</div>
+                  <div class="lesson-stats"><span>7</span> Lessons - <span>14</span> hours total content</div>
+                  <div class="lesson-links">
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1qTf8KjE0grvxCiU60dEOEF6KlIxB5DX8GfGGt918_Ic/edit?usp=sharing">1. <span>Introduction to React</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1cZ9hSgPhVNir_snBvlHP2BHS07rlliGByIlAzFLTxmo/edit?usp=sharing">2. <span>Components, Fragments, Events, and State</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/16Hn2zxTnQvvV-nBq-AdexHzntssBjvKOM49Z9giv2KQ/edit?usp=share_link">3. <span>Conditional Rendering & useEffect</span></a></div>
+                    <div class="lesson"><a target="_blank" href="#">4. <span>Available Week 6</span></a></div>
+                    <div class="lesson"><a target="_blank" href="#">5. <span>Available Week 7</span></a></div>
+                    <div class="lesson"><a target="_blank" href="#">6. <span>Available Week 8</span></a></div>
+                    <div class="lesson"><a target="_blank" href="#">7. <span>Available Week 9</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <div id="java" class="java-container">
+              <div class="java-inner-container">
+                <div class="lesson-title-logo">
+                  <div class="lesson-title">Java</div>
+                  <img src="/static/assets/Icons/colorjava.png">
+                </div>
+                <div class="lesson-desc-stats-links">
+                  <div class="lesson-desc">This course was made by <span>Piotr Zychlinski</span>. This course goes over the basic syntax of Java. It then walks you through a project applying what you learnt.</div>
+                  <div class="lesson-stats"><span>7</span> Lessons - <span>14</span> hours total content</div>
+                  <div class="lesson-links">
+                    <div class="lesson"><a target=”_blank” href="#">1. <span>Coming Soon</span></a></div>
+                    <!--
+                    <div class="lesson"><a target="_blank" href="#">2. <span>Coming Soon</span></a></div>
+                    <div class="lesson"><a target="_blank" href="#">3. <span>Coming Soon</span></a></div>
+                    <div class="lesson"><a target="_blank" href="#">4. <span>Coming Soon</span></a></div>
+                    <div class="lesson"><a target="_blank" href="#">5. <span>Coming Soon</span></a></div>
+                    <div class="lesson"><a target="_blank" href="#">6. <span>Coming Soon</span></a></div>
+                    <div class="lesson"><a target="_blank" href="#">7. <span>Coming Soon</span></a></div>
+                    -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mid-right-container">
+            <div id="swift" class="swift-container">
+              <div class="swift-inner-container">
+                <div class="lesson-title-logo">
+                  <div class="lesson-title">Swift</div>
+                  <img src="/static/assets/Icons/colorswift.png">
+                </div>
+                <div class="lesson-desc-stats-links">
+                  <div class="lesson-desc">This course made by <span>Adriano Barbet</span> is an introduction to iOS dev. It goes over the basic syntax of Swift and the framework SwiftUI. It then walks through a project: Building the <span>Instagram</span> Home and Profile page UI.</div>
+                  <div class="lesson-stats"><span>6</span> Lessons - <span>12</span> hours total content</div>
+                  <div class="lesson-links">
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1qL3-bG_Uv4gdUdscdMa7rDpCU9JViVrEoJSUp3fqnF0/edit?usp=sharing">1. <span>Basics of Swift & iOS Development</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1eTPTTknh43WlhsJBdJGH1t7MzCzak1Gu19ngiAyPh7w/edit?usp=sharing">2. <span>Basics of SwiftUI & Xcode</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1tQ94vdfxEF9DbPwns0LNCdvabSc5Xw-dqR5Ij1JwWxc/edit?usp=sharing">3. <span>Project part 1: Setting up your work environment</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1myLMscr369hq8VxdA3tiT584SKYORGGgVzX7hHj3OB0/edit?usp=sharing">4. <span>Project part 2: Building the home page</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1iPrQmOhTW9ChRF8cBaVc-IBwczTGba6doHRxIeI7PVU/edit?usp=sharing">5. <span>Project part 3: Building the tab bar</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/10VpkPx0tMKuY3Y8QJJ-7-Op_9RenaC4IBpw4kACCArk/edit?usp=sharing">6. <span>Project part 4: Building the profile page</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="uiux" class="java-container">
+              <div class="java-inner-container">
+                <div class="lesson-title-logo">
+                  <div class="lesson-title">UI/UX</div>
+                  <img src="/static/assets/Icons/coloruiux.png">
+                </div>
+                <div class="lesson-desc-stats-links">
+                  <div class="lesson-desc">This course was made by <span>Saffron Rabadiya</span>. This course is an introduction to User Interface and User Experience design. It teaches you the fundamentals, and then walks you through  a project, creating your <span>portfolio</span> website in figma.</div>
+                  <div class="lesson-stats"><span>6</span> Lessons - <span>12</span> hours total content</div>
+                  <div class="lesson-links">
+                    <div class="lesson"><a target=”_blank” href="https://docs.google.com/presentation/d/1ifVEBXYvG4AbB7XZKJ5iEsvzfB4jQTAPSHsZnU55n8Y/edit?usp=sharing">1. <span>Intro to User Interface (UI) Design</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1IzH-CtM5htnJSNnofgfTefMq4si1Pnv5rpLV09Kpx9s/edit?usp=sharing">2. <span>Intro to User Experience (UX) Design</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/18sufyh5j-E5P3IvjKr4KA18mEqJ1Ag8qVog6ARGPXKc/edit?usp=sharing">3. <span>Intro to Prototyping</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1_7gzXx97NBiRByoW_tRy_KQaBuNfBOBxuGwOQ45vY50/edit?usp=sharing">4. <span>Intro to User Research</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1xeE2XIN-i1OmpQymGxOYF0B7OB-tCp6PAGLYHPfgsP4/edit?usp=sharing">5. <span>Prototyping Task</span></a></div>
+                    <div class="lesson"><a target="_blank" href="https://docs.google.com/presentation/d/1hftP6E36worUcrUpokkcTRNPR6W4UKkk3ARITkF0o-k/edit?usp=sharing">6. <span>Portfolio Project in Figma</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bot-container">
+          <div class="bot-left-container">
+            <div class="bot-left-title">Feedback/Questions<span>?</span></div>
+            <div class="botleft-subtitles">
+              <div class="bot-left-subtitle">Don't hesitate to ask any questions on our courses through the form or on our discord server.</div>
+              <div class="bot-left-subtitle speciall">We also appreciate feedback as it will help us improve our courses.</div>
+            </div>
+            <div class="bot-left-chat-to-us">
+              <p>Want to connect with other students learning code?</p>
+              <iframe src="https://discord.com/widget?id=880115166090502194&theme=dark" class="widget" height="160" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+          </div>
+          <form name="feedbackform" id="feedbackform" method="post" class="bot-right-container">
+            <div class="bot-right-boxes-container">
+              <div class="bot-right-box-select">
+                <select name="courseOption" id="courseOption">
+                  <option value="Python">Python</option>
+                  <option value="Swift">Swift</option>
+                  <option value="HTML & CSS">HTML & CSS</option>
+                  <!-- <option value="React">React</option> -->
+                  <option value="UI/UX">UI/UX</option>
+                  <option value="Java">Java</option>
+                </select>
+              </div>
+              <div class="bot-right-box-input">
+                <textarea placeholder="Contact us here! (include your email)" name="message" id="message"></textarea>
+              </div>
+            </div>
+            <button type="submit" id="sendmessagebutton" class="bot-button-container">
+              Send Form
+            </button>
+          </form>
+          <div class="mobile-discord-container">
+            <div class="mobile-discord-title">Want to connect with other students learning code?</div>
+            <iframe src="https://discord.com/widget?id=880115166090502194&theme=dark" class="widget" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include "reusable/footer.html" %}
+
+  </body>
+</html>

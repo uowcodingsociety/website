@@ -1,0 +1,10 @@
+<article class="blogPost">
+    <img src="/static/assets/blogPictures/{{ blogPost.postImageURL }}">
+    <section>
+        <h2 class="postTitle">{{ blogPost.postTitle }}</h2>
+        <h4 class="postCreationDate">{{ blogPost.postCreationDate }}</h4>
+        <p class="postDescription">{{ blogPost.postDescription }}</p>
+        <h4 class="postAuthor">{{ blogPost.postAuthor }}</h4>
+        <button onclick="openBlogPost({{ blogPost.postID }})">Read More</button>
+    </section>
+</article>

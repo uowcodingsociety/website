@@ -1,0 +1,151 @@
+main{
+  box-sizing: border-box;
+  max-width: 1434px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 70px;
+  margin: 0px auto;
+  color: var(--primary-white);
+  margin-bottom: -15px;
+}
+
+b{
+  font-weight: 400;
+}
+
+.type1{
+  width: 650px;
+  margin: 10px 0px;
+  border-radius: 11px;
+  box-shadow: 0px 0px 9px 1px rgb(0 0 0 / 20%);
+}
+
+.type2{
+  width: 500px;
+  margin: 10px 0px;
+  border-radius: 11px;
+  box-shadow: 0px 0px 9px 1px rgb(0 0 0 / 20%);
+}
+
+.type3{
+  width: 300px;
+  margin: 10px 0px;
+  border-radius: 11px;
+}
+
+a{
+  color: var(--primary-blue);
+  text-underline-offset: 2.5px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  width: 100%;
+  margin: 5px 0px;
+}
+
+main p{
+  margin: 5px 0px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+#postCreationDate {
+  color: var(--shades-blue);
+  font-style: italic;
+  margin-top: 30px;
+}
+
+h1{
+  font-size: 33px;
+  margin: 50px 0px 10px 0px;
+  background-color: var(--background-100);
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: auto;
+}
+
+h1 span{
+  color: var(--primary-blue);
+}
+
+h2{
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+h2 span{
+  color: var(--primary-blue);
+}
+
+h3{
+  font-size: 18px;
+  margin: 12px 0px;
+  font-weight: 500;
+}
+
+code {
+  font-family: monospace;
+  font-size: 14px;
+  background-color: var(--shades-dark);
+  padding: 0px 4px;
+  border-radius: 3px;
+}
+
+quote {
+  font-style: italic;
+  margin: 5px 0px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+    .type1{
+        width: 100%;
+    }
+
+    .type2{
+        width: 80%;
+    }
+
+    .type3{
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 498px){
+  main{
+      padding: 0px 25px;
+  }
+
+  h1{
+      font-size: 23px;
+      padding: 10px 15px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+  }
+
+  h2{
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  main p{
+      font-size: 14px;
+  }
+
+  h3{
+      margin: 10px 0px;
+  }
+
+  quote{
+      font-size: 14px;
+      line-height: 24px;
+  }
+
+
+
+}

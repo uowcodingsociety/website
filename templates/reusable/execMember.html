@@ -1,0 +1,19 @@
+<div class="person">
+    <div class="person-image-container">
+        <img class="person-image" src="/static/assets/exec-images/{{ member.imageLink }}.jpg">
+    </div>
+    <div class="person-text-container">
+        <div class="person-name">{{ member.name }}</div>
+        <div class="person-position">{{ member.title }}</div>
+        <div class="person-socials-container">
+            <div class="socials-container1">
+                <a target=”_blank” href="{{ member.liLink }}"><img src="/static/assets/Icons/linkedin2.png"></a>
+            </div>
+            {% if member.ghLink != "" %}
+            <div class="socials-container2">
+                <a target=”_blank” href="{{ member.ghLink }}"><img src="/static/assets/Icons/github2.png"></a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
