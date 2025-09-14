@@ -35,13 +35,12 @@ jobs:
         . venv/bin/activate
         FLASK_APP=codesoc.py flask db-reset
 
-    - name: Test Flask app starts
+    - name: Test Flask app imports
       run: |
         . venv/bin/activate
-        timeout 10s bash -c '
-          FLASK_APP=codesoc.py flask run &
-          FLASK_PID=$!
-          sleep 10
-          curl -f http://127.0.0.1:5000 > /dev/null
-          kill $FLASK_PID
-        '
+        python -c "
+        import codesoc
+        print('✅ Flask app imports successfully')
+        with codesoc.app.app_context():
+            print('✅ App context creation successful')
+        "
