@@ -1,6 +1,12 @@
 __pycache__/
 *.py[cod]
 
+# Environment variables
+.env
+.env.local
+.env.production
+.env.*.local
+
 # Database files - regenerated from JSON data
 instance/
 *.sqlite

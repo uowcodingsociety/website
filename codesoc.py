@@ -3,8 +3,13 @@ from flask_migrate import Migrate
 from db_schema import db, ExecMember, BlogPost, Sponsor, SponsorNews
 from flask_mail import Mail, Message
 import click
+import os
+from dotenv import load_dotenv
 from db_manager import DatabaseManager
 from schema_generator import generate_all_schemas, save_schemas_to_file
+
+# Load environment variables from .env file
+load_dotenv()
 
 app = Flask(__name__)
 
