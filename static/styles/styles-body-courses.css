@@ -1,4 +1,4 @@
-.all{
+.all {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,15 +22,15 @@ select {
   color: var(--primary-white);
 }
 
-textarea{
-    outline-color: transparent;
+textarea {
+  outline-color: transparent;
 }
 
 select::-ms-expand {
   display: none;
 }
 
-.all-container{
+.all-container {
   margin: 52px 70px 75px 70px;
 
   width: 1300px;
@@ -40,15 +40,15 @@ select::-ms-expand {
 
 /* Top */
 
-.top-container{
+.top-container {
   height: 230px;
 
   margin-bottom: 65px;
 }
 
-.top-title{
+.top-title {
   margin-bottom: 65px;
-  opacity: 0.0;
+  opacity: 0;
   position: relative;
   left: -30px;
   font-size: 50px;
@@ -57,18 +57,19 @@ select::-ms-expand {
   color: var(--primary-white);
 }
 
-.top-title span{
+.top-title span {
   color: var(--primary-blue);
 }
 
-.courses-list-container{
+.courses-list-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.available-title, .coming-soon-title{
+.available-title,
+.coming-soon-title {
   color: var(--primary-white);
   font-size: 25px;
   line-height: 24px;
@@ -77,7 +78,8 @@ select::-ms-expand {
   margin-bottom: 12px;
 }
 
-.available-list, .coming-soon-list{
+.available-list,
+.coming-soon-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,32 +90,36 @@ select::-ms-expand {
   padding: 20px 38px;
 }
 
-.available-list img, .coming-soon-list img{
+.available-list img,
+.coming-soon-list img {
   height: 60px;
   width: 60px;
 }
 
-.available-list{
+.available-list {
   width: 650px;
 }
 
-.coming-soon-list{
+.coming-soon-list {
   width: 220px;
 }
 
-.separator{
+.separator {
   color: var(--primary-blue);
   font-size: 30px;
   font-weight: 500;
 }
 
-#python, #swift, #html, #js{
+#python,
+#swift,
+#html,
+#js {
   scroll-margin-block-start: 100px;
 }
 
 /* Mid */
 
-.mid-container{
+.mid-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
@@ -121,12 +127,14 @@ select::-ms-expand {
 
 /* Mid Left */
 
-
-.mid-left-container{
+.mid-left-container {
   height: auto;
 }
 
-.python-container, .swift-container, .html-css-container, .java-container{
+.python-container,
+.swift-container,
+.html-css-container,
+.java-container {
   background-color: var(--background-100);
   border-radius: 11px;
   width: 592px;
@@ -135,23 +143,25 @@ select::-ms-expand {
   align-items: center;
 }
 
-.html-css-container, .swift-container{
+.html-css-container,
+.swift-container {
   padding: 25px 0px;
 }
 
-.python-container, .html-css-container{
+.python-container,
+.html-css-container {
   margin-bottom: 61px;
 }
 
-.python-inner-container{
+.python-inner-container {
   width: 510px;
 }
 
-.html-css-inner-container{
+.html-css-inner-container {
   width: 510px;
 }
 
-.lesson-title-logo{
+.lesson-title-logo {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -159,18 +169,18 @@ select::-ms-expand {
   margin-bottom: 3px;
 }
 
-.lesson-title{
+.lesson-title {
   color: var(--primary-white);
   font-size: 30px;
   font-weight: 500;
 }
 
-.lesson-title-logo img{
+.lesson-title-logo img {
   width: 72px;
   height: 72px;
 }
 
-.lesson-desc{
+.lesson-desc {
   width: 390px;
   color: var(--primary-white);
   font-size: 17px;
@@ -180,11 +190,11 @@ select::-ms-expand {
   margin-bottom: 36px;
 }
 
-.lesson-desc > span{
+.lesson-desc>span {
   font-weight: 500;
 }
 
-.lesson-stats{
+.lesson-stats {
   color: var(--primary-white);
   font-size: 22px;
   font-weight: 500;
@@ -193,24 +203,23 @@ select::-ms-expand {
   margin-bottom: 30px;
 }
 
-.lesson-stats span{
+.lesson-stats span {
   color: var(--primary-blue);
 }
 
-.lesson-links{
+.lesson-links {
   color: var(--primary-white);
   font-weight: 400;
   line-height: 151%;
   font-size: 17px;
 }
 
-.lesson-links a{
+.lesson-links a {
   color: var(--primary-white);
   text-decoration: none;
 }
 
-
-.lesson{
+.lesson {
   margin-bottom: 19px;
   background-color: var(--shades-dark);
   border-radius: 5px;
@@ -219,40 +228,41 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-.lesson:hover{
+.lesson:hover {
   background-color: var(--shades-blue);
   transition: background-color 0.2s;
 }
 
-.lesson:active{
+.lesson:active {
   background-color: var(--primary-blue);
 }
 
 /* Mid Right */
 
-.mid-right-container{
+.mid-right-container {
   height: auto;
 }
 
-.java-inner-container{
+.java-inner-container {
   width: 510px;
 }
 
-.java-container, .python-container{
+.java-container,
+.python-container {
   padding: 25px 0px;
 }
 
-.swift-container{
+.swift-container {
   margin-bottom: 61px;
 }
 
-.swift-inner-container{
+.swift-inner-container {
   width: 510px;
 }
 
 /* Bot */
 
-.bot-container{
+.bot-container {
   width: 100%;
 
   display: flex;
@@ -260,7 +270,7 @@ select::-ms-expand {
   align-items: start;
 }
 
-.bot-left-container{
+.bot-left-container {
   width: 578px;
   height: 482px;
 
@@ -271,7 +281,7 @@ select::-ms-expand {
   row-gap: 57px;
 }
 
-.bot-left-title{
+.bot-left-title {
   font-size: 50px;
   font-weight: 700;
   line-height: 24px;
@@ -282,11 +292,11 @@ select::-ms-expand {
   white-space: nowrap;
 }
 
-.bot-left-title span{
+.bot-left-title span {
   color: var(--primary-blue);
 }
 
-.bot-left-subtitle{
+.bot-left-subtitle {
   text-align: center;
   color: var(--primary-white);
 
@@ -298,18 +308,18 @@ select::-ms-expand {
   margin-bottom: 13px;
 }
 
-.speciall{
+.speciall {
   margin-bottom: 0px;
 }
 
-.bot-left-chat-to-us{
+.bot-left-chat-to-us {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 15px;
 }
 
-.bot-left-chat-to-us p{
+.bot-left-chat-to-us p {
   margin: 0px;
   text-align: center;
   color: var(--primary-white);
@@ -319,12 +329,11 @@ select::-ms-expand {
   line-height: 24px;
 }
 
-.bot-left-chat-to-us p span{
+.bot-left-chat-to-us p span {
   font-weight: 400;
 }
 
-
-.bot-left-chat-to-us p a{
+.bot-left-chat-to-us p a {
   color: var(--primary-blue);
   font-weight: 700;
   text-decoration: none;
@@ -335,7 +344,7 @@ select::-ms-expand {
   text-decoration: underline 3px;
 }
 
-.bot-right-container{
+.bot-right-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -346,18 +355,17 @@ select::-ms-expand {
   width: 592px;
 }
 
-.bot-right-boxes-container{
+.bot-right-boxes-container {
   display: flex;
   width: 100%;
   flex-direction: column;
   row-gap: 50px;
 }
 
-.bot-right-box-select{
+.bot-right-box-select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 
   width: 100%;
   height: 53px;
@@ -366,7 +374,7 @@ select::-ms-expand {
   border-radius: 11px;
 }
 
-#courseOption{
+#courseOption {
   background-color: var(--background-100);
   margin-left: 21px;
   -webkit-appearance: unset;
@@ -378,16 +386,16 @@ select::-ms-expand {
   background-size: 20px;
 }
 
-.bot-right-box-select-icon{
+.bot-right-box-select-icon {
   margin-right: 21px;
 }
 
-.bot-right-box-select-icon img{
+.bot-right-box-select-icon img {
   width: 20px;
   height: 20px;
 }
 
-.bot-right-box-input{
+.bot-right-box-input {
   width: 100%;
   height: 290px;
 
@@ -399,8 +407,10 @@ select::-ms-expand {
   align-items: center;
 }
 
-.bot-right-box-input textarea{
-  font-family: azo sans, sans-serif;
+.bot-right-box-input textarea {
+  font-family:
+    azo sans,
+    sans-serif;
   background-color: transparent;
   border: none;
   width: 100%;
@@ -413,8 +423,8 @@ select::-ms-expand {
   line-height: 20px;
 }
 
-.bot-right-box-input textarea::placeholder{
-  color: #ABAEC8;
+.bot-right-box-input textarea::placeholder {
+  color: #abaec8;
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
@@ -422,7 +432,7 @@ select::-ms-expand {
   width: 100%;
 }
 
-.bot-button-container{
+.bot-button-container {
   background-color: var(--primary-blue);
   color: var(--primary-white);
   font-size: 20px;
@@ -439,14 +449,13 @@ select::-ms-expand {
   border: none;
 }
 
-.bot-button-container:hover{
+.bot-button-container:hover {
   background-color: var(--shades-blue);
 }
 
-
 /* Mobile Design */
 
-.mobile-discord-container{
+.mobile-discord-container {
   display: none;
   flex-direction: column;
   row-gap: 8px;
@@ -455,7 +464,7 @@ select::-ms-expand {
   width: 357px;
 }
 
-.mobile-discord-title{
+.mobile-discord-title {
   color: var(--primary-white);
   font-size: 17px;
   line-height: 24px;
@@ -463,7 +472,7 @@ select::-ms-expand {
   width: 100%;
 }
 
-.mobile-discord-subtitle{
+.mobile-discord-subtitle {
   color: var(--primary-white);
   font-size: 17px;
   line-height: 24px;
@@ -471,240 +480,258 @@ select::-ms-expand {
   margin-bottom: 10px;
 }
 
-.widget{
+.widget {
   width: 350px;
 }
-
 
 /*768px, 828px and 1150px */
 
 @media all and (max-width: 1350px) {
 
-  .python-container, .swift-container, .html-css-container, .java-container{
+  .python-container,
+  .swift-container,
+  .html-css-container,
+  .java-container {
     width: 550px;
   }
 
-  .bot-right-container{
+  .bot-right-container {
     width: 550px;
   }
-
 }
 
 @media all and (max-width: 1260px) {
 
-  .python-container, .swift-container, .html-css-container, .java-container{
+  .python-container,
+  .swift-container,
+  .html-css-container,
+  .java-container {
     width: 495px;
     padding: 20px 0px;
   }
 
-  .python-inner-container, .swift-inner-container, .html-css-inner-container, .java-inner-container{
+  .python-inner-container,
+  .swift-inner-container,
+  .html-css-inner-container,
+  .java-inner-container {
     width: 450px;
   }
 
-  .lesson-title{
+  .lesson-title {
     font-size: 27px;
     margin-top: 5px;
   }
 
-  #python, #swift, #js{
+  #python,
+  #swift,
+  #js {
     scroll-margin-block-start: 20px;
   }
 
-  #html{
+  #html {
     scroll-margin-block-start: 50px;
   }
 
-  .bot-right-container{
+  .bot-right-container {
     width: 495px;
   }
 
-  .bot-left-container{
+  .bot-left-container {
     width: unset;
   }
 
-  .bot-left-title{
+  .bot-left-title {
     font-size: 40px;
   }
-
 }
 
 @media all and (max-width: 1200px) {
-
-  .available-list{
+  .available-list {
     margin-right: 20px;
   }
 
-  .mid-container{
+  .mid-container {
     align-items: start;
     margin-bottom: 0px;
   }
 
-  .top-container{
+  .top-container {
     height: auto;
     margin-bottom: 40px;
   }
 
-  .mid-left-container{
+  .mid-left-container {
     margin-bottom: 61px;
   }
-
 }
 
 @media (max-width: 1181px) {
-    .available-container{
-        margin-bottom: 20px;
-    }
+  .available-container {
+    margin-bottom: 20px;
+  }
 }
 
 @media all and (max-width: 1150px) {
 
-  .python-container, .swift-container, .html-css-container, .java-container{
+  .python-container,
+  .swift-container,
+  .html-css-container,
+  .java-container {
     width: 430px;
     height: auto;
   }
 
-  .widget{
+  .widget {
     width: 300px;
   }
 
-  .python-inner-container, .swift-inner-container, .html-css-inner-container, .java-inner-container{
+  .python-inner-container,
+  .swift-inner-container,
+  .html-css-inner-container,
+  .java-inner-container {
     width: 400px;
     height: auto;
   }
 
-  .swift-container, .html-css-container{
+  .swift-container,
+  .html-css-container {
     padding: 15px 0px;
   }
 
-  .lesson-title-logo img{
-
+  .lesson-title-logo img {
     width: 60px;
     height: 60px;
   }
 
-  .lesson-title-logo{
+  .lesson-title-logo {
     margin-bottom: 10px;
   }
 
-  .lesson-links{
+  .lesson-links {
     font-size: 14px;
   }
 
-  .bot-right-container{
+  .bot-right-container {
     width: 430px;
     row-gap: 15px;
   }
 
-  .bot-button-container{
+  .bot-button-container {
     padding: 9px 35px;
     font-size: 18px;
   }
 
-  .bot-left-title{
+  .bot-left-title {
     font-size: 35px;
   }
 
-  .bot-left-subtitle{
+  .bot-left-subtitle {
     font-size: 16px;
 
     max-width: 428px;
   }
 
-  .bot-left-container{
+  .bot-left-container {
     justify-content: start;
     row-gap: 35px;
     height: auto;
   }
 
-  .bot-right-boxes-container{
+  .bot-right-boxes-container {
     row-gap: 25px;
   }
 
-  .bot-right-box-input{
+  .bot-right-box-input {
     height: 255px;
   }
 
-  .bot-left-chat-to-us p{
+  .bot-left-chat-to-us p {
     font-size: 16px;
   }
-
 }
 
 @media all and (max-width: 1020px) {
 
-  .python-container, .swift-container, .html-css-container, .java-container{
+  .python-container,
+  .swift-container,
+  .html-css-container,
+  .java-container {
     width: 550px;
     height: auto;
   }
 
-  .widget{
+  .widget {
     width: 350px;
   }
 
-  .python-inner-container, .swift-inner-container, .html-css-inner-container, .java-inner-container{
+  .python-inner-container,
+  .swift-inner-container,
+  .html-css-inner-container,
+  .java-inner-container {
     width: 510px;
     height: auto;
   }
 
-  .lesson-links{
+  .lesson-links {
     font-size: 17px;
   }
 
-  .available-list{
+  .available-list {
     margin-right: 0px;
   }
 
-  .mid-container{
+  .mid-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .all-container{
+  .all-container {
     width: unset;
   }
 
-  .top-container{
+  .top-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .courses-list-container{
+  .courses-list-container {
     display: flex;
     flex-direction: column;
   }
 
-  .top-title{
+  .top-title {
     margin-bottom: 40px;
   }
 
-  .bot-container{
+  .bot-container {
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
   }
 
-  .bot-left-container{
+  .bot-left-container {
     height: unset;
     row-gap: 35px;
     margin-bottom: 60px;
   }
 
-  .bot-right-container{
+  .bot-right-container {
     row-gap: 25px;
   }
-
-
 }
 
 @media all and (max-width: 768px) {
 
-  .python-container, .java-container, .swift-container, .html-css-container{
+  .python-container,
+  .java-container,
+  .swift-container,
+  .html-css-container {
     margin-bottom: 30px;
   }
 
-  .all-container{
+  .all-container {
     margin: 14px 16px 70px 16px;
     display: flex;
     justify-content: center;
@@ -712,99 +739,106 @@ select::-ms-expand {
     flex-direction: column;
   }
 
-  .mid-left-container, .mid-right-container{
+  .mid-left-container,
+  .mid-right-container {
     margin: 0px;
     height: unset;
   }
 
-  .top-container{
+  .top-container {
     display: block;
     margin-bottom: 30px;
   }
 
-  .courses-list-container{
+  .courses-list-container {
     display: block;
   }
 
-  .top-title{
+  .top-title {
     font-size: 28px;
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 17px;
   }
 
-  .available-title, .coming-soon-title{
+  .available-title,
+  .coming-soon-title {
     font-weight: 400;
     font-size: 16px;
   }
 
-
-  .available-list{
+  .available-list {
     padding: 20px 15px 20px 20px;
     margin-bottom: 0px;
     width: 323px;
   }
 
-  .available-list img, .coming-soon-list img{
+  .available-list img,
+  .coming-soon-list img {
     width: 33px;
     height: 33px;
   }
 
-  .separator{
+  .separator {
     font-size: 23px;
   }
 
-  .available-container{
+  .available-container {
     margin-bottom: 15px;
   }
 
-  .coming-soon-list{
+  .coming-soon-list {
     padding: 20px 20px 20px 15px;
     width: 115px;
   }
 
-  .coming-soon-title, .available-title{
+  .coming-soon-title,
+  .available-title {
     margin-bottom: 5px;
   }
 
-  .swift-inner-container, .html-css-inner-container{
+  .swift-inner-container,
+  .html-css-inner-container {
     width: 306px;
     height: unset;
     padding: 0px;
   }
 
-  .swift-container, .html-css-container{
+  .swift-container,
+  .html-css-container {
     width: 358px;
     height: unset;
   }
 
-  .python-inner-container, .java-inner-container{
+  .python-inner-container,
+  .java-inner-container {
     width: 306px;
     height: unset;
     padding: 0px;
   }
 
-  .python-container, .java-container{
+  .python-container,
+  .java-container {
     width: 358px;
     height: unset;
   }
 
-  .lesson-title{
+  .lesson-title {
     font-size: 24px;
     font-weight: 500;
     line-height: auto;
   }
 
-  .lesson-title-logo{
+  .lesson-title-logo {
     margin-bottom: 15px;
   }
 
-  .lesson-title-logo img{
+  .lesson-title-logo img {
     width: 40px;
     height: 40px;
   }
 
-  .lesson-desc{
+  .lesson-desc {
     font-size: 14px;
     font-weight: 300;
     line-height: 150%;
@@ -812,135 +846,143 @@ select::-ms-expand {
     width: auto;
   }
 
-  .lesson-stats{
+  .lesson-stats {
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
     margin-bottom: 15px;
   }
 
-  .lesson-links{
+  .lesson-links {
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
   }
 
-  .lesson{
+  .lesson {
     margin-bottom: 13px;
   }
 
-  #python, #swift, #js{
+  #python,
+  #swift,
+  #js {
     scroll-margin-block-start: 20px;
   }
 
-  #html{
+  #html {
     scroll-margin-block-start: 50px;
   }
 
-  .bot-container{
+  .bot-container {
     margin-top: 0px;
   }
 
-  .bot-left-container{
+  .bot-left-container {
     align-items: start;
     width: 357px;
     row-gap: 10px;
     margin-bottom: 15px;
   }
 
-  .bot-left-subtitle{
+  .bot-left-subtitle {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     text-align: start;
   }
 
-  .bot-left-title{
+  .bot-left-title {
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
     text-align: start;
   }
 
-  .bot-left-chat-to-us{
+  .bot-left-chat-to-us {
     display: none;
   }
 
-  .bot-right-container{
+  .bot-right-container {
     width: 357px;
     row-gap: 15px;
     margin-bottom: 30px;
   }
 
-  .bot-right-box-select-course, .bot-right-box-input textarea, .bot-right-box-input textarea::placeholder{
+  .bot-right-box-select-course,
+  .bot-right-box-input textarea,
+  .bot-right-box-input textarea::placeholder {
     font-size: 14px;
   }
 
-  .bot-right-boxes-container{
+  .bot-right-boxes-container {
     row-gap: 15px;
   }
 
-  .bot-button-container{
+  .bot-button-container {
     font-weight: 700;
   }
 
-  .mobile-discord-container{
+  .mobile-discord-container {
     display: flex;
   }
-
 }
 
 @media (max-width: 500px) {
-
-  .top-title{
+  .top-title {
     font-size: 22px;
-}
+  }
 }
 
 @media all and (max-width: 380px) {
-
-  .available-list{
+  .available-list {
     width: 264px;
     border-radius: 9px;
     padding: 15px;
   }
 
-  .available-list img, .coming-soon-list img{
+  .available-list img,
+  .coming-soon-list img {
     width: 28px;
     height: 28px;
   }
 
-  .separator{
+  .separator {
     font-size: 17px;
   }
 
-  .coming-soon-list{
+  .coming-soon-list {
     width: 100px;
     border-radius: 9px;
     padding: 15px;
   }
 
-  .python-container, .swift-container, .java-container, .html-css-container{
+  .python-container,
+  .swift-container,
+  .java-container,
+  .html-css-container {
     width: 300px;
     height: unset;
     padding: 10px 0px;
   }
 
-  .python-inner-container, .swift-inner-container, .java-inner-container, .html-css-inner-container{
+  .python-inner-container,
+  .swift-inner-container,
+  .java-inner-container,
+  .html-css-inner-container {
     width: 270px;
     height: unset;
   }
 
-  .bot-left-container, .bot-right-container{
+  .bot-left-container,
+  .bot-right-container {
     width: 300px;
   }
 
-  .widget{
+  .widget {
     width: 300px;
   }
 
-  .mobile-discord-container{
+  .mobile-discord-container {
     width: 300px;
   }
-
 }
