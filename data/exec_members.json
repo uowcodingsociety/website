@@ -96,6 +96,19 @@
     "imageLink": "aaron"
   },
   {
+    "execID": 9,
+    "name": "Neil Martey-Botchway",
+    "course": "Mathematics",
+    "bio": null,
+    "nationality": "",
+    "pronouns": "he/him",
+    "team": null,
+    "title": "Head of Mentoring",
+    "liLink": "https://www.linkedin.com/in/neil-martey-botchway/",
+    "year": "2",
+    "imageLink": "neil"
+  },
+  {
     "execID": 1,
     "name": "Alex Do",
     "course": "Computer Science",
