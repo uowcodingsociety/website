@@ -11,87 +11,86 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 2
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
-    - name: Check for Python file changes
-      uses: tj-actions/changed-files@v41
-      id: changed-files
-      with:
-        files: '**/*.py'
+      - name: Check for Python file changes
+        uses: tj-actions/changed-files@v41
+        id: changed-files
+        with:
+          files: "**/*.py"
 
-    - name: Deploy to production
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.VM_HOST }}
-        username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
-        script: |
-          if [ -d ~/website/.git ]; then
-            echo "Repository exists, pulling latest changes..."
+      - name: Deploy to production
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
+            if [ -d ~/website/.git ]; then
+              echo "Repository exists, pulling latest changes..."
+              cd ~/website/
+              git pull origin main
+            else
+              echo "Repository doesn't exist, cloning..."
+              rm -rf ~/website/
+              git clone https://github.com/${{ github.repository }} ~/website/
+              cd ~/website/
+            fi
+
+      - name: Create environment file
+        if: success()
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
             cd ~/website/
-            git pull origin main
-          else
-            echo "Repository doesn't exist, cloning..."
-            rm -rf ~/website/
-            git clone https://github.com/${{ github.repository }} ~/website/
+            echo "MAIL_USERNAME=${{ secrets.MAIL_USERNAME }}" > .env
+            echo "MAIL_PASSWORD=${{ secrets.MAIL_PASSWORD }}" >> .env
+
+      - name: Install dependencies
+        if: success()
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
             cd ~/website/
-          fi
+            pip install -r requirements.txt
 
-    - name: Create environment file
-      if: success()
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.VM_HOST }}
-        username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
-        script: |
-          cd ~/website/
-          echo "MAIL_USERNAME=${{ secrets.MAIL_USERNAME }}" > .env
-          echo "MAIL_PASSWORD=${{ secrets.MAIL_PASSWORD }}" >> .env
+      - name: Validate database
+        if: success()
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
+            cd ~/website/
+            FLASK_APP=codesoc.py flask db-validate
 
-    - name: Install dependencies
-      if: success()
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.VM_HOST }}
-        username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
-        script: |
-          cd ~/website/
-          pip install -r requirements.txt
+      - name: Reset database
+        if: success()
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
+            cd ~/website/
+            FLASK_APP=codesoc.py flask db-reset
 
-    - name: Validate database
-      if: success()
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.VM_HOST }}
-        username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
-        script: |
-          cd ~/website/
-          FLASK_APP=codesoc.py flask db-validate
-
-    - name: Reset database
-      if: success()
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.VM_HOST }}
-        username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
-        script: |
-          cd ~/website/
-          FLASK_APP=codesoc.py flask db-reset
-
-    - name: Reload WSGI if Python files changed
-      if: steps.changed-files.outputs.any_changed == 'true'
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.VM_HOST }}
-        username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
-        script: |
-          echo "Python files changed, reloading WSGI..."
-          touch /var/www/www_warwickcodingsociety_com_wsgi.py
+      - name: Reload WSGI
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
+            echo "Reloading WSGI..."
+            touch /var/www/www_warwickcodingsociety_com_wsgi.py
