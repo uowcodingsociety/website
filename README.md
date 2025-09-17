@@ -2,6 +2,17 @@
 
 Warwick Codesoc website. Built using Flask. Originally owned by Warwick Coding Society's founder [Adriano Barbet](https://www.linkedin.com/in/adrianobarbet/) and contributed to by ex-Presidents [Piotr Zychlinksi](https://www.linkedin.com/in/piotr-zychlinski/) and [Alfie-Joe Smith](https://www.linkedin.com/in/alfiejfs/).
 
+# Quickstart
+
+- Changes to blog posts, exec members, sponsor news and sponsors can be made in the `data/` directory.
+- Add events via the Warwick Coding Society GMail account in the Google Calendar.
+  - Valid event prefixes include:
+    - careers@
+    - courses@
+    - event@
+    - social@
+  - So for example, `event@ CodeSoc Pub Night`
+
 ## How to run
 
 - First download the code from the repository
