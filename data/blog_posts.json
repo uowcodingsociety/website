@@ -1,6 +1,6 @@
 [
   {
-    "postID": 1,
+    "postID": 7,
     "postTitle": "Our Code of Conduct",
     "postDescription": "Creating a welcoming and inclusive environment for all members of our coding community.",
     "postCreationDate": "2024-10-01",
@@ -10,7 +10,7 @@
     "postImageURL": "code-conduct-image.jpg"
   },
   {
-    "postID": 7,
+    "postID": 8,
     "postTitle": "What's new for 2025/26 for CodeSoc?",
     "postDescription": "This year's a big one. Tune in to see what we're cooking up!",
     "postCreationDate": "2025-09-14",
