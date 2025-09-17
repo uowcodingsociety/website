@@ -1,5 +1,15 @@
 [
   {
+    "postID": 1,
+    "postTitle": "Our Code of Conduct",
+    "postDescription": "Creating a welcoming and inclusive environment for all members of our coding community.",
+    "postCreationDate": "2024-10-01",
+    "postTags": "community",
+    "postContent": "<div style='text-align: center;'><img src='/static/assets/blogPictures/code-conduct-image.jpg' alt='Code of Conduct' style='max-width: 60%; height: auto; border-radius: 10px;'></div><h3>Building an Inclusive Community</h3><p>At Warwick Coding Society, we're committed to creating a welcoming environment where everyone can learn, grow, and thrive. Our code of conduct ensures that all members feel safe, respected, and valued regardless of their background, experience level, or identity.</p><h3>Our Core Values</h3><ul><li><b>Respect</b> - We treat all members with dignity and courtesy</li><li><b>Inclusivity</b> - We welcome people of all backgrounds and skill levels</li><li><b>Collaboration</b> - We support each other's learning journey</li><li><b>Growth</b> - We embrace mistakes as learning opportunities</li></ul><h3>Expected Behavior</h3><p>We expect all community members to:</p><ul><li>Be respectful in all interactions, both online and offline</li><li>Use welcoming and inclusive language</li><li>Be patient with beginners and those learning new concepts</li><li>Give constructive feedback in a kind manner</li><li>Respect different opinions and approaches to problem-solving</li></ul><h3>Unacceptable Behavior</h3><p>The following behaviors are not tolerated:</p><ul><li>Harassment, discrimination, or intimidation of any kind</li><li>Offensive comments related to personal characteristics</li><li>Deliberate disruption of events or discussions</li><li>Sharing inappropriate content</li><li>Any behavior that makes others feel unwelcome or unsafe</li></ul><h3>Reporting and Enforcement</h3><p>If you experience or witness behavior that violates our code of conduct, please reach out to our exec team through our <a href='https://discord.gg/NDCg2VwQxZ'>Discord</a> or contact us directly. We take all reports seriously and will handle them confidentially.</p><p>Together, we can build a community where everyone feels empowered to learn and contribute. Thank you for helping us maintain this positive environment!</p>",
+    "postAuthor": "Warwick Coding Society",
+    "postImageURL": "code-conduct-image.jpg"
+  },
+  {
     "postID": 7,
     "postTitle": "What's new for 2025/26 for CodeSoc?",
     "postDescription": "This year's a big one. Tune in to see what we're cooking up!",
