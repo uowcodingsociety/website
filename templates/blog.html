@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Blog | CodeSoc</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <head> <title>Blog | CodeSoc</title> <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link rel="stylesheet" href="static/styles/reset.css">
     <link rel="stylesheet" href="static/styles/styles-navbar.css">
     <link rel="stylesheet" href="static/styles/styles-body-blog.css">
@@ -49,7 +47,7 @@
 
         <hr>
 
-        {% for blogPost in blogPosts %}
+        {% for blogPost in blogPosts|reverse %}
             {% include "reusable/blogPostWidget.html" %}
         {% endfor %}
 
