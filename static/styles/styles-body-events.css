@@ -203,7 +203,7 @@ li{
     .fc .fc-list-event-title a{
         border-radius: 4px;
         padding: 2px 7px;
-        color: var(--background-300);
+        color: white;
         display: block;
         width: fit-content;
     }

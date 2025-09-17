@@ -42,19 +42,23 @@ function parseEventTypes() {
         if(eventTextSplit.length == 2) {
             var eventType = eventTextSplit[0].trim();
             var eventTitle = eventTextSplit[1].trim();
+            var dotElement = $(element).closest('tr').find('.fc-list-event-dot');
             switch(eventType){
                 case "courses":
-                    // $(element).parent().css("background-color", coursesColour)
                     $(element).css("background-color", coursesColour)
+                    dotElement.css("border-color", coursesColour)
                     break;
                 case "social":
                     $(element).css("background-color", socialsColour)
+                    dotElement.css("border-color", socialsColour)
                     break;
                 case "other":
                     $(element).css("background-color", otherColour)
+                    dotElement.css("border-color", otherColour)
                     break;
                 case "careers":
                     $(element).css("background-color", careersColour)
+                    dotElement.css("border-color", careersColour)
                     break;
                 default:
                     console.log("Event type not found: " + eventType);
@@ -85,7 +89,7 @@ function setIndexColours() {
     initialView: calendarType,
     googleCalendarApiKey: 'AIzaSyCzbQq8jTFGVnOQxqqt3RGdxulJ-Cl12t8',
     events: {
-      googleCalendarId: 'kim8h0qrkcsocf683vjuagremg@group.calendar.google.com'
+      googleCalendarId: '9d975695483d8707770a19f3ad52606ec56d7ed1d9c8b9ad2f89f0a4c4618c14@group.calendar.google.com'
     },
     eventTimeFormat: {
       hour: 'numeric',
