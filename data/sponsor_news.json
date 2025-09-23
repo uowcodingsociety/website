@@ -3,8 +3,27 @@
     "newsID": 2,
     "sponsorID": 5,
     "newsTitle": "IMC Trading Partnership",
-    "newsDescription": "We are proud to announce that IMC Trading have partnered with Warwick Coding Society as a Bronze Sponsor",
+    "newsDescription": "We are proud to announce that IMC Trading have partnered with Warwick Coding Society as a Bronze Sponsor for the 24/25 year.",
     "newsURL": "https://www.imctrading.com",
-    "newsImageName": "imc.png"
+    "newsImageName": "imc.png",
+    "newsDate": "2024-09-15"
+  },
+  {
+    "newsID": 3,
+    "sponsorID": 5,
+    "newsTitle": "Jump Trading Partnership",
+    "newsDescription": "We are proud to announce that Jump Trading have partnered with Warwick Coding Society as a Title Sponsor for the 25/26 year.",
+    "newsURL": "https://www.jumptrading.com",
+    "newsImageName": "jump.png",
+    "newsDate": "2025-09-23"
+  },
+  {
+    "newsID": 4,
+    "sponsorID": 5,
+    "newsTitle": "Bloomberg Partnership",
+    "newsDescription": "We are proud to announce that Bloomberg have partnered with Warwick Coding Society as a Bronze Sponsor for the 25/26 year.",
+    "newsURL": "https://www.bloomberg.com",
+    "newsImageName": "bloomberg.png",
+    "newsDate": "2025-09-22"
   }
 ]
