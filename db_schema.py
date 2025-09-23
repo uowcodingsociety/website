@@ -80,10 +80,12 @@ class SponsorNews(db.Model):
     newsDescription = db.Column(db.String(1024))
     newsURL = db.Column(db.String(1024))
     newsImageName = db.Column(db.String(256))
+    newsDate = db.Column(db.Date)
 
-    def __init__(self, sponsorID, newsTitle, newsDescription, newsURL, newsImageName):
+    def __init__(self, sponsorID, newsTitle, newsDescription, newsURL, newsImageName, newsDate=None):
         self.sponsorID = sponsorID
         self.newsTitle = newsTitle
         self.newsDescription = newsDescription
         self.newsURL = newsURL
         self.newsImageName = newsImageName
+        self.newsDate = newsDate if newsDate else date.today()

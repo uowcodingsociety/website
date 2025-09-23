@@ -170,6 +170,9 @@ class DatabaseManager:
         # Load SponsorNews
         if "sponsor_news" in validated_data:
             for item in validated_data["sponsor_news"]:
+                # Parse the date string to a date object
+                news_date = datetime.strptime(item['newsDate'], "%Y-%m-%d").date()
+
                 news = SponsorNews(
                     sponsorID=item['sponsorID'],
                     newsTitle=item['newsTitle'],
@@ -178,6 +181,7 @@ class DatabaseManager:
                     newsImageName=item['newsImageName']
                 )
                 news.newsID = item['newsID']
+                news.newsDate = news_date  # Set the parsed date
                 db.session.add(news)
             print(f"  ✓ Added {len(validated_data['sponsor_news'])} sponsor news items")
 
