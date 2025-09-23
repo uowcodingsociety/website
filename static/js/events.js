@@ -88,6 +88,7 @@ function setIndexColours() {
     },
     initialView: calendarType,
     initialDate: new Date(),
+    firstDay: 1,
     googleCalendarApiKey: 'AIzaSyCzbQq8jTFGVnOQxqqt3RGdxulJ-Cl12t8',
     events: {
       googleCalendarId: '9d975695483d8707770a19f3ad52606ec56d7ed1d9c8b9ad2f89f0a4c4618c14@group.calendar.google.com'
