@@ -48,4 +48,45 @@ You can regenerate the SQLite database with:
 python -m flask db-reset
 ```
 
+### Database Migrations
+
+When making changes to the database schema (models in `db_schema.py`):
+
+1. **Create a migration** after modifying the models:
+   ```sh
+   export FLASK_APP=codesoc.py
+   flask db migrate -m "Description of your changes"
+   ```
+
+2. **Apply the migration**:
+   ```sh
+   flask db upgrade
+   ```
+
+3. **Reset database with new schema**:
+   ```sh
+   flask db-reset
+   ```
+
+#### Troubleshooting Migrations
+
+If you encounter migration conflicts or "table already exists" errors:
+
+1. **Check current migration status**:
+   ```sh
+   flask db current
+   ```
+
+2. **If database is inconsistent, stamp it as current**:
+   ```sh
+   flask db stamp head
+   ```
+
+3. **Then create and apply your new migration**:
+   ```sh
+   flask db migrate -m "Your changes"
+   flask db upgrade
+   flask db-reset
+   ```
+
 The validation is ran per-PR and is required to merge. Build validation is also completed after.
