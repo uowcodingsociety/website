@@ -9,12 +9,21 @@
     "sponsorImageName": "wwsu.png"
   },
   {
-    "sponsorID": 5,
-    "sponsorName": "IMC Trading",
-    "sponsorDescription": "For three decades IMC has provided liquidity to the financial markets globally. Specialised in algorithmic trading and advanced technology, we set the pace for the evolution of market making.",
-    "sponsorIndustry": null,
-    "sponsorTier": null,
-    "sponsorSiteURL": null,
-    "sponsorImageName": null
+    "sponsorID": 2,
+    "sponsorName": "Jump Trading",
+    "sponsorDescription": "Jump Trading LLC is a proprietary trading firm with a focus on algorithmic and high-frequency trading strategies.",
+    "sponsorIndustry": "Finance",
+    "sponsorTier": "Title Sponsor",
+    "sponsorSiteURL": "https://www.jumptrading.com/hr/students-new-grads",
+    "sponsorImageName": "jump.png"
+  },
+  {
+    "sponsorID": 3,
+    "sponsorName": "Bloomberg",
+    "sponsorDescription": "Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News.",
+    "sponsorIndustry": "Finance",
+    "sponsorTier": "Bronze Sponsor",
+    "sponsorSiteURL": "https://www.bloomberg.com/company/early-careers/",
+    "sponsorImageName": "bloomberg.png"
   }
 ]

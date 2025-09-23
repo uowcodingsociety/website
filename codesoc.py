@@ -84,7 +84,7 @@ def careers():
 @app.route("/careers/sponsors")
 def sponsors():
     sponsors = Sponsor.query.all()
-    sponsorNews = SponsorNews.query.all()
+    sponsorNews = SponsorNews.query.order_by(SponsorNews.newsDate.desc()).all()
     sponsorNewsSponsorList = []
     for news in sponsorNews:
         newsDict = {"news": news, "sponsor": Sponsor.query.get(news.sponsorID)}

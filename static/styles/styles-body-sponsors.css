@@ -193,6 +193,13 @@ p{
     font-weight: 500;
 }
 
+.postCreationDate{
+    color: var(--shades-blue);
+    font-style: italic;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+
 .newsContent{
     width: 67%;
 }
