@@ -98,6 +98,17 @@ function setIndexColours() {
       minute: '2-digit',
       meridiem: 'short'
     },
+    eventDidMount: function(info) {
+      if (info.event.extendedProps.location) {
+        var titleElement = info.el.querySelector('.fc-event-title, .fc-list-event-title a');
+        if (titleElement) {
+          // Get the current title (which may have been processed by parseEventTypes)
+          var currentTitle = titleElement.innerHTML;
+          // Add location with styling
+          titleElement.innerHTML = currentTitle + '<br><br><span style="font-weight: normal;">' + info.event.extendedProps.location + '</span>';
+        }
+      }
+    },
     });
     calendar.render();
   });
