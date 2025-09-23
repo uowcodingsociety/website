@@ -50,6 +50,24 @@ li{
     color: #008EFF;
 }
 
+.calendarDownloadButton{
+    font-family: inherit;
+    background-color: #008EFF;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 7px;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.calendarDownloadButton:hover{
+    background-color: #66BBFF;
+}
+
 #colourIndex li{
     width: 120px;
     margin: 15px 10px 15px 0px;
