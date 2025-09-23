@@ -363,6 +363,17 @@
             "type": "null"
           }
         ]
+      },
+      "newsDate": {
+        "anyOf": [
+          {
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
       }
     },
     "required": [],

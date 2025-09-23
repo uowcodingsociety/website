@@ -1,9 +1,9 @@
 <div class="newsWidget">
     <div class="newsContent">
         <h3 class="newsTitle">{{ newsDict["news"].newsTitle }}</h3>
+        <h4 class="postCreationDate">{{ newsDict["news"].newsDate }}</h4>
         <p class="newsDescription">{{ newsDict["news"].newsDescription }}</p>
-        <a target=”_blank” href="{{ newsDict['news'].newsURL }}"><button class="learnMoreButton">Learn more</button></a>
-        <a target=”_blank” href="{{ newsDict['sponsor'].sponsorSiteURL }}"><button class="partnerNewsButton">{{ newsDict["sponsor"].sponsorName }}</button></a>
+        <a target="_blank" href="{{ newsDict['news'].newsURL }}"><button class="learnMoreButton">Learn more</button></a>
     </div>
     <img class ="newsImage" src="/static/assets/newsImages/{{ newsDict['news'].newsImageName }}">
 </div>
