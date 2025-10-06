@@ -25,5 +25,14 @@
     "newsURL": "https://www.bloomberg.com",
     "newsImageName": "bloomberg.png",
     "newsDate": "2025-09-22"
+  },
+  {
+    "newsID": 5,
+    "sponsorID": 5,
+    "newsTitle": "Jane Street Partnership",
+    "newsDescription": "We are proud to announce that Jane Street have partnered with Warwick Coding Society as a Bronze Sponsor for the 25/26 year.",
+    "newsURL": "https://www.janestreet.com",
+    "newsImageName": "janestreet.jpg",
+    "newsDate": "2025-10-06"
   }
 ]

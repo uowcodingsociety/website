@@ -1,6 +1,6 @@
 [
   {
-    "sponsorID": 4,
+    "sponsorID": 5,
     "sponsorName": "Warwick Student's Union",
     "sponsorDescription": "Warwick Student's Union, also known as Warwick SU, is the student union for the University of Warwick. We are an official Warwick SU recognized society and the SU supports us in a variety of ways.",
     "sponsorIndustry": "Academic",
@@ -25,5 +25,14 @@
     "sponsorTier": "Bronze Sponsor",
     "sponsorSiteURL": "https://www.bloomberg.com/company/early-careers/",
     "sponsorImageName": "bloomberg.png"
+  },
+  {
+    "sponsorID": 4,
+    "sponsorName": "Jane Street",
+    "sponsorDescription": "Jane Street is a quantitative trading firm and liquidity provider with a unique focus on technology and collaborative problem solving.",
+    "sponsorIndustry": "Finance",
+    "sponsorTier": "Bronze Sponsor",
+    "sponsorSiteURL": "https://www.janestreet.com/join-jane-street/open-roles/?type=students-and-new-grads&location=london",
+    "sponsorImageName": "janestreet.jpg"
   }
 ]
