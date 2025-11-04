@@ -1,6 +1,6 @@
 [
   {
-    "sponsorID": 5,
+    "sponsorID": 6,
     "sponsorName": "Warwick Student's Union",
     "sponsorDescription": "Warwick Student's Union, also known as Warwick SU, is the student union for the University of Warwick. We are an official Warwick SU recognized society and the SU supports us in a variety of ways.",
     "sponsorIndustry": "Academic",
@@ -15,14 +15,14 @@
     "sponsorIndustry": "Finance",
     "sponsorTier": "Title Sponsor",
     "sponsorSiteURL": "https://www.jumptrading.com/hr/students-new-grads",
-    "sponsorImageName": "jump.png"
+    "sponsorImageName": "jt.png"
   },
   {
     "sponsorID": 3,
     "sponsorName": "Bloomberg",
     "sponsorDescription": "Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News.",
     "sponsorIndustry": "Finance",
-    "sponsorTier": "Bronze Sponsor",
+    "sponsorTier": "Patron Sponsor",
     "sponsorSiteURL": "https://www.bloomberg.com/company/early-careers/",
     "sponsorImageName": "bloomberg.png"
   },
@@ -31,8 +31,17 @@
     "sponsorName": "Jane Street",
     "sponsorDescription": "Jane Street is a quantitative trading firm and liquidity provider with a unique focus on technology and collaborative problem solving.",
     "sponsorIndustry": "Finance",
-    "sponsorTier": "Bronze Sponsor",
+    "sponsorTier": "Patron Sponsor",
     "sponsorSiteURL": "https://www.janestreet.com/join-jane-street/open-roles/?type=students-and-new-grads&location=london",
-    "sponsorImageName": "janestreet.jpg"
+    "sponsorImageName": "js.png"
+  },
+  {
+    "sponsorID": 5,
+    "sponsorName": "Hudson River Trading",
+    "sponsorDescription": "Hudson River Trading is a multi-asset class quantitative trading firm that provides liquidity on global markets and directly to our clients.",
+    "sponsorIndustry": "Finance",
+    "sponsorTier": "Patron Sponsor",
+    "sponsorSiteURL": "https://www.hudsonrivertrading.com/student-opportunities/",
+    "sponsorImageName": "hrt.png"
   }
 ]

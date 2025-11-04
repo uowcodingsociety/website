@@ -14,14 +14,14 @@
     "newsTitle": "Jump Trading Partnership",
     "newsDescription": "We are proud to announce that Jump Trading have partnered with Warwick Coding Society as a Title Sponsor for the 25/26 year.",
     "newsURL": "https://www.jumptrading.com",
-    "newsImageName": "jump.png",
+    "newsImageName": "jt.png",
     "newsDate": "2025-09-23"
   },
   {
     "newsID": 4,
     "sponsorID": 5,
     "newsTitle": "Bloomberg Partnership",
-    "newsDescription": "We are proud to announce that Bloomberg have partnered with Warwick Coding Society as a Bronze Sponsor for the 25/26 year.",
+    "newsDescription": "We are proud to announce that Bloomberg have partnered with Warwick Coding Society as a Patron Sponsor for the 25/26 year.",
     "newsURL": "https://www.bloomberg.com",
     "newsImageName": "bloomberg.png",
     "newsDate": "2025-09-22"
@@ -30,9 +30,18 @@
     "newsID": 5,
     "sponsorID": 5,
     "newsTitle": "Jane Street Partnership",
-    "newsDescription": "We are proud to announce that Jane Street have partnered with Warwick Coding Society as a Bronze Sponsor for the 25/26 year.",
+    "newsDescription": "We are proud to announce that Jane Street have partnered with Warwick Coding Society as a Patron Sponsor for the 25/26 year.",
     "newsURL": "https://www.janestreet.com",
-    "newsImageName": "janestreet.jpg",
+    "newsImageName": "js.png",
     "newsDate": "2025-10-06"
+  },
+  {
+    "newsID": 6,
+    "sponsorID": 5,
+    "newsTitle": "Hudson River Trading Partnership",
+    "newsDescription": "We are proud to announce that Jane Street have partnered with Warwick Coding Society as a Patron Sponsor for the 25/26 year.",
+    "newsURL": "https://www.hudsonrivertrading.com",
+    "newsImageName": "hrt.png",
+    "newsDate": "2025-11-03"
   }
 ]
