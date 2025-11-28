@@ -13,12 +13,8 @@ from datetime import datetime, timedelta
 # Load environment variables from .env file
 # Get the directory where this script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
-dotenv_path = os.path.join(script_dir, '.env')
+dotenv_path = os.path.join(script_dir, ".env")
 load_dotenv(dotenv_path=dotenv_path)
-
-with open("env_dump.txt", "w") as f:
-    for k, v in os.environ.items():
-        f.write(f"{k}={v}\n")
 
 app = Flask(__name__)
 
