@@ -32,7 +32,8 @@ jobs:
             if [ -d ~/website/.git ]; then
               echo "Repository exists, pulling latest changes..."
               cd ~/website/
-              git pull origin main
+              git fetch origin
+              git reset --hard origin/main
             else
               echo "Repository doesn't exist, cloning..."
               rm -rf ~/website/
