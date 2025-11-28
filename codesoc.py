@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from flask_migrate import Migrate
 from db_schema import db, ExecMember, BlogPost, Sponsor, SponsorNews
 from flask_mail import Mail, Message
@@ -7,6 +7,7 @@ import os
 from dotenv import load_dotenv
 from db_manager import DatabaseManager
 from schema_generator import generate_all_schemas, save_schemas_to_file
+import requests
 
 # Load environment variables from .env file
 load_dotenv()
@@ -22,7 +23,10 @@ app.config["MAIL_USE_TLS"] = False
 app.config["MAIL_USE_SSL"] = True
 
 import os
-app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{os.path.join(app.instance_path, 'codesoc.sqlite')}"
+
+app.config["SQLALCHEMY_DATABASE_URI"] = (
+    f"sqlite:///{os.path.join(app.instance_path, 'codesoc.sqlite')}"
+)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db.init_app(app)
@@ -32,6 +36,11 @@ mail = Mail(app)
 # Initialize database manager
 db_manager = DatabaseManager()
 db_manager.init_app(app)
+
+# Advent of Code configuration
+AOC_SESSION_COOKIE = os.environ.get("AOC_SESSION_COOKIE", "")
+AOC_LEADERBOARD_ID = "3615951"
+AOC_YEAR = "2025"
 
 
 @app.route("/")
@@ -115,6 +124,11 @@ def execTeam():
     )
 
 
+@app.route("/aoc")
+def aoc():
+    return render_template("aoc.html", pageName="aoc")
+
+
 @app.route("/blog")
 def blog():
     blogPosts = BlogPost.query.all()
@@ -136,6 +150,22 @@ def payBill(blogID):
         return render_template("blogPost.html", blogPost=blog, pageName="blog")
     else:
         return render_template("blogNotFound.html", pageName="blog")
+
+
+@app.route("/api/aoc/leaderboard")
+def aoc_leaderboard():
+    """Fetch Advent of Code leaderboard data"""
+    if not AOC_SESSION_COOKIE:
+        return jsonify({"error": "AOC session cookie not configured"}), 500
+
+    try:
+        url = f"https://adventofcode.com/{AOC_YEAR}/leaderboard/private/view/{AOC_LEADERBOARD_ID}.json"
+        cookies = {"session": AOC_SESSION_COOKIE}
+        response = requests.get(url, cookies=cookies, timeout=10)
+        response.raise_for_status()
+        return jsonify(response.json())
+    except requests.exceptions.RequestException as e:
+        return jsonify({"error": str(e)}), 500
 
 
 # CLI Commands for database management

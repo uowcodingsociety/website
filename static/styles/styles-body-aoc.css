@@ -1,0 +1,201 @@
+main {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#pageTitle {
+  font-family: "objektiv-mk1", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+}
+
+#pageTitle span {
+  color: #008eff;
+}
+
+.leaderboard-info {
+  margin-bottom: 2rem;
+}
+
+.leaderboard-info p {
+  font-family: "objektiv-mk1", sans-serif;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+}
+
+.leaderboard-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #008eff 0%, #0066cc 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: white;
+  min-width: 150px;
+}
+
+.stat-label {
+  font-family: "objektiv-mk1", sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-family: "objektiv-mk1", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.leaderboard-container {
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table thead {
+  background: linear-gradient(135deg, #008eff 0%, #0066cc 100%);
+  color: white;
+}
+
+.leaderboard-table th {
+  font-family: "objektiv-mk1", sans-serif;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.leaderboard-table th.rank-col {
+  width: 80px;
+  text-align: center;
+}
+
+.leaderboard-table th.stars-col,
+.leaderboard-table th.score-col {
+  width: 100px;
+  text-align: center;
+}
+
+.leaderboard-table tbody tr {
+  border-bottom: 1px solid #1a1a1a;
+  transition: background-color 0.2s ease;
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.leaderboard-table tbody tr.top-3 {
+  background: linear-gradient(90deg,
+      rgba(0, 142, 255, 0.05) 0%,
+      rgba(0, 142, 255, 0) 100%);
+}
+
+.leaderboard-table td {
+  font-family: "objektiv-mk1", sans-serif;
+  padding: 1rem;
+  color: #f0f0f0;
+}
+
+.rank {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #008eff;
+}
+
+.rank.first {
+  color: #ffd700;
+}
+
+.rank.second {
+  color: #c0c0c0;
+}
+
+.rank.third {
+  color: #cd7f32;
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.stars,
+.score {
+  text-align: center;
+  font-weight: 600;
+}
+
+.stars {
+  color: #ffd700;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 3rem;
+  font-family: "objektiv-mk1", sans-serif;
+  color: #666;
+}
+
+.error-state {
+  text-align: center;
+  padding: 3rem;
+  font-family: "objektiv-mk1", sans-serif;
+  color: #d32f2f;
+  background: #ffebee;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.last-updated {
+  font-family: "objektiv-mk1", sans-serif;
+  font-size: 0.9rem;
+  color: #999;
+  text-align: right;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  #pageTitle {
+    font-size: 2rem;
+  }
+
+  .leaderboard-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .stat-box {
+    min-width: 100%;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .leaderboard-table th.rank-col,
+  .leaderboard-table th.stars-col,
+  .leaderboard-table th.score-col {
+    width: auto;
+  }
+}
