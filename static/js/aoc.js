@@ -74,8 +74,13 @@ function displayLeaderboard(data) {
     $('#leaderboardTable').show();
 
     // Update last updated time
-    const now = new Date();
-    $('#lastUpdated').text('Last updated: ' + now.toLocaleString());
+    if (data.cached_at) {
+        const cachedTime = new Date(data.cached_at);
+        $('#lastUpdated').text('Last updated: ' + cachedTime.toLocaleString());
+    } else {
+        const now = new Date();
+        $('#lastUpdated').text('Last updated: ' + now.toLocaleString());
+    }
 }
 
 function calculateActiveDays(data) {

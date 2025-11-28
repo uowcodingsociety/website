@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from db_manager import DatabaseManager
 from schema_generator import generate_all_schemas, save_schemas_to_file
 import requests
+from datetime import datetime, timedelta
 
 # Load environment variables from .env file
 load_dotenv()
@@ -41,6 +42,10 @@ db_manager.init_app(app)
 AOC_SESSION_COOKIE = os.environ.get("AOC_SESSION_COOKIE", "")
 AOC_LEADERBOARD_ID = "3615951"
 AOC_YEAR = "2025"
+AOC_CACHE_DURATION = timedelta(minutes=15)
+
+# Cache for leaderboard data
+aoc_cache = {"data": None, "last_updated": None}
 
 
 @app.route("/")
@@ -154,17 +159,42 @@ def payBill(blogID):
 
 @app.route("/api/aoc/leaderboard")
 def aoc_leaderboard():
-    """Fetch Advent of Code leaderboard data"""
+    """Fetch Advent of Code leaderboard data with 15-minute caching"""
     if not AOC_SESSION_COOKIE:
         return jsonify({"error": "AOC session cookie not configured"}), 500
 
+    # Check if we have valid cached data
+    now = datetime.now()
+    if (
+        aoc_cache["data"] is not None
+        and aoc_cache["last_updated"] is not None
+        and now - aoc_cache["last_updated"] < AOC_CACHE_DURATION
+    ):
+        response_data = aoc_cache["data"].copy()
+        response_data["cached_at"] = aoc_cache["last_updated"].isoformat()
+        return jsonify(response_data)
+
+    # Cache is expired or empty, fetch new data
     try:
         url = f"https://adventofcode.com/{AOC_YEAR}/leaderboard/private/view/{AOC_LEADERBOARD_ID}.json"
         cookies = {"session": AOC_SESSION_COOKIE}
         response = requests.get(url, cookies=cookies, timeout=10)
         response.raise_for_status()
-        return jsonify(response.json())
+
+        # Update cache
+        aoc_cache["data"] = response.json()
+        aoc_cache["last_updated"] = now
+
+        response_data = aoc_cache["data"].copy()
+        response_data["cached_at"] = now.isoformat()
+        return jsonify(response_data)
     except requests.exceptions.RequestException as e:
+        # If API call fails but we have stale cached data, return it anyway
+        if aoc_cache["data"] is not None:
+            response_data = aoc_cache["data"].copy()
+            if aoc_cache["last_updated"] is not None:
+                response_data["cached_at"] = aoc_cache["last_updated"].isoformat()
+            return jsonify(response_data)
         return jsonify({"error": str(e)}), 500
 
 
