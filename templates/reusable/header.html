@@ -37,6 +37,12 @@
                <!--  <p id="new-bubble-nav">New</p> -->
             {% endif %}
           </div>
+          <div id="navigation-container">
+            <a href="/aoc" class="navigation-item {{'active-nav-item' if pageName == 'aoc' else ''}}">AoC 2025</a>
+            {% if pageName != "aoc" %}
+               <!--  <p id="new-bubble-nav">New</p> -->
+            {% endif %}
+          </div>
           <!-- <a href="/woco" class="navigation-item {{'active-nav-item' if pageName == 'woco' else ''}}">Woco</a> -->
 
         </div>
