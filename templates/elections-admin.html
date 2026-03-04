@@ -41,6 +41,16 @@
       <div id="results-loading">Loading results…</div>
       <div id="results-container" style="display:none"></div>
     </section>
+
+    <!-- CSV Interpreter -->
+    <section class="admin-section">
+      <h2>CSV Vote Interpreter</h2>
+      <p class="elections-instructions">Paste a vote CSV dump below to derive results offline.</p>
+      <textarea id="csv-input" class="admin-csv-input" placeholder="voter_student_id,category_slug,position_title,rank,points,candidate_id,candidate_name,submitted_at&#10;..."></textarea>
+      <button id="csv-parse-btn" class="elections-btn" style="margin-top:0.75rem">Interpret</button>
+      <p id="csv-error" class="elections-error" style="display:none"></p>
+      <div id="csv-results" style="display:none;margin-top:1.5rem"></div>
+    </section>
   </main>
 
   <script>
