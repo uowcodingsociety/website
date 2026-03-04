@@ -477,12 +477,27 @@ def elections_results():
     return jsonify(results)
 
 
-def _dump_votes_to_csv():
-    """Write all current votes to a timestamped CSV file. Returns the filename."""
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    filename = f"votes_{timestamp}.csv"
+@app.route("/api/elections/votes/reset/<slug>", methods=["POST"])
+def elections_reset_slug_votes(slug):
+    if not session.get("admin"):
+        return jsonify({"error": "Unauthorised"}), 403
 
-    votes = ElectionVote.query.order_by(
+    filename, count = _dump_votes_to_csv(slug=slug)
+    ElectionVote.query.filter_by(categorySlug=slug).delete()
+    db.session.commit()
+
+    return jsonify({"filename": filename, "count": count})
+
+
+def _dump_votes_to_csv(slug=None):
+    """Write votes to a timestamped CSV. Optionally filter by slug. Returns (filename, count)."""
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    filename = f"votes_{slug}_{timestamp}.csv" if slug else f"votes_{timestamp}.csv"
+
+    query = ElectionVote.query
+    if slug:
+        query = query.filter_by(categorySlug=slug)
+    votes = query.order_by(
         ElectionVote.voterStudentID,
         ElectionVote.categorySlug,
         ElectionVote.positionTitle,
