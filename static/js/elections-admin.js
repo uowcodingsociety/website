@@ -46,7 +46,14 @@ function loadResults() {
       let html = "";
       data.forEach(function (category) {
         html += `<div class="admin-category-block">`;
-        html += `<h3 class="admin-category-title">${category.name}</h3>`;
+        html += `
+          <div class="admin-category-header">
+            <h3 class="admin-category-title">${category.name}</h3>
+            <button class="elections-btn elections-btn-admin admin-reset-btn"
+                    data-slug="${category.slug}" data-name="${category.name}">
+              Reset votes
+            </button>
+          </div>`;
 
         category.positions.forEach(function (position) {
           html += `<div class="admin-position-block">`;
@@ -91,3 +98,26 @@ function loadResults() {
 }
 
 loadResults();
+
+$(document).on("click", ".admin-reset-btn", function () {
+  const slug = $(this).data("slug");
+  const name = $(this).data("name");
+  const $btn = $(this);
+
+  if (!confirm(`Reset all votes for "${name}"? A CSV dump will be saved first.`)) return;
+
+  $btn.prop("disabled", true).text("Resetting…");
+
+  $.ajax({
+    url: `/api/elections/votes/reset/${slug}`,
+    method: "POST",
+    success: function (data) {
+      alert(`Done. ${data.count} vote(s) dumped to ${data.filename} and removed.`);
+      loadResults();
+    },
+    error: function (xhr) {
+      alert((xhr.responseJSON && xhr.responseJSON.error) || "Reset failed.");
+      $btn.prop("disabled", false).text("Reset votes");
+    },
+  });
+});

@@ -388,10 +388,17 @@ main {
   margin-bottom: 2.5rem;
 }
 
+.admin-category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
 .admin-category-title {
   font-size: 1.05rem;
   color: var(--primary-blue);
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 .admin-position-block {
