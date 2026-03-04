@@ -90,3 +90,13 @@ If you encounter migration conflicts or "table already exists" errors:
    ```
 
 The validation is ran per-PR and is required to merge. Build validation is also completed after.
+
+#### Admin password notes
+
+If you change the administrator password it may invalidate your session. Reset cookies if so otherwise this is an edge case.
+
+#### Note to future devs
+
+I really don't like this json-schema to database pipeline. Probably migrate to an external database instead of a local one and include backups. Also could just do JSON. Whatever is fine. 
+
+Also we use PythonAnywhere as a hosting platform right now. Try to migrate somewhere free but this is again a pain. Flask is annoying, try to move to easier deployment models and so on. 
