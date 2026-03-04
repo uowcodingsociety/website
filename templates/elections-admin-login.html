@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admin Login | CodeSoc</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="/static/styles/styles-navbar.css">
+  <link rel="stylesheet" href="/static/styles/styles-body-elections.css">
+  <link rel="stylesheet" href="/static/styles/styles-footer.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kfd8owr.css">
+  <link rel="shortcut icon" type="image/png" href="/static/assets/Icons/favicon.ico">
+</head>
+
+<body>
+  <script src="/static/js/jquery-3.6.0.min.js"></script>
+  <script src="/static/js/global.js"></script>
+
+  {% include "reusable/header.html" %}
+
+  <main>
+    <h1 id="pageTitle">Admin Login<span>.</span></h1>
+    <div class="verify-box" style="margin-top: 1rem;">
+      <form method="POST" action="/elections/administrator/login">
+        <h2>Elections Administrator</h2>
+        <p>Enter the admin password to continue.</p>
+        <div class="verify-input-row">
+          <input type="password" name="password" placeholder="Password" autofocus>
+          <button type="submit" class="elections-btn">Login</button>
+        </div>
+        {% if error %}
+        <p class="elections-error" style="margin-top: 0.75rem;">{{ error }}</p>
+        {% endif %}
+      </form>
+    </div>
+  </main>
+
+  {% include "reusable/footer.html" %}
+</body>
+
+</html>

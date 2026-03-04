@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
-from datetime import date
+from datetime import date, datetime
 
 db = SQLAlchemy()
 
@@ -51,6 +51,56 @@ class BlogPost(db.Model):
         self.postCreationDate = date.today()
         self.postAuthor = postAuthor
         self.postImageURL = postImageURL
+
+class ElectionCandidate(db.Model):
+    __tablename__ = "electionCandidates"
+
+    candidateID = db.Column(db.Integer, primary_key=True)
+    categorySlug = db.Column(db.String(64))
+    categoryName = db.Column(db.String(128))
+    positionTitle = db.Column(db.String(128))
+    name = db.Column(db.String(128))
+    manifestoLink = db.Column(db.String(512), default="")
+
+    def __init__(self, categorySlug, categoryName, positionTitle, name, manifestoLink=""):
+        self.categorySlug = categorySlug
+        self.categoryName = categoryName
+        self.positionTitle = positionTitle
+        self.name = name
+        self.manifestoLink = manifestoLink
+
+
+class ElectionVote(db.Model):
+    __tablename__ = "electionVotes"
+    __table_args__ = (
+        db.UniqueConstraint("voterStudentID", "positionTitle", "rank", name="uq_voter_position_rank"),
+        db.UniqueConstraint("voterStudentID", "candidateID", name="uq_voter_candidate"),
+    )
+
+    voteID = db.Column(db.Integer, primary_key=True)
+    voterStudentID = db.Column(db.Integer, nullable=False)
+    candidateID = db.Column(db.Integer, nullable=False)
+    positionTitle = db.Column(db.String(128))
+    categorySlug = db.Column(db.String(64))
+    rank = db.Column(db.Integer)
+    points = db.Column(db.Integer)
+    submittedAt = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __init__(self, voterStudentID, candidateID, positionTitle, categorySlug, rank, points):
+        self.voterStudentID = voterStudentID
+        self.candidateID = candidateID
+        self.positionTitle = positionTitle
+        self.categorySlug = categorySlug
+        self.rank = rank
+        self.points = points
+
+
+class ElectionSettings(db.Model):
+    __tablename__ = "electionSettings"
+
+    id = db.Column(db.Integer, primary_key=True)
+    isOpen = db.Column(db.Boolean, default=False)
+
 
 class Sponsor(db.Model):
     __tablename__ = "sponsors"

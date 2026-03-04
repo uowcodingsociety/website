@@ -37,6 +37,9 @@
                <!--  <p id="new-bubble-nav">New</p> -->
             {% endif %}
           </div>
+          {% if elections_open %}
+          <a href="/elections" class="navigation-item {{'active-nav-item' if pageName == 'elections' else ''}}">Elections</a>
+          {% endif %}
 
           <!-- <a href="/woco" class="navigation-item {{'active-nav-item' if pageName == 'woco' else ''}}">Woco</a> -->
 
@@ -86,6 +89,9 @@
           <!-- <a href="/develop" class="navigation-item">Develop</a> -->
           <a href="/events" class="navigation-item">Events</a>
           <a href="/blog" class="navigation-item">Blog</a>
+          {% if elections_open %}
+          <a href="/elections" class="navigation-item">Elections</a>
+          {% endif %}
 
           <div class="mobile-important-navigation">
             <a href="/exec-team" class="navigation-item">Meet the Exec</a>

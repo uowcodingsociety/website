@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Elections Administrator | CodeSoc</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="/static/styles/styles-navbar.css">
+  <link rel="stylesheet" href="/static/styles/styles-body-elections.css">
+  <link rel="stylesheet" href="/static/styles/styles-footer.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kfd8owr.css">
+  <link rel="shortcut icon" type="image/png" href="/static/assets/Icons/favicon.ico">
+</head>
+
+<body>
+  <script src="/static/js/jquery-3.6.0.min.js"></script>
+  <script src="/static/js/global.js"></script>
+
+  {% include "reusable/header.html" %}
+
+  <main>
+    <h1 id="pageTitle">Elections Admin<span>.</span></h1>
+    <a href="/elections/administrator/logout" class="elections-back" style="margin-bottom:1.5rem;display:inline-block;">Logout &rarr;</a>
+
+    <!-- Toggle -->
+    <section class="admin-section">
+      <h2>Status</h2>
+      <div class="admin-toggle-row">
+        <span id="elections-status-label" class="elections-status-badge {{ 'badge-open' if is_open else 'badge-closed' }}">
+          {{ 'OPEN' if is_open else 'CLOSED' }}
+        </span>
+        <button id="toggle-btn" class="elections-btn elections-btn-admin">
+          {{ 'Close Elections' if is_open else 'Open Elections' }}
+        </button>
+      </div>
+      <p id="toggle-error" class="elections-error" style="display:none"></p>
+    </section>
+
+    <!-- Results -->
+    <section class="admin-section">
+      <h2>Results</h2>
+      <div id="results-loading">Loading results…</div>
+      <div id="results-container" style="display:none"></div>
+    </section>
+  </main>
+
+  <script>
+    let currentlyOpen = {{ 'true' if is_open else 'false' }};
+  </script>
+  <script src="/static/js/elections-admin.js"></script>
+
+  {% include "reusable/footer.html" %}
+</body>
+
+</html>

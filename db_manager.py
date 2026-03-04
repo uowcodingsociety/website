@@ -7,7 +7,7 @@ import os
 from datetime import datetime
 from flask import Flask
 from jsonschema import validate, ValidationError
-from db_schema import db, ExecMember, BlogPost, Sponsor, SponsorNews
+from db_schema import db, ExecMember, BlogPost, Sponsor, SponsorNews, ElectionCandidate, ElectionVote
 from schema_generator import generate_all_schemas
 
 
@@ -104,6 +104,8 @@ class DatabaseManager:
         db.session.query(Sponsor).delete()
         db.session.query(BlogPost).delete()
         db.session.query(ExecMember).delete()
+        db.session.query(ElectionVote).delete()
+        db.session.query(ElectionCandidate).delete()
 
         db.session.commit()
         print("✓ Database cleared")
@@ -185,8 +187,35 @@ class DatabaseManager:
                 db.session.add(news)
             print(f"  ✓ Added {len(validated_data['sponsor_news'])} sponsor news items")
 
+        self.load_elections_candidates()
+
         db.session.commit()
         print("✅ All data loaded successfully")
+
+    def load_elections_candidates(self):
+        """Load election candidates from elections.json"""
+        elections_path = "data/elections.json"
+        if not os.path.exists(elections_path):
+            print("  ⚠ data/elections.json not found, skipping election candidates")
+            return
+
+        with open(elections_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        count = 0
+        for category in data.get("categories", []):
+            for position in category.get("positions", []):
+                for candidate in position.get("candidates", []):
+                    c = ElectionCandidate(
+                        categorySlug=category["slug"],
+                        categoryName=category["name"],
+                        positionTitle=position["title"],
+                        name=candidate["name"],
+                        manifestoLink=candidate.get("manifestoLink", "")
+                    )
+                    db.session.add(c)
+                    count += 1
+        print(f"  ✓ Added {count} election candidates")
 
     def reset_database(self):
         """Complete database reset with validation"""

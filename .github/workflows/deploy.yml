@@ -48,6 +48,7 @@ jobs:
             echo "MAIL_PASSWORD=${{ secrets.MAIL_PASSWORD }}" >> .env
             echo "AOC_SESSION_COOKIE=${{ secrets.AOC_SESSION_COOKIE }}" >> .env
             echo "SU_KEY=${{ secrets.SU_KEY }}" >> .env
+            echo "ADMIN_PASSWORD=${{ secrets.ADMIN_PASSWORD }}" >> .env
 
       - name: Install dependencies
         if: success()
