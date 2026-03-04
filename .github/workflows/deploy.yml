@@ -16,12 +16,6 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Check for Python file changes
-        uses: tj-actions/changed-files@v41
-        id: changed-files
-        with:
-          files: "**/*.py"
-
       - name: Deploy to production
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -53,6 +47,7 @@ jobs:
             echo "MAIL_USERNAME=${{ secrets.MAIL_USERNAME }}" > .env
             echo "MAIL_PASSWORD=${{ secrets.MAIL_PASSWORD }}" >> .env
             echo "AOC_SESSION_COOKIE=${{ secrets.AOC_SESSION_COOKIE }}" >> .env
+            echo "SU_KEY=${{ secrets.SU_KEY }}" >> .env
 
       - name: Install dependencies
         if: success()
@@ -75,6 +70,17 @@ jobs:
           script: |
             cd ~/website/
             FLASK_APP=codesoc.py flask db-validate
+
+      - name: Run database migrations
+        if: success()
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
+            cd ~/website/
+            FLASK_APP=codesoc.py flask db upgrade
 
       - name: Reset database
         if: success()
