@@ -1,0 +1,464 @@
+/* ── Elections — shared layout ───────────────────────────────────────────── */
+
+main {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: var(--primary-white);
+}
+
+#pageTitle {
+  font-family: "objektiv-mk1", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+}
+
+#pageTitle span {
+  color: var(--primary-blue);
+}
+
+.elections-back {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  color: var(--shades-dark);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.elections-back:hover {
+  color: var(--shades-blue);
+}
+
+.elections-subtitle {
+  color: var(--shades-dark);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.elections-error {
+  color: #e05c5c;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* ── Shared button ───────────────────────────────────────────────────────── */
+
+.elections-btn {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "azo-sans-web", sans-serif;
+  transition: background-color 0.2s;
+}
+
+.elections-btn:hover {
+  background-color: var(--shades-blue);
+}
+
+.elections-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.elections-btn-primary {
+  padding: 0.65rem 2.5rem;
+  font-size: 1rem;
+}
+
+.elections-btn-admin {
+  background-color: var(--background-100);
+  border: 1px solid var(--shades-dark);
+}
+
+.elections-btn-admin:hover {
+  background-color: var(--shades-dark);
+}
+
+/* ── Landing — category grid ─────────────────────────────────────────────── */
+
+.elections-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.elections-category-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 12px;
+  background-color: var(--background-100);
+  text-decoration: none;
+  color: var(--primary-white);
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.elections-category-card:hover {
+  background-color: var(--shades-dark);
+  transform: translateY(-2px);
+}
+
+.elections-category-card h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #f0f0f0;
+}
+
+.elections-category-card p {
+  font-size: 0.85rem;
+  color: var(--shades-dark);
+  margin: 0;
+}
+
+.elections-vote-cta {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.elections-closed {
+  padding: 3rem 0;
+  color: var(--shades-dark);
+  font-size: 1.1rem;
+}
+
+/* ── Category page — verify ──────────────────────────────────────────────── */
+
+.verify-box {
+  background-color: var(--background-100);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+}
+
+.verify-box h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+
+.verify-box p {
+  color: var(--shades-dark);
+  font-size: 0.9rem;
+  margin: 0 0 1.2rem;
+}
+
+.verify-input-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.verify-input-row input {
+  flex: 1;
+  padding: 0.55rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--shades-dark);
+  background-color: var(--background-300);
+  color: var(--primary-white);
+  font-size: 1rem;
+  font-family: "azo-sans-web", sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.verify-input-row input:focus {
+  border-color: var(--primary-blue);
+}
+
+/* ── Status boxes ────────────────────────────────────────────────────────── */
+
+.elections-status-box {
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  background-color: var(--background-100);
+}
+
+.elections-status-box p {
+  color: #f0f0f0;
+  margin: 0 0 0.25rem;
+}
+
+.elections-status-success h2 {
+  color: var(--primary-blue);
+  margin: 0 0 0.5rem;
+}
+
+/* ── Voting form ─────────────────────────────────────────────────────────── */
+
+.elections-verified-name {
+  color: var(--shades-dark);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.elections-instructions {
+  color: var(--shades-dark);
+  font-size: 0.88rem;
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+#positions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 720px;
+}
+
+.position-block {
+  background-color: var(--background-100);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.position-title {
+  font-size: 1.1rem;
+  margin: 0 0 1.2rem;
+  color: #f0f0f0;
+}
+
+/* Rank slots */
+
+.rank-slots {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.rank-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px dashed var(--shades-dark);
+  border-radius: 8px;
+  min-width: 110px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  user-select: none;
+  background-color: var(--background-300);
+}
+
+.rank-slot:hover {
+  border-color: var(--shades-blue);
+}
+
+.rank-slot.rank-slot-filled {
+  border-style: solid;
+  border-color: var(--primary-blue);
+  background-color: var(--background-500);
+}
+
+.rank-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-blue);
+  margin-bottom: 0.25rem;
+}
+
+.rank-slot-name {
+  font-size: 0.85rem;
+  color: #f0f0f0;
+}
+
+/* Candidate cards */
+
+.candidates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.candidate-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background-color: var(--background-300);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.15s, border-color 0.15s;
+  user-select: none;
+}
+
+.candidate-card:hover {
+  background-color: var(--background-500);
+  border-color: var(--shades-dark);
+}
+
+.candidate-card.candidate-ranked {
+  border-color: var(--primary-blue);
+  background-color: var(--background-500);
+}
+
+.candidate-name {
+  flex: 1;
+  font-size: 0.95rem;
+  color: #f0f0f0;
+}
+
+.manifesto-link {
+  font-size: 0.8rem;
+  color: var(--shades-blue);
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.manifesto-link:hover {
+  color: var(--primary-blue);
+}
+
+.candidate-rank-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  background-color: var(--primary-blue);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  white-space: nowrap;
+}
+
+/* Submit row */
+
+.elections-submit-row {
+  margin-top: 2rem;
+}
+
+/* ── Admin page ──────────────────────────────────────────────────────────── */
+
+.admin-section {
+  margin-bottom: 3rem;
+  max-width: 900px;
+}
+
+.admin-section h2 {
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--background-100);
+  color: #f0f0f0;
+}
+
+.admin-toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.elections-status-badge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 0.9rem;
+  border-radius: 5px;
+}
+
+.badge-open {
+  background-color: rgba(0, 142, 255, 0.15);
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+}
+
+.badge-closed {
+  background-color: rgba(92, 100, 129, 0.2);
+  color: var(--shades-dark);
+  border: 1px solid var(--shades-dark);
+}
+
+.admin-category-block {
+  margin-bottom: 2.5rem;
+}
+
+.admin-category-title {
+  font-size: 1.05rem;
+  color: var(--primary-blue);
+  margin: 0 0 1rem;
+}
+
+.admin-position-block {
+  margin-bottom: 1.5rem;
+}
+
+.admin-position-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #f0f0f0;
+}
+
+.admin-results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.admin-results-table th,
+.admin-results-table td {
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--background-100);
+  color: #f0f0f0;
+}
+
+.admin-results-table th {
+  color: var(--shades-dark);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background-color: var(--background-500);
+}
+
+.admin-results-leader td {
+  background-color: rgba(0, 142, 255, 0.06);
+}
+
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  main {
+    padding: 1.25rem;
+  }
+
+  #pageTitle {
+    font-size: 2rem;
+  }
+
+  .elections-category-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rank-slots {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .elections-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .verify-input-row {
+    flex-direction: column;
+  }
+}

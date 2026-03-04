@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ category.name }} Elections | CodeSoc</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="/static/styles/styles-navbar.css">
+  <link rel="stylesheet" href="/static/styles/styles-body-elections.css">
+  <link rel="stylesheet" href="/static/styles/styles-footer.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kfd8owr.css">
+  <link rel="shortcut icon" type="image/png" href="/static/assets/Icons/favicon.ico">
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Q2ZMD5NS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-M6Q2ZMD5NS');
+</script>
+
+<body>
+  <script src="/static/js/jquery-3.6.0.min.js"></script>
+  <script src="/static/js/global.js"></script>
+
+  <div class="backup-button">
+    <a href="#"><img src="/static/assets/Icons/backupbutton.png"></a>
+  </div>
+
+  {% include "reusable/header.html" %}
+
+  <main>
+    <a href="/elections" class="elections-back">&larr; All categories</a>
+    <h1 id="pageTitle">{{ category.name }}<span>.</span></h1>
+
+    <!-- Step 1: Verify -->
+    <section id="verify-section">
+      <div class="verify-box">
+        <h2>Verify your membership</h2>
+        <p>Enter your Warwick student ID to confirm you're a CodeSoc member.</p>
+        <div class="verify-input-row">
+          <input type="text" id="student-id-input" placeholder="Student ID (e.g. 2012345)" maxlength="10">
+          <button id="verify-btn" class="elections-btn">Verify</button>
+        </div>
+        <p id="verify-error" class="elections-error" style="display:none"></p>
+      </div>
+    </section>
+
+    <!-- Step 2: Already voted -->
+    <section id="already-voted-section" style="display:none">
+      <div class="elections-status-box elections-status-voted">
+        <p>You have already submitted your votes for <strong>{{ category.name }}</strong>. Thank you!</p>
+        <a href="/elections" class="elections-btn" style="display:inline-block;margin-top:1rem">Back to categories</a>
+      </div>
+    </section>
+
+    <!-- Step 3: Voting form -->
+    <section id="voting-section" style="display:none">
+      <p class="elections-verified-name">Voting as: <strong id="voter-name"></strong></p>
+      <p class="elections-instructions">
+        For each position, click candidates to rank them: 1st (5 pts), 2nd (2 pts), 3rd (1 pt).
+        Click a ranked candidate again to remove their rank.
+      </p>
+
+      <div id="positions-container">
+        {% for title, candidates in positions %}
+        <div class="position-block" data-position="{{ title }}">
+          <h2 class="position-title">{{ title }}</h2>
+          <div class="rank-slots">
+            <div class="rank-slot" data-rank="1">
+              <span class="rank-label">1st</span>
+              <span class="rank-slot-name">—</span>
+            </div>
+            <div class="rank-slot" data-rank="2">
+              <span class="rank-label">2nd</span>
+              <span class="rank-slot-name">—</span>
+            </div>
+            <div class="rank-slot" data-rank="3">
+              <span class="rank-label">3rd</span>
+              <span class="rank-slot-name">—</span>
+            </div>
+          </div>
+          <div class="candidates-list">
+            {% for candidate in candidates %}
+            <div class="candidate-card"
+                 data-candidate-id="{{ candidate.candidateID }}"
+                 data-candidate-name="{{ candidate.name }}">
+              <span class="candidate-name">{{ candidate.name }}</span>
+              {% if candidate.manifestoLink %}
+              <a href="{{ candidate.manifestoLink }}" target="_blank" class="manifesto-link" onclick="event.stopPropagation()">Manifesto</a>
+              {% endif %}
+              <span class="candidate-rank-badge" style="display:none"></span>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="elections-submit-row">
+        <p id="submit-error" class="elections-error" style="display:none"></p>
+        <button id="submit-btn" class="elections-btn elections-btn-primary">Submit Votes</button>
+      </div>
+    </section>
+
+    <!-- Step 4: Confirmation -->
+    <section id="confirmation-section" style="display:none">
+      <div class="elections-status-box elections-status-success">
+        <h2>Votes submitted!</h2>
+        <p>Thank you for voting in the <strong>{{ category.name }}</strong> elections.</p>
+        <a href="/elections" class="elections-btn" style="display:inline-block;margin-top:1rem">Vote in another category</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const CATEGORY_SLUG = "{{ category.slug }}";
+  </script>
+  <script src="/static/js/elections-category.js"></script>
+
+  {% include "reusable/footer.html" %}
+</body>
+
+</html>
