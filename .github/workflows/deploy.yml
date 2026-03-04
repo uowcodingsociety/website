@@ -80,6 +80,8 @@ jobs:
           key: ${{ secrets.VM_SSH_KEY }}
           script: |
             cd ~/website/
+            FLASK_APP=codesoc.py flask db current 2>/dev/null | grep -q '[0-9a-f]' || \
+              FLASK_APP=codesoc.py flask db stamp head
             FLASK_APP=codesoc.py flask db upgrade
 
       - name: Reset database
