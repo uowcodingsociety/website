@@ -13,8 +13,13 @@
       "name": "Finance Team",
       "slug": "finance",
       "positions": [
-        { "title": "Treasurer", "candidates": [] },
-        { "title": "Merchandise Manager", "candidates": [] }
+        { "title": "Treasurer", "candidates": [
+          { "name": "Aaron Gonsalves", "manifestoLink": "https://drive.google.com/file/d/1KORgg5NuHDexzX8JiIqVuCY5plCL1O1h/view" },
+          { "name": "Sean Odera Onwuazo", "manifestoLink": "https://drive.google.com/file/d/18VKf4lUjRH4PAd3KYJiRbJSU6y83RE-U/view" }
+        ]},
+        { "title": "Merchandise Manager", "candidates": [
+          { "name": "Riyasath Meah", "manifestoLink": "https://drive.google.com/file/d/12OjWpMp0Fmh62qNeLCBLRhLQlW3FKBxF/view" }
+        ]}
       ]
     },
     {
@@ -22,7 +27,9 @@
       "slug": "academic",
       "positions": [
         { "title": "Head of Mentoring", "candidates": [] },
-        { "title": "Python Course Lead", "candidates": [] },
+        { "title": "Python Course Lead", "candidates": [
+          { "name": "Aaron Gonsalves", "manifestoLink": "https://drive.google.com/file/d/1KORgg5NuHDexzX8JiIqVuCY5plCL1O1h/view" }
+        ]},
         { "title": "C++ Course Lead", "candidates": [] },
         { "title": "HPC Team Lead", "candidates": [] }
       ]
@@ -42,7 +49,9 @@
       "positions": [
         { "title": "Social Secretary", "candidates": [] },
         { "title": "Sports Coordinator", "candidates": [] },
-        { "title": "Diversity Director", "candidates": [] }
+        { "title": "Diversity Director", "candidates": [
+          { "name": "Riyasath Meah", "manifestoLink": "https://drive.google.com/file/d/12OjWpMp0Fmh62qNeLCBLRhLQlW3FKBxF/view" }
+        ]}
       ]
     }
   ]
