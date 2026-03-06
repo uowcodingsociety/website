@@ -5,17 +5,20 @@
       "slug": "management",
       "positions": [
         { "title": "President", "candidates": [
-          { "name": "Armaan Nagra", "manifestoLink": "https://drive.google.com/file/d/1CbIHp_CtRqpwEcF6Orz2p40XbBnRqjB1/view" }
+          { "name": "Armaan Nagra", "manifestoLink": "https://drive.google.com/file/d/1CbIHp_CtRqpwEcF6Orz2p40XbBnRqjB1/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Vice-President", "candidates": [
           { "name": "Kamai Jackson-Wade", "manifestoLink": "https://drive.google.com/file/d/1-Jvpiwg-Ef36yEyW2cD7C0fzRO0lGgNn/view" },
-          { "name": "Leen Alqurashi", "manifestoLink": "https://drive.google.com/file/d/1Bq0is4UQ-3aTDDk3g9KZW-OFQKz3p5eC/view" },
-          { "name": "Sarim Haye", "manifestoLink": "https://drive.google.com/file/d/1e9fTSJYPCBZSUDLWJM1m4ca7lS-CaxnBIVcHDlY1OOk/view" }
+          { "name": "Leen Alqurashi", "manifestoLink": "https://drive.google.com/file/d/181wW3FsAJsUYwXbImjnrYN9xBSyPDSiz/view" },
+          { "name": "Sarim Haye", "manifestoLink": "https://drive.google.com/file/d/1e9fTSJYPCBZSUDLWJM1m4ca7lS-CaxnBIVcHDlY1OOk/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Head of Infrastructure", "candidates": [
           { "name": "Yuyao Xie", "manifestoLink": "https://drive.google.com/file/d/1GxssHIcrfBEL8tnPQJqJcQpOKdSYUisI/view" },
           { "name": "Lakshan Ganapathy", "manifestoLink": "https://drive.google.com/file/d/1wTsEkEumI7cvRPfjzhI2AYoMde0q4SGu/view" },
-          { "name": "Trishan Chudasma", "manifestoLink": "https://drive.google.com/file/d/1fpafoVbPO0R3GVdzohUjtkdlk3JEvWxB/view" }
+          { "name": "Trishan Chudasma", "manifestoLink": "https://drive.google.com/file/d/1fpafoVbPO0R3GVdzohUjtkdlk3JEvWxB/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]}
       ]
     },
@@ -29,11 +32,12 @@
           { "name": "Kishor Yogeswaran", "manifestoLink": "https://drive.google.com/file/d/13aOO34UTa-8lY1znS34lkGPb6WXikt_d/view" },
           { "name": "Adam Wasiak", "manifestoLink": "https://drive.google.com/file/d/1Rp072S8--4DDyt4FAxspLTn16iwdDTsV/view" },
           { "name": "Avi Ahilan", "manifestoLink": "https://drive.google.com/file/d/1t-hI5E7rfVhAcG2XawT4pJ6goPIPF9Qa/view" },
-          { "name": "Trishan Chudasma", "manifestoLink": "https://drive.google.com/file/d/1fpafoVbPO0R3GVdzohUjtkdlk3JEvWxB/view" }
+          { "name": "Trishan Chudasma", "manifestoLink": "https://drive.google.com/file/d/1fpafoVbPO0R3GVdzohUjtkdlk3JEvWxB/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Merchandise Manager", "candidates": [
           { "name": "Riyasath Meah", "manifestoLink": "https://drive.google.com/file/d/12OjWpMp0Fmh62qNeLCBLRhLQlW3FKBxF/view" },
-          { "name": "Abhir Verma", "manifestoLink": "https://drive.google.com/file/d/10awu7um3vzTOsMybwwKompkoDAY8iV9e/view" }
+          { "name": "RON (Re-Open Nominations)" }
         ]}
       ]
     },
@@ -44,27 +48,31 @@
         { "title": "Head of Mentoring", "candidates": [
           { "name": "Kamai Jackson-Wade", "manifestoLink": "https://drive.google.com/file/d/1-Jvpiwg-Ef36yEyW2cD7C0fzRO0lGgNn/view" },
           { "name": "Platon Razumov", "manifestoLink": "https://drive.google.com/file/d/1mPR4u9uQ8Vq9CV5uYJdkEg1CxmojAVL8/view" },
-          { "name": "Aryan Sharma", "manifestoLink": "https://drive.google.com/file/d/1CXo46WqueZ0mpef7dfp2EZk8JOwLWki7/view" }
+          { "name": "Aryan Sharma", "manifestoLink": "https://drive.google.com/file/d/1CXo46WqueZ0mpef7dfp2EZk8JOwLWki7/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Python Course Lead", "candidates": [
           { "name": "Aaron Gonsalves", "manifestoLink": "https://drive.google.com/file/d/1KORgg5NuHDexzX8JiIqVuCY5plCL1O1h/view" },
-          { "name": "Andrii Halchuk", "manifestoLink": "https://drive.google.com/file/d/1EuqN9ooMVLtADVswAoAknxfyvmfZiIC1/view" },
+          { "name": "Andrii Halchuk", "manifestoLink": "https://docs.google.com/presentation/d/1dP5IFdO2PxwRT2GJNNt_iYWd8EQ6oZ3N/edit?usp=sharing&ouid=100654385780300985801&rtpof=true&sd=true" },
           { "name": "Bhushan Balaji", "manifestoLink": "https://drive.google.com/file/d/13KMTQBjpV2BWO7vQ4QORcfFiQVxK811p/view" },
-          { "name": "Mahmoud Khoder", "manifestoLink": "https://drive.google.com/file/d/1taIYIkxlRNPgQspTIHLh73l3of9F506g/view" },
           { "name": "Namish Jain", "manifestoLink": "https://drive.google.com/file/d/1vFub5022LRbzuJzTcHrmMewdttBP1zVo/view" },
-          { "name": "Ian Gitau" }
+          { "name": "Ian Gitau" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "C++ Course Lead", "candidates": [
           { "name": "Lanzo Raj Muthu Amirtharaj", "manifestoLink": "https://drive.google.com/file/d/1AsJDoq2mmdb93SW7TAs8uah9Gp_o4IYK/view" },
-          { "name": "Daniel Kowalczyk", "manifestoLink": "https://drive.google.com/file/d/1vjxDzxVeGfFqgnJQ3IYC82ckgL8grtnb/view" }
+          { "name": "Daniel Kowalczyk", "manifestoLink": "https://drive.google.com/file/d/1vjxDzxVeGfFqgnJQ3IYC82ckgL8grtnb/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Sysdes Course Lead", "candidates": [
-          { "name": "Jamie Shakeshaft-Ward", "manifestoLink": "https://drive.google.com/file/d/1wC8s751rdpOOOaYmXM0lt5bn3StLmUGJ/view" }
+          { "name": "Jamie Shakeshaft-Ward", "manifestoLink": "https://drive.google.com/file/d/1wC8s751rdpOOOaYmXM0lt5bn3StLmUGJ/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "HPC Team Lead", "candidates": [
           { "name": "Mayukha, Nevin and Luke", "manifestoLink": "https://drive.google.com/file/d/1Ph3e2bakA9XKGvNobjdQgPyHdlWu6WiG/view" },
           { "name": "Santiago Osorio", "manifestoLink": "https://drive.google.com/file/d/1QVcOPIgQqglpSZzbyIuaj3nOB5p2ADst/view" },
-          { "name": "Daniel Kowalczyk", "manifestoLink": "https://drive.google.com/file/d/1vjxDzxVeGfFqgnJQ3IYC82ckgL8grtnb/view" }
+          { "name": "Daniel Kowalczyk", "manifestoLink": "https://drive.google.com/file/d/1vjxDzxVeGfFqgnJQ3IYC82ckgL8grtnb/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]}
       ]
     },
@@ -74,18 +82,21 @@
       "positions": [
         { "title": "Social Media Lead", "candidates": [
           { "name": "Alex Prepelita", "manifestoLink": "https://drive.google.com/file/d/1eXnioQE56xqpVHAJ0asIDvX2OtaipGbP/view" },
-          { "name": "Grace Jayaseelan", "manifestoLink": "https://drive.google.com/file/d/1UCoXgxOLBQsJuYTpjN_QAEWNnAo4OPOk/view" },
+          { "name": "Grace Jayaseelan", "manifestoLink": "https://drive.google.com/file/d/1bi3FWqbhBCZqjlCyT5FW1MuK_QNQF8Jx/view" },
           { "name": "Anuj Bhat", "manifestoLink": "https://drive.google.com/file/d/1hBKx3kNyx6iba32kELR84xJv-OFZyXz5/view" },
-          { "name": "Kashish Rohit", "manifestoLink": "https://drive.google.com/file/d/1uvaeXLIQO6YzS7rv1cm3rkQa6OFu2VLA/view" }
+          { "name": "Kashish Rohit", "manifestoLink": "https://drive.google.com/file/d/1uvaeXLIQO6YzS7rv1cm3rkQa6OFu2VLA/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Graphics Lead", "candidates": [
           { "name": "Alex Prepelita", "manifestoLink": "https://drive.google.com/file/d/1eXnioQE56xqpVHAJ0asIDvX2OtaipGbP/view" },
-          { "name": "Dwaraka Vivekanandan", "manifestoLink": "https://drive.google.com/file/d/1fWI256HGlrRU74GJU6QJKgEg6IktVmTu/view" }
+          { "name": "Dwaraka Vivekanandan", "manifestoLink": "https://drive.google.com/file/d/1fWI256HGlrRU74GJU6QJKgEg6IktVmTu/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Video Production", "candidates": [
           { "name": "Rosie Levene", "manifestoLink": "https://drive.google.com/file/d/19mf8fXU-Tb66Ru5_OuiDzomrqbC7KhBw/view" },
           { "name": "Anuj Bhat", "manifestoLink": "https://drive.google.com/file/d/1hBKx3kNyx6iba32kELR84xJv-OFZyXz5/view" },
-          { "name": "Kashish Rohit", "manifestoLink": "https://drive.google.com/file/d/1uvaeXLIQO6YzS7rv1cm3rkQa6OFu2VLA/view" }
+          { "name": "Kashish Rohit", "manifestoLink": "https://drive.google.com/file/d/1uvaeXLIQO6YzS7rv1cm3rkQa6OFu2VLA/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]}
       ]
     },
@@ -95,20 +106,22 @@
       "positions": [
         { "title": "Social Secretary", "candidates": [
           { "name": "Adam Wasiak", "manifestoLink": "https://drive.google.com/file/d/1Rp072S8--4DDyt4FAxspLTn16iwdDTsV/view" },
-          { "name": "Andrii Halchuk", "manifestoLink": "https://drive.google.com/file/d/1EuqN9ooMVLtADVswAoAknxfyvmfZiIC1/view" },
+          { "name": "Andrii Halchuk", "manifestoLink": "https://docs.google.com/presentation/d/118O78SHGClIMVFq72IX-7Ajnuqk1sbQw/edit?usp=sharing&ouid=100654385780300985801&rtpof=true&sd=true" },
           { "name": "Josh Beiraghdar", "manifestoLink": "https://drive.google.com/file/d/1Ms8OfLcZ1l4JbO9X3kZftSeMkmF9qWX8/view" },
-          { "name": "Anushka Majumdar", "manifestoLink": "https://drive.google.com/file/d/1vVVAcvQsbMNa45al-8qkIJY-Rz1mjVbh/view" }
+          { "name": "Anushka Majumdar", "manifestoLink": "https://drive.google.com/file/d/1cPcoPItan10JEV4cej6_zUyMEt8-xn4w/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Sports Coordinator", "candidates": [
           { "name": "Aryan Sharma", "manifestoLink": "https://drive.google.com/file/d/1CXo46WqueZ0mpef7dfp2EZk8JOwLWki7/view" },
-          { "name": "Mahmoud Khoder", "manifestoLink": "https://drive.google.com/file/d/1taIYIkxlRNPgQspTIHLh73l3of9F506g/view" }
+          { "name": "Mahmoud Khoder", "manifestoLink": "https://drive.google.com/file/d/1VvgkXKK6iMKciIuEvrUbUjxfBRamS6p6/view" },
+          { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Diversity Director", "candidates": [
           { "name": "Riyasath Meah", "manifestoLink": "https://drive.google.com/file/d/12OjWpMp0Fmh62qNeLCBLRhLQlW3FKBxF/view" },
           { "name": "Avi Ahilan", "manifestoLink": "https://drive.google.com/file/d/1t-hI5E7rfVhAcG2XawT4pJ6goPIPF9Qa/view" },
           { "name": "Rosie Levene", "manifestoLink": "https://drive.google.com/file/d/19mf8fXU-Tb66Ru5_OuiDzomrqbC7KhBw/view" },
           { "name": "Dwaraka Vivekanandan", "manifestoLink": "https://drive.google.com/file/d/1fWI256HGlrRU74GJU6QJKgEg6IktVmTu/view" },
-          { "name": "Abhir Verma", "manifestoLink": "https://drive.google.com/file/d/10awu7um3vzTOsMybwwKompkoDAY8iV9e/view" }
+          { "name": "RON (Re-Open Nominations)" }
         ]}
       ]
     }
