@@ -11,7 +11,7 @@
         { "title": "Vice-President", "candidates": [
           { "name": "Kamai Jackson-Wade", "manifestoLink": "https://drive.google.com/file/d/1-Jvpiwg-Ef36yEyW2cD7C0fzRO0lGgNn/view" },
           { "name": "Leen Alqurashi", "manifestoLink": "https://drive.google.com/file/d/181wW3FsAJsUYwXbImjnrYN9xBSyPDSiz/view" },
-          { "name": "Adam Wasiak" },
+          { "name": "Adam Wasiak", "manifestoLink": "https://docs.google.com/presentation/d/1MzOGLY67WcjpQfdptE71FvzdNgrX9pGG/edit?usp=drive_link&ouid=100654385780300985801&rtpof=true&sd=true" },
           { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "Head of Infrastructure", "candidates": [
@@ -28,7 +28,7 @@
       "positions": [
         { "title": "Treasurer", "candidates": [
           { "name": "Aaron Gonsalves", "manifestoLink": "https://drive.google.com/file/d/1KORgg5NuHDexzX8JiIqVuCY5plCL1O1h/view" },
-          { "name": "Kishor Yogeswaran", "manifestoLink": "https://drive.google.com/file/d/13aOO34UTa-8lY1znS34lkGPb6WXikt_d/view" },
+          { "name": "Kishor Yogeswaran", "manifestoLink": "https://docs.google.com/document/d/1LFqIw1P6MUrVIEmUpMP60obfP9PWk2PD/edit?usp=sharing&ouid=100654385780300985801&rtpof=true&sd=true" },
           { "name": "Avi Ahilan", "manifestoLink": "https://drive.google.com/file/d/1t-hI5E7rfVhAcG2XawT4pJ6goPIPF9Qa/view" },
           { "name": "Trishan Chudasma", "manifestoLink": "https://drive.google.com/file/d/1fpafoVbPO0R3GVdzohUjtkdlk3JEvWxB/view" },
           { "name": "RON (Re-Open Nominations)" }
@@ -52,9 +52,9 @@
         { "title": "Python Course Lead", "candidates": [
           { "name": "Aaron Gonsalves", "manifestoLink": "https://drive.google.com/file/d/1KORgg5NuHDexzX8JiIqVuCY5plCL1O1h/view" },
           { "name": "Andrii Halchuk", "manifestoLink": "https://docs.google.com/presentation/d/1dP5IFdO2PxwRT2GJNNt_iYWd8EQ6oZ3N/edit?usp=sharing&ouid=100654385780300985801&rtpof=true&sd=true" },
-          { "name": "Bhushan Balaji", "manifestoLink": "https://drive.google.com/file/d/13KMTQBjpV2BWO7vQ4QORcfFiQVxK811p/view" },
-          { "name": "Namish Jain", "manifestoLink": "https://drive.google.com/file/d/1vFub5022LRbzuJzTcHrmMewdttBP1zVo/view" },
-          { "name": "Ian Gitau" },
+          { "name": "Bhushan Balaji", "manifestoLink": "https://drive.google.com/file/d/1S9azPEg6QG8SfBEtcT_xZ3okXLAB_ymx/view?usp=drive_link" },
+          { "name": "Namish Jain", "manifestoLink": "https://drive.google.com/file/d/1taZ033-Rgvc8C5upuDuaIXLdYW2Z4e2q/view?usp=drive_link" },
+          { "name": "Ian Gitau", "manifestoLink": "https://drive.google.com/file/d/136YBVB3eXYbVGQBdcK20_WDowBFCiIMu/view?usp=sharing" },
           { "name": "RON (Re-Open Nominations)" }
         ]},
         { "title": "C++ Course Lead", "candidates": [
