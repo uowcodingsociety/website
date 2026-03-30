@@ -1,5 +1,7 @@
 __pycache__/
 *.py[cod]
+venv/
+/.DS_Store
 
 # Environment variables
 .env
@@ -18,4 +20,3 @@ instance/
 # Keep JSON data files and schemas
 !data/
 !schemas.json
-
