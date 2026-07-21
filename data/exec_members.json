@@ -1,34 +1,48 @@
 [
   {
     "execID": 1,
-    "name": "Armaan Nagra",
-    "course": "",
-    "bio": null,
-    "nationality": "",
-    "pronouns": "he/him",
-    "team": null,
-    "title": "President",
-    "liLink": "https://www.linkedin.com/in/armaan-nagra",
-    "ghLink": "https://github.com/armaan-nagra",
-    "year": "2",
-    "imageLink": "armaan"
-  },
-  {
-    "execID": 2,
     "name": "K.",
     "course": "",
     "bio": null,
     "nationality": "",
     "pronouns": "he/him",
     "team": null,
-    "title": "Vice President",
-    "liLink": "https://www.linkedin.com/in/",
-    "ghLink": "https://github.com/",
-    "year": "1",
+    "title": "President",
+    "liLink": "",
+    "ghLink": "",
+    "year": "2",
     "imageLink": "profilespecial"
   },
   {
+    "execID": 2,
+    "name": "Adam Wasiak",
+    "course": "",
+    "bio": null,
+    "nationality": "",
+    "pronouns": "he/him",
+    "team": null,
+    "title": "Director",
+    "liLink": "https://www.linkedin.com/in/adam-wasiak-741957331",
+    "ghLink": "https://github.com/Amrovv",
+    "year": "2",
+    "imageLink": "adam"
+  },
+  {
     "execID": 3,
+    "name": "Trishan Chudasma",
+    "course": "",
+    "bio": null,
+    "nationality": "",
+    "pronouns": "he/him",
+    "team": null,
+    "title": "Director",
+    "liLink": "https://linkedin.com/in/trishanc",
+    "ghLink": "https://github.com/chudasmat",
+    "year": "2",
+    "imageLink": "trishan"
+  },
+  {
+    "execID": 4,
     "name": "Kishor Yogeswaran",
     "course": "",
     "bio": null,
@@ -38,22 +52,8 @@
     "title": "Treasurer",
     "liLink": "https://www.linkedin.com/in/kishor-yogeswaran-772322262",
     "ghLink": "https://github.com/KYoges",
-    "year": "2",
+    "year": "3",
     "imageLink": "kishor"
-  },
-  {
-    "execID": 4,
-    "name": "Trishan Chudasma",
-    "course": "",
-    "bio": null,
-    "nationality": "",
-    "pronouns": "he/him",
-    "team": null,
-    "title": "Treasurer",
-    "liLink": "https://linkedin.com/in/trishanc",
-    "ghLink": "https://github.com/chudasmat",
-    "year": "1",
-    "imageLink": "trishan"
   },
   {
     "execID": 5,
@@ -66,7 +66,7 @@
     "title": "Head of Infrastructure",
     "liLink": "https://www.linkedin.com/in/lakshan-ganapathy/",
     "ghLink": "https://github.com/Ek547",
-    "year": "2",
+    "year": "3",
     "imageLink": "lakshan"
   },
   {
@@ -80,7 +80,7 @@
     "title": "Head of Mentoring",
     "liLink": "http://www.linkedin.com/in/platonrazumov",
     "ghLink": "https://github.com/PlatonRaz",
-    "year": "2",
+    "year": "3",
     "imageLink": "platon"
   },
   {
@@ -94,7 +94,7 @@
     "title": "Python Course Lead",
     "liLink": "",
     "ghLink": "",
-    "year": "1",
+    "year": "2",
     "imageLink": "profilespecial"
   },
   {
@@ -108,7 +108,7 @@
     "title": "C++ Course Lead",
     "liLink": "https://www.linkedin.com/in/lanzoami/",
     "ghLink": "https://github.com/lanzoami",
-    "year": "1",
+    "year": "2",
     "imageLink": "lanzo"
   },
   {
@@ -122,7 +122,7 @@
     "title": "C++ Course Lead",
     "liLink": "",
     "ghLink": "https://github.com/danmarkowal",
-    "year": "1",
+    "year": "2",
     "imageLink": "daniel"
   },
   {
@@ -136,7 +136,7 @@
     "title": "System Design Course Lead",
     "liLink": "https://linkedin.com/in/jamiesw",
     "ghLink": "",
-    "year": "2",
+    "year": "3",
     "imageLink": "jamie"
   },
   {
@@ -150,7 +150,7 @@
     "title": "HPC Team Lead",
     "liLink": "",
     "ghLink": "",
-    "year": "2",
+    "year": "3",
     "imageLink": "mayukha"
   },
   {
@@ -164,7 +164,7 @@
     "title": "HPC Team Lead",
     "liLink": "",
     "ghLink": "",
-    "year": "2",
+    "year": "3",
     "imageLink": "luke"
   },
   {
@@ -178,7 +178,7 @@
     "title": "HPC Team Lead",
     "liLink": "",
     "ghLink": "",
-    "year": "2",
+    "year": "3",
     "imageLink": "nevin"
   },
   {
@@ -192,7 +192,7 @@
     "title": "Social Media Lead",
     "liLink": "https://www.linkedin.com/in/anujb12345/",
     "ghLink": "",
-    "year": "1",
+    "year": "2",
     "imageLink": "anuj"
   },
   {
@@ -206,7 +206,7 @@
     "title": "Graphics Lead",
     "liLink": "",
     "ghLink": "",
-    "year": "1",
+    "year": "2",
     "imageLink": "profilespecial"
   },
   {
@@ -220,7 +220,7 @@
     "title": "Video Production",
     "liLink": "https://www.linkedin.com/in/kashish-rohit-0738a6224/",
     "ghLink": "",
-    "year": "1",
+    "year": "2",
     "imageLink": "kashish"
   },
   {
@@ -234,25 +234,11 @@
     "title": "Social Secretary",
     "liLink": "https://www.linkedin.com/in/anushka-majumdar/",
     "ghLink": "https://github.com/anushkamj",
-    "year": "1",
+    "year": "2",
     "imageLink": "anushka"
   },
   {
     "execID": 18,
-    "name": "Adam Wasiak",
-    "course": "",
-    "bio": null,
-    "nationality": "",
-    "pronouns": "he/him",
-    "team": null,
-    "title": "Social Secretary",
-    "liLink": "https://www.linkedin.com/in/adam-wasiak-741957331",
-    "ghLink": "https://github.com/Amrovv",
-    "year": "1",
-    "imageLink": "adam"
-  },
-  {
-    "execID": 19,
     "name": "Aryan Sharma",
     "course": "",
     "bio": null,
@@ -262,11 +248,11 @@
     "title": "Sports Coordinator",
     "liLink": "",
     "ghLink": "",
-    "year": "1",
+    "year": "2",
     "imageLink": "aryan"
   },
   {
-    "execID": 20,
+    "execID": 19,
     "name": "Mahmoud Khoder",
     "course": "",
     "bio": null,
@@ -276,11 +262,11 @@
     "title": "Sports Coordinator",
     "liLink": "",
     "ghLink": "",
-    "year": "1",
+    "year": "2",
     "imageLink": "profilespecial"
   },
   {
-    "execID": 21,
+    "execID": 20,
     "name": "Rosie Levene",
     "course": "",
     "bio": null,
@@ -290,11 +276,11 @@
     "title": "Diversity Director",
     "liLink": "",
     "ghLink": "",
-    "year": "1",
+    "year": "2",
     "imageLink": "rosie"
   },
   {
-    "execID": 22,
+    "execID": 21,
     "name": "Avi Ahilan",
     "course": "",
     "bio": null,
@@ -304,7 +290,7 @@
     "title": "Diversity Director",
     "liLink": "",
     "ghLink": "",
-    "year": "1",
+    "year": "2",
     "imageLink": "profilespecial"
   }
 ]
