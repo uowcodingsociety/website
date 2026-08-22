@@ -92,6 +92,7 @@ p {
   align-items: center;
   justify-content: center;
   column-gap: 10px;
+  min-height: 40px;
 }
 
 .person-socials-container img {
