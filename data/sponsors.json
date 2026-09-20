@@ -1,24 +1,33 @@
 [
   {
-    "sponsorID": 6,
-    "sponsorName": "Warwick Student's Union",
-    "sponsorDescription": "Warwick Student's Union, also known as Warwick SU, is the student union for the University of Warwick. We are an official Warwick SU recognized society and the SU supports us in a variety of ways.",
-    "sponsorIndustry": "Academic",
-    "sponsorTier": "Partner",
-    "sponsorSiteURL": "https://www.warwicksu.com",
-    "sponsorImageName": "wwsu.png"
+    "sponsorID": 1,
+    "sponsorName": "Hudson River Trading",
+    "sponsorDescription": "Hudson River Trading is a multi-asset class quantitative trading firm that provides liquidity on global markets and directly to our clients.",
+    "sponsorIndustry": "Finance",
+    "sponsorTier": "Title Sponsor",
+    "sponsorSiteURL": "https://www.hudsonrivertrading.com/student-opportunities/",
+    "sponsorImageName": "hrt.png"
   },
   {
     "sponsorID": 2,
+    "sponsorName": "Citadel Securities",
+    "sponsorDescription": "Citadel is a leading global investment firm and its affiliate Citadel Securities is a leading market maker, providing liquidity to markets around the world across a broad range of asset classes.",
+    "sponsorIndustry": "Finance",
+    "sponsorTier": "Patron Sponsor",
+    "sponsorSiteURL": "https://www.citadelsecurities.com/careers/",
+    "sponsorImageName": "citadel.png"
+  },
+  {
+    "sponsorID": 3,
     "sponsorName": "Jump Trading",
     "sponsorDescription": "Jump Trading LLC is a proprietary trading firm with a focus on algorithmic and high-frequency trading strategies.",
     "sponsorIndustry": "Finance",
-    "sponsorTier": "Title Sponsor",
+    "sponsorTier": "Patron Sponsor",
     "sponsorSiteURL": "https://www.jumptrading.com/hr/students-new-grads",
     "sponsorImageName": "jt.png"
   },
   {
-    "sponsorID": 3,
+    "sponsorID": 4,
     "sponsorName": "Bloomberg",
     "sponsorDescription": "Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News.",
     "sponsorIndustry": "Finance",
@@ -27,7 +36,7 @@
     "sponsorImageName": "bloomberg.png"
   },
   {
-    "sponsorID": 4,
+    "sponsorID": 5,
     "sponsorName": "Jane Street",
     "sponsorDescription": "Jane Street is a quantitative trading firm and liquidity provider with a unique focus on technology and collaborative problem solving.",
     "sponsorIndustry": "Finance",
@@ -36,12 +45,12 @@
     "sponsorImageName": "js.png"
   },
   {
-    "sponsorID": 5,
-    "sponsorName": "Hudson River Trading",
-    "sponsorDescription": "Hudson River Trading is a multi-asset class quantitative trading firm that provides liquidity on global markets and directly to our clients.",
-    "sponsorIndustry": "Finance",
-    "sponsorTier": "Patron Sponsor",
-    "sponsorSiteURL": "https://www.hudsonrivertrading.com/student-opportunities/",
-    "sponsorImageName": "hrt.png"
+    "sponsorID": 6,
+    "sponsorName": "Warwick Student's Union",
+    "sponsorDescription": "Warwick Student's Union, also known as Warwick SU, is the student union for the University of Warwick. We are an official Warwick SU recognized society and the SU supports us in a variety of ways.",
+    "sponsorIndustry": "Academic",
+    "sponsorTier": "Partner",
+    "sponsorSiteURL": "https://www.warwicksu.com",
+    "sponsorImageName": "wwsu.png"
   }
 ]
