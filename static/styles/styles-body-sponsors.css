@@ -89,6 +89,15 @@ p{
     width: 70px;
 }
 
+/* Wide wordmark logos (e.g. Citadel) need more width to read at a comparable size */
+.partnerWidget-wide .partnerLogo{
+    width: 160px;
+}
+
+.partnerWidget-wide .partnerTitle{
+    max-width: 50%;
+}
+
 .partnerTitle{
     margin-bottom: 10px;
     font-size: 26px;
