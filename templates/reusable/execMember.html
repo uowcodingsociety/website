@@ -6,7 +6,7 @@
         <div class="person-name">{{ member.name }}</div>
         <div class="person-position">{{ member.title }}</div>
         <div class="person-socials-container">
-            {% if member.execID != 1 %}
+            {% if member.liLink != "" %}
             <div class="socials-container1">
                 <a target=”_blank” href="{{ member.liLink }}"><img src="/static/assets/Icons/linkedin2.png"></a>
             </div>

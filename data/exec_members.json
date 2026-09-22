@@ -1,34 +1,20 @@
 [
   {
     "execID": 1,
-    "name": "K.",
-    "course": "",
-    "bio": null,
-    "nationality": "",
-    "pronouns": "he/him",
-    "team": null,
-    "title": "President",
-    "liLink": "",
-    "ghLink": "",
-    "year": "2",
-    "imageLink": "profilespecial"
-  },
-  {
-    "execID": 2,
     "name": "Adam Wasiak",
     "course": "",
     "bio": null,
     "nationality": "",
     "pronouns": "he/him",
     "team": null,
-    "title": "Director",
+    "title": "President",
     "liLink": "https://www.linkedin.com/in/adam-wasiak-741957331",
     "ghLink": "https://github.com/Amrovv",
     "year": "2",
     "imageLink": "adam"
   },
   {
-    "execID": 3,
+    "execID": 2,
     "name": "Trishan Chudasma",
     "course": "",
     "bio": null,
@@ -42,7 +28,7 @@
     "imageLink": "trishan"
   },
   {
-    "execID": 4,
+    "execID": 3,
     "name": "Kishor Yogeswaran",
     "course": "",
     "bio": null,
@@ -56,7 +42,7 @@
     "imageLink": "profilespecial"
   },
   {
-    "execID": 5,
+    "execID": 4,
     "name": "Lakshan Ganapathy",
     "course": "",
     "bio": null,
@@ -70,7 +56,7 @@
     "imageLink": "lakshan"
   },
   {
-    "execID": 6,
+    "execID": 5,
     "name": "Platon Razumov",
     "course": "",
     "bio": null,
@@ -84,7 +70,7 @@
     "imageLink": "platon"
   },
   {
-    "execID": 7,
+    "execID": 6,
     "name": "Ian Gitau",
     "course": "",
     "bio": null,
@@ -98,7 +84,7 @@
     "imageLink": "profilespecial"
   },
   {
-    "execID": 8,
+    "execID": 7,
     "name": "Lanzo Raj Muthu Amirtharaj",
     "course": "",
     "bio": null,
@@ -112,7 +98,7 @@
     "imageLink": "lanzo"
   },
   {
-    "execID": 9,
+    "execID": 8,
     "name": "Daniel Kowalczyk",
     "course": "",
     "bio": null,
@@ -126,7 +112,7 @@
     "imageLink": "daniel"
   },
   {
-    "execID": 10,
+    "execID": 9,
     "name": "Jamie Shakeshaft-Ward",
     "course": "",
     "bio": null,
@@ -140,7 +126,7 @@
     "imageLink": "jamie"
   },
   {
-    "execID": 11,
+    "execID": 10,
     "name": "Mayukha Pochana",
     "course": "",
     "bio": null,
@@ -154,7 +140,7 @@
     "imageLink": "mayukha"
   },
   {
-    "execID": 12,
+    "execID": 11,
     "name": "Luke Turnyanskiy",
     "course": "",
     "bio": null,
@@ -168,7 +154,7 @@
     "imageLink": "luke"
   },
   {
-    "execID": 13,
+    "execID": 12,
     "name": "Nevin Ahluwalia",
     "course": "",
     "bio": null,
@@ -182,7 +168,7 @@
     "imageLink": "nevin"
   },
   {
-    "execID": 14,
+    "execID": 13,
     "name": "Anuj Bhat",
     "course": "",
     "bio": null,
@@ -196,7 +182,7 @@
     "imageLink": "anuj"
   },
   {
-    "execID": 15,
+    "execID": 14,
     "name": "Dwaraka Vivekanandan",
     "course": "",
     "bio": null,
@@ -210,7 +196,7 @@
     "imageLink": "profilespecial"
   },
   {
-    "execID": 16,
+    "execID": 15,
     "name": "Kashish Rohit",
     "course": "",
     "bio": null,
@@ -224,7 +210,7 @@
     "imageLink": "kashish"
   },
   {
-    "execID": 17,
+    "execID": 16,
     "name": "Anushka Majumdar",
     "course": "",
     "bio": null,
@@ -238,7 +224,7 @@
     "imageLink": "anushka"
   },
   {
-    "execID": 18,
+    "execID": 17,
     "name": "Aryan Sharma",
     "course": "",
     "bio": null,
@@ -252,7 +238,7 @@
     "imageLink": "aryan"
   },
   {
-    "execID": 19,
+    "execID": 18,
     "name": "Mahmoud Khoder",
     "course": "",
     "bio": null,
@@ -266,7 +252,7 @@
     "imageLink": "profilespecial"
   },
   {
-    "execID": 20,
+    "execID": 19,
     "name": "Rosie Levene",
     "course": "",
     "bio": null,
@@ -280,7 +266,7 @@
     "imageLink": "rosie"
   },
   {
-    "execID": 21,
+    "execID": 20,
     "name": "Avi Ahilan",
     "course": "",
     "bio": null,
