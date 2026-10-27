@@ -90,6 +90,12 @@
               <a href="{{ candidate.manifestoLink }}" target="_blank" class="manifesto-link" onclick="event.stopPropagation()">Manifesto</a>
               {% endif %}
               <span class="candidate-rank-badge" style="display:none"></span>
+              {% if candidate.manifesto %}
+              <details class="manifesto-details" onclick="event.stopPropagation()">
+                <summary>Read manifesto</summary>
+                <p class="manifesto-text">{{ candidate.manifesto }}</p>
+              </details>
+              {% endif %}
             </div>
             {% endfor %}
           </div>
