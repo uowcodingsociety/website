@@ -211,7 +211,8 @@ class DatabaseManager:
                         categoryName=category["name"],
                         positionTitle=position["title"],
                         name=candidate["name"],
-                        manifestoLink=candidate.get("manifestoLink", "")
+                        manifestoLink=candidate.get("manifestoLink", ""),
+                        manifesto=candidate.get("manifesto", "")
                     )
                     db.session.add(c)
                     count += 1

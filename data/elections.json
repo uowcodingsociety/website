@@ -1,124 +1,35 @@
 {
   "categories": [
     {
-      "name": "Management",
-      "slug": "management",
+      "name": "Freshers Representatives",
+      "slug": "freshers",
       "positions": [
-        { "title": "President", "candidates": [
-          { "name": "Armaan Nagra", "manifestoLink": "https://drive.google.com/file/d/1CbIHp_CtRqpwEcF6Orz2p40XbBnRqjB1/view" },
+        { "title": "Careers Rep", "candidates": [
+          { "name": "Sameeha Salim", "manifesto": "As a CSBS student, I’m excited to explore where my degree can take me, from tech to fintech and beyond. I want to share the opportunities I discover and the things I learn along the way. As Careers Rep, I’d love to help others explore different career paths, make industry connections and turn their interest in tech into real opportunities." },
+          { "name": "Drishith Paturi", "manifesto": "Currently navigating spring week and internship applications myself, I know how useful advice from people with experience can be. Through tutoring students, I’ve learned how to explain things clearly and make resources accessible. As Careers Rep, I’d love to organise informal Q&As with older students, share practical application advice and help members explore careers in tech and beyond!" },
+          { "name": "Malay Rahul Mehta", "manifesto": "Having work experience with firms like Barclays London, DCS Private, and been to EY Career Starters, I believe this careers role is a great opportunity for me to share my insights and knowledge with my peers. I highly promote attending talks, career fairs and CodeSoc sponsor events. As Careers Frep, I'll make CV support more approachable and actively promote hackathons and events relevant to you." },
+          { "name": "Freddie Baker", "manifesto": "As a Warwick computer science student interested into finance, I want to apply for either a quantitive developer or fintech roles, I want to help fellow students in tailoring their CV and portfolio towards these roles and developing the necessary skills to succeed in the application process and thrive in the industry. I would aim to help with 1-1 sessions that give personal feedback for your case." },
+          { "name": "Adam Clarke", "manifesto": "Since Welcome Week, I've learnt invaluable skills from attending careers events at Warwick Coding Society - from writing CVs to applying to spring weeks and internships. This year, I am keen to continue the incredible work done by the exec in highlighting the best paths to get into big tech, quantitative finance, AI/ML and more and am eager to share my findings as my peers and I progress!" },
           { "name": "RON (Re-Open Nominations)" }
         ]},
-        { "title": "Vice-President", "candidates": [
-          { "name": "K.", "manifestoLink": "" },
-          { "name": "Leen Alqurashi", "manifestoLink": "https://drive.google.com/file/d/181wW3FsAJsUYwXbImjnrYN9xBSyPDSiz/view" },
-          { "name": "Adam Wasiak", "manifestoLink": "https://docs.google.com/presentation/d/1MzOGLY67WcjpQfdptE71FvzdNgrX9pGG/edit?usp=drive_link&ouid=100654385780300985801&rtpof=true&sd=true" },
+        { "title": "Diversity Rep", "candidates": [
+          { "name": "Diya Kohli", "manifesto": "Starting at CodeSoc can feel intimidating, whether you’re a beginner to coding or just unsure you’ll fit in. I’m friendly, easy to talk to, and keen to contribute of this community. As your Diversity Rep, I’ll speak up for our year, listen to your ideas and work with the other reps to make it happen. Doesn’t matter whether you’ve coded for years or never at all, you are always welcome at CodeSoc." },
           { "name": "RON (Re-Open Nominations)" }
         ]},
-        { "title": "Head of Infrastructure", "candidates": [
-          { "name": "Yuyao Xie", "manifestoLink": "https://drive.google.com/file/d/1GxssHIcrfBEL8tnPQJqJcQpOKdSYUisI/view" },
-          { "name": "Lakshan Ganapathy", "manifestoLink": "https://drive.google.com/file/d/1wTsEkEumI7cvRPfjzhI2AYoMde0q4SGu/view" },
-          { "name": "Trishan Chudasma", "manifestoLink": "https://drive.google.com/file/d/1fpafoVbPO0R3GVdzohUjtkdlk3JEvWxB/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]}
-      ]
-    },
-    {
-      "name": "Finance Team",
-      "slug": "finance",
-      "positions": [
-        { "title": "Treasurer", "candidates": [
-          { "name": "Aaron Gonsalves", "manifestoLink": "https://drive.google.com/file/d/1KORgg5NuHDexzX8JiIqVuCY5plCL1O1h/view" },
-          { "name": "Kishor Yogeswaran", "manifestoLink": "https://docs.google.com/document/d/1LFqIw1P6MUrVIEmUpMP60obfP9PWk2PD/edit?usp=sharing&ouid=100654385780300985801&rtpof=true&sd=true" },
-          { "name": "Avi Ahilan", "manifestoLink": "https://drive.google.com/file/d/1t-hI5E7rfVhAcG2XawT4pJ6goPIPF9Qa/view" },
-          { "name": "Trishan Chudasma", "manifestoLink": "https://drive.google.com/file/d/1fpafoVbPO0R3GVdzohUjtkdlk3JEvWxB/view" },
+        { "title": "Events Rep", "candidates": [
+          { "name": "Saisha Dinesh Naik", "manifesto": "Running for Freshers rep, I want every coding soc event to be genuinely fun, engaging, and worth your time. No boring or pointless sessions, just hands-on workshops, casual build nights, and creative game jams where you can mess around with code, meet great people, and learn something cool without stress. I want to make tech socials people actually look forward to." },
+          { "name": "Asbah Ayub", "manifesto": "Hello World! Vote for me for coding society event experiences worth leaving your room for! I have years of experience in planning, from being class representative to cultural captain at school.. I’ve always believed that if something can be better, we should make it so. I promise to make sure we code, retry and get high(on fun)! Basically, why settle for less when you can vote for better?😋" },
+          { "name": "Ekam Dibakar Chatterjee", "manifesto": "At School I cofounded a 25 member Machine Learning Club and was sponsored by Quantiphi to organize a hackathon. At CodeSoc, I would learn from my experience to run more unique events such as a Chess Bot Battle where everyone codes a chess AI and the highest Elo wins a prize (interchangeable with poker), plus finance hackathons using my experience working with sponsors. And I'll be at every social!" },
+          { "name": "Sam Davis", "manifesto": "As a crew manager, I have experience coordinating teams to deliver events for up to 1,300 people, and I'm excited to bring that experience to CodeSoc to plan and run events that benefit everyone, regardless of coding experience! I've also co-led the launch of the A-level maths division at a London-based tutoring company, working with others to turn ideas into a reality that benefits people." },
           { "name": "RON (Re-Open Nominations)" }
         ]},
-        { "title": "Merchandise Manager", "candidates": [
-          { "name": "Riyasath Meah", "manifestoLink": "https://drive.google.com/file/d/12OjWpMp0Fmh62qNeLCBLRhLQlW3FKBxF/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]}
-      ]
-    },
-    {
-      "name": "Academic Team",
-      "slug": "academic",
-      "positions": [
-        { "title": "Head of Mentoring", "candidates": [
-          { "name": "K.", "manifestoLink": "" },
-          { "name": "Platon Razumov", "manifestoLink": "https://drive.google.com/file/d/1mPR4u9uQ8Vq9CV5uYJdkEg1CxmojAVL8/view" },
-          { "name": "Aryan Sharma", "manifestoLink": "https://drive.google.com/file/d/1CXo46WqueZ0mpef7dfp2EZk8JOwLWki7/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]},
-        { "title": "Python Course Lead", "candidates": [
-          { "name": "Aaron Gonsalves", "manifestoLink": "https://drive.google.com/file/d/1KORgg5NuHDexzX8JiIqVuCY5plCL1O1h/view" },
-          { "name": "Andrii Halchuk", "manifestoLink": "https://docs.google.com/presentation/d/1dP5IFdO2PxwRT2GJNNt_iYWd8EQ6oZ3N/edit?usp=sharing&ouid=100654385780300985801&rtpof=true&sd=true" },
-          { "name": "Bhushan Balaji", "manifestoLink": "https://drive.google.com/file/d/1S9azPEg6QG8SfBEtcT_xZ3okXLAB_ymx/view?usp=drive_link" },
-          { "name": "Namish Jain", "manifestoLink": "https://drive.google.com/file/d/1taZ033-Rgvc8C5upuDuaIXLdYW2Z4e2q/view?usp=drive_link" },
-          { "name": "Ian Gitau", "manifestoLink": "https://drive.google.com/file/d/136YBVB3eXYbVGQBdcK20_WDowBFCiIMu/view?usp=sharing" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]},
-        { "title": "C++ Course Lead", "candidates": [
-          { "name": "Lanzo Raj Muthu Amirtharaj", "manifestoLink": "https://drive.google.com/file/d/1AsJDoq2mmdb93SW7TAs8uah9Gp_o4IYK/view" },
-          { "name": "Daniel Kowalczyk", "manifestoLink": "https://drive.google.com/file/d/1vjxDzxVeGfFqgnJQ3IYC82ckgL8grtnb/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]},
-        { "title": "Sysdes Course Lead", "candidates": [
-          { "name": "Jamie Shakeshaft-Ward", "manifestoLink": "https://drive.google.com/file/d/1wC8s751rdpOOOaYmXM0lt5bn3StLmUGJ/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]},
-        { "title": "HPC Team Lead", "candidates": [
-          { "name": "Mayukha, Nevin and Luke", "manifestoLink": "https://drive.google.com/file/d/1Ph3e2bakA9XKGvNobjdQgPyHdlWu6WiG/view" },
-          { "name": "Santiago Osorio", "manifestoLink": "https://drive.google.com/file/d/1QVcOPIgQqglpSZzbyIuaj3nOB5p2ADst/view" },
-          { "name": "Daniel Kowalczyk", "manifestoLink": "https://drive.google.com/file/d/1vjxDzxVeGfFqgnJQ3IYC82ckgL8grtnb/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]}
-      ]
-    },
-    {
-      "name": "Creative Team",
-      "slug": "creative",
-      "positions": [
-        { "title": "Social Media Lead", "candidates": [
-          { "name": "Alex Prepelita", "manifestoLink": "https://drive.google.com/file/d/1eXnioQE56xqpVHAJ0asIDvX2OtaipGbP/view" },
-          { "name": "Grace Jayaseelan", "manifestoLink": "https://drive.google.com/file/d/1bi3FWqbhBCZqjlCyT5FW1MuK_QNQF8Jx/view" },
-          { "name": "Anuj Bhat", "manifestoLink": "https://drive.google.com/file/d/1KbPFjowUJRCEW7RBQWQOOoVYJEJjJa7Q/view?usp=drive_link" },
-          { "name": "Kashish Rohit", "manifestoLink": "https://drive.google.com/file/d/1uvaeXLIQO6YzS7rv1cm3rkQa6OFu2VLA/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]},
-        { "title": "Graphics Lead", "candidates": [
-          { "name": "Alex Prepelita", "manifestoLink": "https://drive.google.com/file/d/1eXnioQE56xqpVHAJ0asIDvX2OtaipGbP/view" },
-          { "name": "Dwaraka Vivekanandan", "manifestoLink": "https://drive.google.com/file/d/1fWI256HGlrRU74GJU6QJKgEg6IktVmTu/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]},
-        { "title": "Video Production", "candidates": [
-          { "name": "Rosie Levene", "manifestoLink": "https://drive.google.com/file/d/19mf8fXU-Tb66Ru5_OuiDzomrqbC7KhBw/view" },
-          { "name": "Anuj Bhat", "manifestoLink": "https://drive.google.com/file/d/1KbPFjowUJRCEW7RBQWQOOoVYJEJjJa7Q/view?usp=drive_link" },
-          { "name": "Kashish Rohit", "manifestoLink": "https://drive.google.com/file/d/1uvaeXLIQO6YzS7rv1cm3rkQa6OFu2VLA/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]}
-      ]
-    },
-    {
-      "name": "Community Team",
-      "slug": "community",
-      "positions": [
-        { "title": "Social Secretary", "candidates": [
-          { "name": "Adam Wasiak", "manifestoLink": "https://drive.google.com/file/d/1Rp072S8--4DDyt4FAxspLTn16iwdDTsV/view" },
-          { "name": "Andrii Halchuk", "manifestoLink": "https://docs.google.com/presentation/d/118O78SHGClIMVFq72IX-7Ajnuqk1sbQw/edit?usp=sharing&ouid=100654385780300985801&rtpof=true&sd=true" },
-          { "name": "Josh Beiraghdar", "manifestoLink": "https://drive.google.com/file/d/1Ms8OfLcZ1l4JbO9X3kZftSeMkmF9qWX8/view" },
-          { "name": "Anushka Majumdar", "manifestoLink": "https://drive.google.com/file/d/1cPcoPItan10JEV4cej6_zUyMEt8-xn4w/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]},
-        { "title": "Sports Coordinator", "candidates": [
-          { "name": "Aryan Sharma", "manifestoLink": "https://drive.google.com/file/d/1CXo46WqueZ0mpef7dfp2EZk8JOwLWki7/view" },
-          { "name": "Mahmoud Khoder", "manifestoLink": "https://drive.google.com/file/d/1VvgkXKK6iMKciIuEvrUbUjxfBRamS6p6/view" },
-          { "name": "RON (Re-Open Nominations)" }
-        ]},
-        { "title": "Diversity Director", "candidates": [
-          { "name": "Riyasath Meah", "manifestoLink": "https://drive.google.com/file/d/12OjWpMp0Fmh62qNeLCBLRhLQlW3FKBxF/view" },
-          { "name": "Avi Ahilan", "manifestoLink": "https://drive.google.com/file/d/1t-hI5E7rfVhAcG2XawT4pJ6goPIPF9Qa/view" },
-          { "name": "Rosie Levene", "manifestoLink": "https://drive.google.com/file/d/19mf8fXU-Tb66Ru5_OuiDzomrqbC7KhBw/view" },
-          { "name": "Dwaraka Vivekanandan", "manifestoLink": "https://drive.google.com/file/d/1fWI256HGlrRU74GJU6QJKgEg6IktVmTu/view" },
+        { "title": "Mentoring Rep", "candidates": [
+          { "name": "Bilal Raja", "manifesto": "I’ve always believed in the idea of aiding others. Mentoring is always something I’ve been comfortable doing and I’ve always loved supporting others because it’s the kind and respectable thing to do. By voting for me, I will promise to provide strong support to the mentoring programme and ensure that mentors and mentees gain the maximum out of code mentoring whilst making it as fun as possible." },
+          { "name": "Diya Kohli", "manifesto": "As your Mentoring rep, I’d ensure our mentoring sessions were exciting, insightful and something everyone looked forward to. Having run countless computing mentoring sessions at school, I am able to explain tricky concepts clearly and patiently. If you vote for me, I promise to check in with everyone, keep sessions welcoming for all and get any feedback to the exec!" },
+          { "name": "Adam Clarke", "manifesto": "While studying for my Computer Science A-Level, I was flabbergasted as my classmates ChatGPT'ed their entire coursework and crammed a third of a curriculum they weren't taught. At Warwick Coding Society, I will instil the value of a strong leader in positioning mentors to teach a vital skill like programming, promoting independent thought (not vibes!) that translates into masterful final projects." },
+          { "name": "Ferhat Celik", "manifesto": "My passion for guiding others reflects my love for mentoring. This is backed up by my breadth of experience at my local youth centre, where I worked with younger students allowing me to leave a positive contribution to their personal development. Lastly, my strong interpersonal skills would enable me to connect mentors & mentees to form deep-rooted relationships." },
+          { "name": "Wesley-Aloy Nnamani", "manifesto": "As a mentor in this society, I bring communication skills built through three leadership roles at my previous school, skills that drive results. Last Monday's turnout could have been stronger, and I'm committed to making our sessions ones students don't want to miss. Having learned Python and Java myself, and still learning, I know the coding journey first hand.Thank you!" },
+          { "name": "Tanish Gupta", "manifesto": "Having been a peer tutor and received an Outstanding Peer Tutor Award, I know how much good mentoring matters. From leading the Programming and Competitive Maths Clubs to now being an undergraduate CS SSLC Representative, I’ve always enjoyed supporting others. Through personal CS projects and collaborating in the UKIEPC, hackathons and the Economics World Cup, I’ve also learnt the value of sharing ideas and working together. I’d love to bring this to CodeSoc and help everyone grow together!" },
           { "name": "RON (Re-Open Nominations)" }
         ]}
       ]

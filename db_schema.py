@@ -61,13 +61,15 @@ class ElectionCandidate(db.Model):
     positionTitle = db.Column(db.String(128))
     name = db.Column(db.String(128))
     manifestoLink = db.Column(db.String(512), default="")
+    manifesto = db.Column(db.Text, default="")
 
-    def __init__(self, categorySlug, categoryName, positionTitle, name, manifestoLink=""):
+    def __init__(self, categorySlug, categoryName, positionTitle, name, manifestoLink="", manifesto=""):
         self.categorySlug = categorySlug
         self.categoryName = categoryName
         self.positionTitle = positionTitle
         self.name = name
         self.manifestoLink = manifestoLink
+        self.manifesto = manifesto
 
 
 class ElectionVote(db.Model):
