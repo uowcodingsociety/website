@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 from dotenv import load_dotenv
 from db_manager import DatabaseManager
 from schema_generator import generate_all_schemas, save_schemas_to_file
+import course_content
 import csv
 import requests
 from datetime import datetime, timedelta
@@ -132,6 +133,32 @@ def courses():
         msg.body = courseOption + " Course Feedback: " + courseFeedback
         mail.send(msg)
     return render_template("courses.html", pageName="courses")
+
+
+@app.route("/learn/courses/<course>/<int:year>")
+@app.route("/learn/courses/<course>/<int:year>/<session_slug>")
+def course_notes(course, year, session_slug=None):
+    course_data = course_content.load_course(course, year)
+    if course_data is None:
+        abort(404)
+
+    pages = [course_data["overview"]] + course_data["sessions"]
+    slugs = [page["slug"] for page in pages]
+    current_slug = session_slug or ""
+    if current_slug not in slugs:
+        abort(404)
+    position = slugs.index(current_slug)
+
+    return render_template(
+        "course-notes.html",
+        pageName="courses",
+        course=course_data,
+        page=pages[position],
+        is_overview=position == 0,
+        prev_page=pages[position - 1] if position > 0 else None,
+        next_page=pages[position + 1] if position + 1 < len(pages) else None,
+        base_url=f"/learn/courses/{course}/{year}",
+    )
 
 
 @app.route("/learn/mentorship")
@@ -570,6 +597,18 @@ def db_validate():
             click.echo("✅ All JSON files are valid!")
         else:
             click.echo("❌ Validation errors found!")
+
+
+@app.cli.command("course-validate")
+def course_validate():
+    """Check every course notes file in content/courses has valid frontmatter"""
+    click.echo("🔍 Validating course notes...")
+    errors = course_content.validate_all()
+    if errors:
+        for error in errors:
+            click.echo(f"❌ {error}")
+        raise SystemExit(1)
+    click.echo("✅ All course notes are valid!")
 
 
 @app.cli.command("db-generate-schemas")
