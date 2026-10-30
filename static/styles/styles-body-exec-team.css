@@ -46,20 +46,29 @@ p {
   text-align: left;
 }
 
-#execTeam {
-  display: flex;
-  background-color: var(--background-100);
-  border-radius: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.exec-team {
+  margin-bottom: 40px;
+}
+
+.exec-team-heading {
+  font-size: 26px;
+  margin: 0px 0px 20px;
+  color: var(--primary-blue);
+}
+
+.exec-team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .person {
-  background-color: var(--background-300);
+  box-sizing: border-box;
+  width: 220px;
+  background-color: var(--background-100);
   padding: 10px;
   border-radius: 20px;
-  margin: 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +93,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 200px;
+  width: 100%;
+  flex: 1;
+  /* room for a two-line name, a title and the socials row */
+  min-height: 105px;
 }
 
 .person-socials-container {
@@ -117,9 +129,11 @@ p {
 
 .person-name {
   font-size: 18px;
+  line-height: 1.25;
 }
 
 .person-position {
+  line-height: 1.25;
   color: var(--primary-blue);
   overflow-wrap: break-word;
   text-align: center;
@@ -134,22 +148,26 @@ p {
     padding: 0px 15px;
   }
 
-  .person-image-container {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 20px;
-    margin-bottom: 10px;
-  }
-
-  .person-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 150px;
+  .exec-team-members {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .person {
-    margin: 10px 25px;
+    width: 100%;
+  }
+
+  .person-image-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .person-text-container {
+    min-height: 120px;
+  }
+
+  .person-name {
+    font-size: 16px;
   }
 }
