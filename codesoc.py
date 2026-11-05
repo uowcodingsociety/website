@@ -134,6 +134,12 @@ def courses():
     return render_template("courses.html", pageName="courses")
 
 
+@app.route("/learn/courses/cpp")
+def cpp_course():
+    # The course is served by a PythonAnywhere static file mapping at /learn/courses/cpp/ (see README)
+    return redirect("/learn/courses/cpp/", code=308)
+
+
 @app.route("/learn/mentorship")
 def mentorship():
     return render_template("mentorship.html", pageName="mentorship")
