@@ -1,0 +1,133 @@
+{%- set overview = course.overview -%}
+{%- macro long_date(d) -%}{{ d.day }} {{ d.strftime('%B %Y') }}{%- endmacro -%}
+{%- macro author_list(names) -%}
+  {%- if names|length > 1 -%}{{ names[:-1]|join(', ') }} and {{ names[-1] }}{%- else -%}{{ names[0] }}{%- endif -%}
+{%- endmacro -%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% if not is_overview %}{{ page.title }} | {% endif %}{{ overview.title }} {{ course.year }} | CodeSoc</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="{{ page.description }}">
+    <link rel="stylesheet" href="/static/styles/reset.css">
+    <link rel="stylesheet" href="/static/styles/styles-navbar.css">
+    <link rel="stylesheet" href="/static/styles/styles-course-notes-code.css">
+    <link rel="stylesheet" href="/static/styles/styles-body-course-notes.css">
+    <link rel="stylesheet" href="/static/styles/styles-footer.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kfd8owr.css">
+    <link rel="shortcut icon" type="image/png" href="/static/assets/Icons/favicon.ico">
+  </head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Q2ZMD5NS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M6Q2ZMD5NS');
+  </script>
+
+  <body>
+
+    <script src = "/static/js/jquery-3.6.0.min.js"></script>
+    <script src = "/static/js/global.js"></script>
+
+    <div class="backup-button">
+      <a href="#"><img src="/static/assets/Icons/backupbutton.png"></a>
+    </div>
+
+    {% include "reusable/header.html" %}
+
+    <main class="course-page">
+      <header class="course-header">
+        <a class="course-back" href="/learn/courses#python">&larr; All courses</a>
+        {% if not is_overview %}
+          <a class="course-eyebrow" href="{{ base_url }}">{{ overview.title }} {{ course.year }}</a>
+        {% else %}
+          <div class="course-eyebrow">{{ course.year }}</div>
+        {% endif %}
+        <h1 id="pageTitle">{{ page.title }}<span>.</span></h1>
+        <p class="course-description">{{ page.description }}</p>
+        <div class="course-meta">
+          {% if not is_overview %}<span>{{ long_date(page.date) }}</span>{% endif %}
+          {% if page.authors %}<span>{{ 'Course leaders:' if is_overview else 'Written by' }} {{ author_list(page.authors) }}</span>{% endif %}
+        </div>
+      </header>
+
+      <div class="course-layout">
+        <nav class="course-sidebar" aria-label="Sessions">
+          <div class="course-sidebar-title">Sessions</div>
+          <ol>
+            <li>
+              <a href="{{ base_url }}" class="{{ 'current' if is_overview else '' }}">Overview</a>
+            </li>
+            {% for session in course.sessions %}
+            <li>
+              <a href="{{ base_url }}/{{ session.slug }}" class="{{ 'current' if session.slug == page.slug else '' }}">
+                {{ session.title }}
+                <small>{{ long_date(session.date) }}</small>
+              </a>
+            </li>
+            {% endfor %}
+          </ol>
+        </nav>
+
+        <article class="course-content">
+          {{ page.html | safe }}
+
+          {% if is_overview %}
+          <h2 id="sessions">Sessions so far</h2>
+          {% if course.sessions %}
+          <ul class="session-cards">
+            {% for session in course.sessions %}
+            <li>
+              <a href="{{ base_url }}/{{ session.slug }}" class="session-card">
+                <span class="session-card-date">{{ long_date(session.date) }}</span>
+                <span class="session-card-title">{{ session.title }}</span>
+                <span class="session-card-desc">{{ session.description }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          <p class="session-cards-note">Each session's notes appear here once the session has run.</p>
+          {% endif %}
+        </article>
+
+        {% if page.toc and not is_overview %}
+        <aside class="course-toc" aria-label="On this page">
+          <div class="course-sidebar-title">On this page</div>
+          <ul>
+            {% for heading in page.toc %}
+            <li class="toc-level-{{ heading.level }}"><a href="#{{ heading.id }}">{{ heading.text }}</a></li>
+            {% endfor %}
+          </ul>
+        </aside>
+        {% endif %}
+      </div>
+
+      <nav class="course-pager" aria-label="Previous and next">
+        {% if prev_page %}
+        <a class="pager-link pager-prev" href="{{ base_url }}{{ '/' ~ prev_page.slug if prev_page.slug else '' }}">
+          <small>Previous</small>
+          <span>&larr; {{ 'Overview' if not prev_page.slug else prev_page.title }}</span>
+        </a>
+        {% endif %}
+        {% if next_page %}
+        <a class="pager-link pager-next" href="{{ base_url }}/{{ next_page.slug }}">
+          <small>Next</small>
+          <span>{{ next_page.title }} &rarr;</span>
+        </a>
+        {% endif %}
+      </nav>
+
+      <p class="course-credit">
+        These notes are shared between Warwick AI, UWCS and CodeSoc for the joint {{ overview.title }}.
+        Warwick AI also publish them on <a href="https://warwick.ai/education/courses" target="_blank" rel="noopener noreferrer">their website</a>.
+      </p>
+    </main>
+
+    {% include "reusable/footer.html" %}
+
+  </body>
+</html>
