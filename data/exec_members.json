@@ -292,5 +292,33 @@
 		"ghLink": "",
 		"year": "2",
 		"imageLink": "profilespecial"
+	},
+	{
+		"execID": 22,
+		"name": "Grace Jayaseelan",
+		"course": "",
+		"bio": null,
+		"nationality": "",
+		"pronouns": "she/her",
+		"team": "Operations",
+		"title": "Merchandise Lead",
+		"liLink": "https://www.linkedin.com/in/grace-j-1a6023389",
+		"ghLink": "",
+		"year": "2",
+		"imageLink": "profilespecial"
+	},
+	{
+		"execID": 23,
+		"name": "Ananth Iyer",
+		"course": "",
+		"bio": null,
+		"nationality": "",
+		"pronouns": "he/him",
+		"team": "Operations",
+		"title": "Merchandise Lead",
+		"liLink": "https://www.linkedin.com/in/ananthai/",
+		"ghLink": "https://github.com/AnanthIyer21",
+		"year": "2",
+		"imageLink": "profilespecial"
 	}
 ]
