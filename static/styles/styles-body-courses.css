@@ -113,7 +113,8 @@ select::-ms-expand {
 #python,
 #swift,
 #html,
-#js {
+#js,
+#cpp {
   scroll-margin-block-start: 100px;
 }
 
@@ -258,6 +259,10 @@ select::-ms-expand {
 
 .swift-inner-container {
   width: 510px;
+}
+
+#cpp {
+  margin-top: 61px;
 }
 
 /* Bot */
@@ -524,7 +529,8 @@ select::-ms-expand {
 
   #python,
   #swift,
-  #js {
+  #js,
+  #cpp {
     scroll-margin-block-start: 20px;
   }
 
@@ -731,6 +737,10 @@ select::-ms-expand {
     margin-bottom: 30px;
   }
 
+  #cpp {
+    margin-top: 0px;
+  }
+
   .all-container {
     margin: 14px 16px 70px 16px;
     display: flex;
@@ -865,7 +875,8 @@ select::-ms-expand {
 
   #python,
   #swift,
-  #js {
+  #js,
+  #cpp {
     scroll-margin-block-start: 20px;
   }
 
